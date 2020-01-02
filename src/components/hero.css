@@ -1,17 +1,17 @@
 .hero {
     display: flex;
     align-items: center;
-    padding-top: var(--m-p-l);
+    padding-top: var(--m-p-m);
 }
 
 .hero-intro {
-    flex: 1.5;
+    flex: 2;
     margin-right: var(--m-p-l);
     margin-bottom: var(--m-p-m);
 }
 
 .hero-intro>h1 {
-    font-size: var(--fs-xxl);
+    font-size: calc(var(--fs-xl) + 1.5rem);
 }
 
 .hero-intro>h3 {
@@ -19,7 +19,7 @@
 }
 
 .hero-intro>p {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-l);
     margin-bottom: 2rem;
 }
 
@@ -43,7 +43,7 @@
         text-align: center;
     }
     .hero-portrait>img {
-        max-width: 50%;
+        max-width: 65%;
         margin: auto;
     }
 }

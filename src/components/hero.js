@@ -32,7 +32,7 @@ function Hero() {
 					If you want a new web site/application or want to get your
 					existing one(s) fixed, contact me to get a free quote.
 				</p>
-				<Button type="primary" size="l">
+				<Button type="primary" size="m">
 					Contact Me
 				</Button>
 			</div>

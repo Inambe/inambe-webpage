@@ -7,14 +7,17 @@
     --clr-grad-2: rgb(212, 63, 141);
     --clr-black: #2f2f2f;
     --clr-white: #fafafa;
+    --clr-gray-light: #e1e1e1;
+    --clr-gray: #c1c1c1;
     /* standard */
     --bg-main: linear-gradient(to top, var(--clr-grad-1) 0%, var(--clr-grad-2) 100%);
     --ff-main: 'Poppins', sans-serif;
     /* font-size */
-    --fs-main: calc(5px + 1.728vmin);
-    --fs-l: calc(var(--fs-main) + 0.25rem);
-    --fs-xl: calc(var(--fs-main) + 0.5rem);
-    --fs-xxl: calc(var(--fs-main) + 2.5rem);
+    --fs-main: calc(9.63px + 1vmin);
+    --fs-s: var(--fs-main);
+    --fs-m: calc(var(--fs-main) + 0.25rem);
+    --fs-l: calc(var(--fs-main) + 0.5rem);
+    --fs-xl: calc(var(--fs-main) + 1rem);
     /* margin-padding sizes */
     --m-p-s: 1rem;
     --m-p-m: 2rem;
