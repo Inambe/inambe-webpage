@@ -11,10 +11,10 @@
     --bg-main: linear-gradient(to top, var(--clr-grad-1) 0%, var(--clr-grad-2) 100%);
     --ff-main: 'Poppins', sans-serif;
     /* font-size */
-    --fs-main: 1.1rem;
-    --fs-l: 1.2rem;
-    --fs-xl: 1.5rem;
-    --fs-xxl: 3.5rem;
+    --fs-main: calc(5px + 1.728vmin);
+    --fs-l: calc(var(--fs-main) + 0.25rem);
+    --fs-xl: calc(var(--fs-main) + 0.5rem);
+    --fs-xxl: calc(var(--fs-main) + 2.5rem);
     /* margin-padding sizes */
     --m-p-s: 1rem;
     --m-p-m: 2rem;
@@ -26,10 +26,13 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: var(--fs-main);
+}
+
 body {
     margin: 0;
     font-family: var(--ff-main);
-    font-size: var(--fs-main);
     background-image: var(--bg-main);
     color: var(--clr-white);
     background-repeat: no-repeat;
