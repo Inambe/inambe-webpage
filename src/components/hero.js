@@ -37,7 +37,7 @@ function Hero() {
 				</Button>
 			</div>
 			<div className="hero-portrait">
-				<Img src={portrait} />
+				<Img src={portrait} alt="Inam Ul Huq" />
 			</div>
 		</div>
 	);
