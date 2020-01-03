@@ -7,18 +7,25 @@
 .header-nav {
     display: flex;
     justify-content: center;
+    overflow: auto;
 }
 
-.header-nav a {
+.header-nav>a {
     text-decoration: none;
     color: var(--clr-white);
-    margin-right: var(--m-p-xl);
+    margin-right: var(--m-p-m);
 }
 
-.header-nav a:last-child {
+.header-nav>a:last-child {
     margin-right: 0;
 }
 
-.header-nav a:hover {
+.header-nav>a:hover {
     color: var(--clr-primary);
+}
+
+@media only screen and (max-width: 768px) {
+    .header-nav {
+        justify-content: flex-start;
+    }
 }
