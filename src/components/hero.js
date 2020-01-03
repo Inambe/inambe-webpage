@@ -14,8 +14,7 @@ function Hero() {
 				<h3>Full stack web developer</h3>
 				<p>
 					Hi 👋, I'm Inam Ul Huq. I'm a full stack web developer. I
-					develop, maintain and fix websites and web applications. I
-					use{" "}
+					develop, maintain and fix web sites/applications. I use{" "}
 					<A
 						href="https://en.wikipedia.org/wiki/JavaScript"
 						target="_blank"
@@ -30,7 +29,7 @@ function Hero() {
 				</p>
 				<p>
 					If you want a new web site/application or want to get your
-					existing one(s) fixed, contact me to get a free quote.
+					existing one fixed, contact me to get a free quote.
 				</p>
 				<Button type="primary" size="m">
 					Contact Me
