@@ -1,7 +1,6 @@
 .hero {
     display: flex;
     align-items: center;
-    padding-top: var(--m-p-m);
 }
 
 .hero-intro {
