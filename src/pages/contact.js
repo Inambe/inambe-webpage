@@ -19,12 +19,12 @@ function Contact() {
 					<Input name="name" />
 				</FormControl>
 				<FormControl>
-					<Label>Your email</Label>
-					<Input name="email" type="email" />
+					<Label>Your email*</Label>
+					<Input name="email" type="email" required />
 				</FormControl>
 				<FormControl>
-					<Label>Message</Label>
-					<Input name="message" textarea />
+					<Label>Message*</Label>
+					<Input name="message" textarea required />
 				</FormControl>
 				<FormControl>
 					<Button type="primary" size="m">
