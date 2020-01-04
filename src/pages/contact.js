@@ -8,7 +8,7 @@ import Button from "../components/button";
 function Contact() {
 	return (
 		<div className="contact">
-			<form>
+			<form method="post" name="contact-form">
 				{/* for netlify */}
 				<input type="hidden" name="form-name" value="contact-form" />
 
