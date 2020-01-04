@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./hero.css";
 
 import portrait from "./../static/media/imgs/inam-ul-huq.png";
@@ -31,9 +32,11 @@ function Hero() {
 					If you want a new web site/application or want to get your
 					existing one fixed, contact me to get a free quote.
 				</p>
-				<Button type="primary" size="mf">
-					Contact Me
-				</Button>
+				<Link to="/contact">
+					<Button type="primary" size="mf">
+						Contact Me
+					</Button>
+				</Link>
 			</div>
 			<div className="hero-portrait">
 				<Img src={portrait} alt="Inam Ul Huq" />

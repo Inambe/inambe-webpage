@@ -1,5 +1,6 @@
 import React from "react";
 import "./contact.css";
+
 import Input from "../components/form/input";
 import FormControl from "../components/form/formControl";
 import Label from "../components/form/label";
