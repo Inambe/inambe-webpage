@@ -1,3 +1,13 @@
-.aboutPage__para {
-	text-align: justify;
+.aboutPage__sec {
+	margin-bottom: var(--m-p-l);
+}
+.aboutPage__sec img {
+	box-shadow: 0rem 0rem 2px 0px var(--clr-black);
+	border-radius: 0.2rem;
+}
+@media (max-width: 768px) {
+	.aboutPage__sec {
+		text-align: justify;
+		margin-bottom: var(--m-p-m);
+	}
 }

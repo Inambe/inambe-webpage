@@ -12,7 +12,7 @@ function AboutPage() {
 	return (
 		<main className="aboutPage">
 			<h1>About me</h1>
-			<Row>
+			<Row className="aboutPage__sec">
 				<Col md={4}>
 					<Img src={Portrait} alt="Inam Ul Huq" />
 				</Col>
@@ -24,35 +24,29 @@ function AboutPage() {
 						own from online courses, YouTube, and a lot of documents
 						including books and blogs.
 					</p>
-					<br />
-					<Row>
-						<Col>
-							<p className="aboutPage__para">
-								I started learning about computer programming,
-								or computers in general, out of curiosity when
-								our teachers would leave off the topics
-								involving programming when they'd teach us about
-								electronics. I started learning to program with
-								C/C++. Later I programmed an{" "}
-								<A
-									href="https://www.arduino.cc/"
-									target="_blank"
-								>
-									Arduino
-								</A>{" "}
-								board for our final year project which, first
-								got us elected for the competition from within
-								our college, and later won in the district-wide
-								competition.
-							</p>
-						</Col>
-						<Col md={5}>
-							<Img
-								src={ProjectGroupPhot}
-								alt="final year project group photo at GCT Sialkot"
-							/>
-						</Col>
-					</Row>
+				</Col>
+			</Row>
+			<Row className="aboutPage__sec">
+				<Col>
+					<p>
+						I started learning about computer programming, or
+						computers in general, out of curiosity when our teachers
+						would leave off the topics involving programming when
+						they'd teach us about electronics. I started learning to
+						program with C/C++. Later I programmed an{" "}
+						<A href="https://www.arduino.cc/" target="_blank">
+							Arduino
+						</A>{" "}
+						board for our final year project which, first got us
+						elected for the competition from within our college, and
+						later won in the district-wide competition.
+					</p>
+				</Col>
+				<Col md={4}>
+					<Img
+						src={ProjectGroupPhot}
+						alt="final year project group photo at GCT Sialkot"
+					/>
 				</Col>
 			</Row>
 		</main>
