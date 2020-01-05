@@ -12,9 +12,9 @@ function Hero() {
 		<div className="hero">
 			<div className="hero-intro">
 				<h1>Inam Ul Huq</h1>
-				<h3>Full stack web developer</h3>
+				<h3>Full-stack web developer</h3>
 				<p>
-					Hi 👋, I'm Inam Ul Huq. I'm a full stack web developer. I
+					Hi 👋, I'm Inam Ul Huq. I'm a full-stack web developer. I
 					develop, maintain and fix web sites/applications. I use{" "}
 					<A
 						href="https://en.wikipedia.org/wiki/JavaScript"
@@ -25,8 +25,8 @@ function Hero() {
 					,{" "}
 					<A href="https://en.wikipedia.org/wiki/PHP" target="_blank">
 						PHP
-					</A>{" "}
-					and its frameworks.
+					</A>
+					, and their frameworks.
 				</p>
 				<p>
 					If you want a new web site/application or want to get your
