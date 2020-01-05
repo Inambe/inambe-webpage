@@ -23,7 +23,7 @@ function ContactPage() {
 				<Col md={5} className="contactPage__section">
 					<p>
 						If you have any question for me or just wanna say hello,
-						use the below form.
+						use the form below.
 					</p>
 					<form method="post" name="contact-form">
 						{/* for netlify */}
