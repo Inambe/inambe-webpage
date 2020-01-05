@@ -6,6 +6,7 @@ import HomePage from "./pages/homePage";
 import Header from "./components/header";
 import Container from "./components/container";
 import ContactPage from "./pages/contactPage";
+import AboutPage from "./pages/aboutPage";
 
 function App() {
 	return (
@@ -17,6 +18,9 @@ function App() {
 				</Route>
 				<Route path="/contact" exact>
 					<ContactPage />
+				</Route>
+				<Route path="/about" exact>
+					<AboutPage />
 				</Route>
 			</Container>
 		</Router>

@@ -1,14 +1,14 @@
 .input {
-    padding: 0.6rem;
-    border-radius: 0.3rem;
-    background: var(--clr-white);
-    border: 3px solid var(--clr-gray);
-    min-width: 20rem;
-    max-width: 100%;
-    color: var(--clr-grad-1);
+	padding: 0.6rem;
+	border-radius: 0.3rem;
+	background: var(--clr-white);
+	border: 3px solid var(--clr-gray);
+	min-width: 20rem;
+	max-width: 100%;
+	color: var(--clr-black);
 }
 
 .input:focus {
-    border: 3px solid var(--clr-gray-light);
-    outline: 0;
+	border: 3px solid var(--clr-gray-light);
+	outline: 0;
 }

@@ -1,53 +1,74 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 :root {
-    /* colors */
-    --clr-primary: #FFD100;
-    --clr-primary-dark: #CCA700;
-    --clr-grad-1: rgb(2, 80, 197);
-    --clr-grad-2: rgb(212, 63, 141);
-    --clr-black: #2f2f2f;
-    --clr-white: #fafafa;
-    --clr-gray-light: #e1e1e1;
-    --clr-gray: #c1c1c1;
-    /* standard */
-    --bg-main: linear-gradient(to top, var(--clr-grad-1) 0%, var(--clr-grad-2) 100%);
-    --ff-main: 'Poppins', sans-serif;
-    /* font-size */
-    /* 1rem = 16px */
-    --fs-main: calc(9.63px + 1vmin);
-    --fs-s: 1rem;
-    --fs-m: 1.25rem;
-    --fs-l: 1.5rem;
-    --fs-xl: 2rem;
-    /* margin-padding sizes */
-    --m-p-s: 1rem;
-    --m-p-m: 2rem;
-    --m-p-l: 3rem;
-    --m-p-xl: 4rem;
+	/* colors */
+	--clr-primary: #ffd100;
+	--clr-primary-dark: #cca700;
+	--clr-grad-1: rgb(2, 80, 197);
+	--clr-grad-2: rgb(212, 63, 141);
+	--clr-black: #2f2f2f;
+	--clr-white: #fafafa;
+	--clr-gray-light: #e1e1e1;
+	--clr-gray: #c1c1c1;
+	/* standard */
+	--bg-main: linear-gradient(
+		to top,
+		var(--clr-grad-1) 0%,
+		var(--clr-grad-2) 100%
+	);
+	--ff-main: "Poppins", sans-serif;
+	/* font-size */
+	/* 1rem = 16px */
+	--fs-main: calc(9.63px + 1vmin);
+	--fs-s: 1rem;
+	--fs-m: 1.25rem;
+	--fs-l: 1.5rem;
+	--fs-xl: 2rem;
+	/* margin-padding sizes */
+	--m-p-s: 1rem;
+	--m-p-m: 2rem;
+	--m-p-l: 3rem;
+	--m-p-xl: 4rem;
 }
 
-*, *::after, *::before {
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 html {
-    font-size: var(--fs-main);
+	font-size: var(--fs-main);
 }
 
 body {
-    margin: 0;
-    font-family: var(--ff-main);
-    background-image: var(--bg-main);
-    color: var(--clr-white);
-    background-repeat: no-repeat;
-    letter-spacing: 0.6px;
-    min-height: 100vh;
+	margin: 0;
+	font-family: var(--ff-main);
+	background-image: var(--bg-main);
+	color: var(--clr-white);
+	background-repeat: no-repeat;
+	letter-spacing: 0.6px;
+	min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
 }
 
-button, input, textarea {
-    font-family: inherit;
+button,
+input,
+textarea {
+	font-family: inherit;
+}
+main img,
+main p {
+	margin-bottom: 0.5rem;
+}
+main h1 {
+	margin-bottom: var(--m-p-s);
 }
