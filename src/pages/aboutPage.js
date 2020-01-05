@@ -31,9 +31,10 @@ function AboutPage() {
 					<p>
 						I started learning about computer programming, or
 						computers in general, out of curiosity when our teachers
-						would leave off the topics involving programming when
-						they'd teach us about electronics. I started learning to
-						program with C/C++. Later I programmed an{" "}
+						would leave off the topics involving computers or
+						computer programming while teaching us Applied
+						Electronics. I started learning to program with C/C++.
+						Later I programmed an{" "}
 						<A href="https://www.arduino.cc/" target="_blank">
 							Arduino
 						</A>{" "}
