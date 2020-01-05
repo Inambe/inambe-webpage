@@ -1,5 +1,11 @@
 import React from "react";
-import { FaGithub, FaEnvelope, FaPhone, FaTwitter } from "react-icons/fa";
+import {
+	FaGithub,
+	FaEnvelope,
+	FaPhone,
+	FaTwitter,
+	FaLinkedin
+} from "react-icons/fa";
 import { Row, Col } from "react-grid-system";
 import "./contact.css";
 
@@ -62,11 +68,17 @@ function Contact() {
 						<FaPhone /> +92 340 4678646
 					</p>
 					<p className="socialIcons">
-						<A href="#">
+						<A href="https://github.com/inambe" target="_blank">
 							<FaGithub />
 						</A>
-						<A href="#">
+						<A href="#" target="_blank">
 							<FaTwitter />
+						</A>
+						<A
+							href="https://www.linkedin.com/in/inambe"
+							target="_blank"
+						>
+							<FaLinkedin />
 						</A>
 					</p>
 				</Col>
