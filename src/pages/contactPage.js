@@ -7,15 +7,15 @@ import {
 	FaLinkedin
 } from "react-icons/fa";
 import { Row, Col } from "react-grid-system";
-import "./contact.css";
+import "./contactPage.css";
 
 import Input from "../components/form/input";
 import FormControl from "../components/form/formControl";
 import Label from "../components/form/label";
 import Button from "../components/button";
-import A from "./../components/a";
+import A from "../components/a";
 
-function Contact() {
+function ContactPage() {
 	return (
 		<div className="contactPage">
 			<h1>Contact</h1>
@@ -87,4 +87,4 @@ function Contact() {
 	);
 }
 
-export default Contact;
+export default ContactPage;

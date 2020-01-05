@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
-import Hero from "./components/hero";
-import Home from "./pages/home";
+
+import HomePage from "./pages/homePage";
 import Header from "./components/header";
 import Container from "./components/container";
-import Contact from "./pages/contact";
+import ContactPage from "./pages/contactPage";
 
 function App() {
 	return (
@@ -13,10 +13,10 @@ function App() {
 			<Header />
 			<Container>
 				<Route path="/" exact>
-					<Home />
+					<HomePage />
 				</Route>
 				<Route path="/contact" exact>
-					<Contact />
+					<ContactPage />
 				</Route>
 			</Container>
 		</Router>

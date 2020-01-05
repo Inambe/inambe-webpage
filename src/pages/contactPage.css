@@ -4,9 +4,11 @@
 .contactPage p {
 	margin-bottom: 0.5rem;
 }
+
 .contactPage__section {
 	margin-bottom: var(--m-p-s);
 }
+
 .contactInfo__item {
 	display: flex;
 	align-items: center;
@@ -15,6 +17,7 @@
 	margin-right: 0.5rem;
 	color: var(--clr-gray);
 }
+
 .socialIcons {
 	margin-top: var(--m-p-s);
 	font-size: var(--fs-l);
