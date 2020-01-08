@@ -11,6 +11,8 @@
 
 .hero-intro>h1 {
     font-size: calc(var(--fs-xl) + 1.5rem);
+    margin: 0;
+    line-height: 100%;
 }
 
 .hero-intro>h3 {
