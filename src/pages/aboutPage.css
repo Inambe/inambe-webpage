@@ -5,9 +5,11 @@
 	box-shadow: 0rem 0rem 2px 0px var(--clr-black);
 	border-radius: 0.2rem;
 }
+.aboutPage__sec p{
+    font-size: var(--fs-m);
+}
 @media (max-width: 768px) {
 	.aboutPage__sec {
-		text-align: justify;
-		margin-bottom: var(--m-p-m);
+		margin-bottom: var(--m-p-l);
 	}
 }

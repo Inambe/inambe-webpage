@@ -15,7 +15,8 @@
 	white-space: nowrap;
 	text-decoration: none;
 	color: var(--clr-white);
-	margin-right: var(--m-p-m);
+    margin-right: var(--m-p-m);
+    transition: color 0.1s ease-out;
 }
 
 .header-nav > a:last-child {
