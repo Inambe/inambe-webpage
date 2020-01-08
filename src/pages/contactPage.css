@@ -1,12 +1,9 @@
 .contactPage > h1 {
 	margin-bottom: var(--m-p-s);
 }
-.contactPage p {
-	margin-bottom: 0.5rem;
-}
 
 .contactPage__section {
-	margin-bottom: var(--m-p-s);
+	margin-bottom: var(--m-p-l);
 }
 
 .contactInfo__item {

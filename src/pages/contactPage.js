@@ -17,7 +17,7 @@ import A from "../components/a";
 
 function ContactPage() {
     return (
-        <div className="contactPage">
+        <main className="contactPage">
             <h1>Contact</h1>
             <Row nogutter>
                 <Col md={5} className="contactPage__section">
@@ -83,7 +83,7 @@ function ContactPage() {
                     </p>
                 </Col>
             </Row>
-        </div>
+        </main>
     );
 }
 
