@@ -5,8 +5,8 @@
 
 .hero-intro {
     flex: 2;
-    margin-right: var(--m-p-l);
-    margin-bottom: var(--m-p-m);
+    margin-right: var(--space-l);
+    margin-bottom: var(--space-m);
 }
 
 .hero-intro>h1 {
@@ -28,7 +28,7 @@
 
 .hero-portrait {
     flex: 1;
-    margin-bottom: var(--m-p-m);
+    margin-bottom: var(--space-m);
 }
 
 .hero-portrait>img {

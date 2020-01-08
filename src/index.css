@@ -25,10 +25,10 @@
 	--fs-l: 1.5rem;
 	--fs-xl: 2rem;
 	/* margin-padding sizes */
-	--m-p-s: 1rem;
-	--m-p-m: 2rem;
-	--m-p-l: 3rem;
-	--m-p-xl: 4rem;
+	--space-s: 1rem;
+	--space-m: 2rem;
+	--space-l: 3rem;
+	--space-xl: 4rem;
 }
 
 *,
@@ -70,6 +70,6 @@ main p {
 	margin-bottom: 0.5rem;
 }
 main h1 {
-    margin-bottom: var(--m-p-s);
+    margin-bottom: var(--space-s);
     font-size: 2.5rem;
 }

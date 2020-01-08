@@ -1,11 +1,11 @@
 .header {
 	background: var(--clr-grad-2);
 	box-shadow: 0px -1px 1px 1px var(--clr-white);
-	margin-bottom: var(--m-p-m);
+	margin-bottom: var(--space-m);
 }
 
 .header-nav {
-	padding: var(--m-p-s) 0;
+	padding: var(--space-s) 0;
 	display: flex;
 	justify-content: center;
 	overflow: auto;
@@ -15,7 +15,7 @@
 	white-space: nowrap;
 	text-decoration: none;
 	color: var(--clr-white);
-    margin-right: var(--m-p-m);
+    margin-right: var(--space-m);
     transition: color 0.1s ease-out;
 }
 
