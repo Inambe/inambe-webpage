@@ -1,8 +1,19 @@
 .a {
-    color: var(--clr-primary);
-    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    color: var(--clr-white);
+    transition: color 0.1s ease-out;
 }
-
-.a:hover {
-    color: var(--clr-primary-dark);
+.a::after{
+    content: "";
+    background: var(--clr-primary);
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    z-index: -1;
+}
+.a:hover{
+    color: var(--clr-primary);
 }

@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 :root {
 	/* colors */
-	--clr-primary: #ffd100;
+	--clr-primary: #FFC300;
 	--clr-primary-dark: #cca700;
 	--clr-grad-1: rgb(2, 80, 197);
 	--clr-grad-2: rgb(212, 63, 141);
-	--clr-black: #2f2f2f;
+    --clr-black: #2f2f2f;
+    --clr-black-light: #444444;
 	--clr-white: #fafafa;
 	--clr-gray-light: #e1e1e1;
 	--clr-gray: #c1c1c1;
@@ -46,7 +47,6 @@ body {
 	background-image: var(--bg-main);
 	color: var(--clr-white);
 	background-repeat: no-repeat;
-	letter-spacing: 0.6px;
 	min-height: 100vh;
 }
 
