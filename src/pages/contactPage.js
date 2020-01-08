@@ -71,7 +71,7 @@ function ContactPage() {
                         <A href="https://github.com/inambe" target="_blank">
                             <FaGithub />
                         </A>
-                        <A href="#" target="_blank">
+                        <A href="https://twitter.com/MeInamUlHuq" target="_blank">
                             <FaTwitter />
                         </A>
                         <A
