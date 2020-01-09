@@ -1,6 +1,9 @@
 .aboutPage__sec {
 	margin-bottom: 5rem;
 }
+.aboutPage__sec:last-of-type {
+	margin-bottom: 0;
+}
 .aboutPage__sec img {
 	box-shadow: 0rem 0rem 2px 0px var(--clr-black);
 	border-radius: 0.2rem;
@@ -26,9 +29,6 @@
 	width: 100%;
 }
 @media (max-width: 768px) {
-	.aboutPage__sec {
-		margin-bottom: var(--space-l);
-	}
 	.skillIcons > span {
 		flex-basis: 20%;
 	}
