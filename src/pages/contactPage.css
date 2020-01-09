@@ -1,3 +1,10 @@
+.contactPage__section {
+	margin-bottom: 5rem;
+}
+.contactPage__section:last-of-type {
+	margin-bottom: 0;
+}
+
 .contactInfo__item {
 	display: flex;
 	align-items: center;
