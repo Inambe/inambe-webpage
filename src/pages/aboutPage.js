@@ -34,8 +34,10 @@ function AboutPage() {
 							maintain, and fix web sites/applications. If you
 							want a new web site/application or want to get your
 							existing one fixed,{" "}
-							<Link to="/contact">contact me</Link> to get a free
-							quote.
+							<A to="/contact" rrLink>
+								contact me
+							</A>{" "}
+							to get a free quote.
 						</p>
 						<p>
 							I learned web and software development on my own
