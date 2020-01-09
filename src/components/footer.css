@@ -1,0 +1,8 @@
+.footer {
+	padding: 0.5rem 0;
+	background: var(--clr-black-light);
+	margin-top: 5rem;
+}
+.footer > p {
+	text-align: center;
+}

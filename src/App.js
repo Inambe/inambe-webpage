@@ -7,6 +7,7 @@ import Header from "./components/header";
 import Container from "./components/container";
 import ContactPage from "./pages/contactPage";
 import AboutPage from "./pages/aboutPage";
+import Footer from "./components/footer";
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 					<AboutPage />
 				</Route>
 			</Container>
+			<Footer />
 		</Router>
 	);
 }
