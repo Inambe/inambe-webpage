@@ -19,12 +19,11 @@ import ProjectGroupPhot from "./../static/media/imgs/gct-project-group-photo.jpg
 
 import Img from "../components/img";
 import A from "../components/a";
-import { Link } from "react-router-dom";
 
 function AboutPage() {
 	return (
 		<main className="aboutPage">
-			<h1>About me</h1>
+			<h1>About</h1>
 			<div className="aboutPage__sec">
 				<Row>
 					<Col>
