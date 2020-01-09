@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 :root {
 	/* colors */
-	--clr-primary: #FFC300;
+	--clr-primary: #ffc300;
 	--clr-primary-dark: #cca700;
 	--clr-grad-1: rgb(2, 80, 197);
 	--clr-grad-2: rgb(212, 63, 141);
-    --clr-black: #2f2f2f;
-    --clr-black-light: #444444;
+	--clr-black: #2f2f2f;
+	--clr-black-light: #444444;
 	--clr-white: #fafafa;
 	--clr-gray-light: #e1e1e1;
 	--clr-gray: #c1c1c1;
@@ -70,6 +70,16 @@ main p {
 	margin-bottom: 0.5rem;
 }
 main h1 {
-    margin-bottom: var(--space-s);
-    font-size: 2.5rem;
+	margin-bottom: 1.5rem;
+	font-size: 2.5rem;
+	color: var(--clr-primary);
+}
+main h2 {
+	margin-bottom: var(--space-s);
+	font-size: 2rem;
+	color: var(--clr-primary);
+}
+a {
+	text-decoration: none;
+	color: inherit;
 }
