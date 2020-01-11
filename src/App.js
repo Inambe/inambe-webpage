@@ -13,18 +13,23 @@ function App() {
 	return (
 		<Router>
 			<Header />
-			<Container>
-				<Route path="/" exact>
+			<Route path="/" exact>
+				<Container>
 					<HomePage />
-				</Route>
-				<Route path="/contact" exact>
+				</Container>
+			</Route>
+			<Route path="/contact" exact>
+				<Container>
 					<ContactPage />
-				</Route>
-				<Route path="/about" exact>
+				</Container>
+				<Footer />
+			</Route>
+			<Route path="/about" exact>
+				<Container>
 					<AboutPage />
-				</Route>
-			</Container>
-			<Footer />
+				</Container>
+				<Footer />
+			</Route>
 		</Router>
 	);
 }

@@ -6,6 +6,7 @@
 .hero-intro {
 	flex: 2;
 	margin-right: var(--space-l);
+	margin-bottom: var(--space-l);
 }
 
 .hero-intro > h1 {
@@ -27,6 +28,7 @@
 
 .hero-portrait {
 	flex: 1;
+	margin-bottom: var(--space-l);
 }
 
 .hero-portrait > img {
@@ -42,9 +44,6 @@
 	.hero-intro {
 		margin-right: 0;
 		text-align: center;
-	}
-	.hero-portrait {
-		margin-bottom: var(--space-m);
 	}
 	.hero-portrait > img {
 		max-width: 65%;
