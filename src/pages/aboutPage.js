@@ -30,18 +30,16 @@ function AboutPage() {
 						<p>
 							Hi <span>👋</span>, I'm Inam ul huq, a full-stack
 							web developer and tech enthusiast. I develop,
-							maintain, and fix web sites/applications. If you
-							want a new web site/application or want to get your
-							existing one fixed,{" "}
-							<A to="/contact" rrLink>
-								contact me
-							</A>{" "}
-							to get a free quote.
+							maintain, and fix web sites/applications.
 						</p>
 						<p>
 							I learned web and software development on my own
 							from online courses, YouTube, and documents
-							including books, blogs, and documentations.
+							including books, blogs, and software documentations.
+						</p>
+						<p>
+							I love open-source software and am interested in
+							spending my time contributing to them.
 						</p>
 					</Col>
 					<Col md={3}>
