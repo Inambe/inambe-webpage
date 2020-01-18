@@ -11,10 +11,10 @@ function Hero() {
     return (
         <div className="hero">
             <div className="hero-intro">
-                <h1>Inam Ul Huq</h1>
+                <h1>Inam Ul Haq</h1>
                 <h3>Full-stack web developer</h3>
                 <p>
-                    Hi 👋, I'm Inam Ul Huq. I'm a full-stack web developer. I
+                    Hi 👋, I'm Inam Ul Haq. I'm a full-stack web developer. I
 					develop, maintain, and fix web sites/applications. I use{" "}
                     <A
                         href="https://en.wikipedia.org/wiki/JavaScript"
@@ -39,7 +39,7 @@ function Hero() {
                 </Link>
             </div>
             <div className="hero-portrait">
-                <Img src={portrait} alt="Inam Ul Huq" />
+                <Img src={portrait} alt="Inam Ul Haq" />
             </div>
         </div>
     );
