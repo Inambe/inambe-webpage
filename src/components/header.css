@@ -1,6 +1,6 @@
 .header {
 	background: var(--clr-grad-2);
-	box-shadow: 0px -1px 1px 1px var(--clr-white);
+	box-shadow: 0px 0px 2px 0px var(--clr-black-light);
 	margin-bottom: var(--space-l);
 }
 
