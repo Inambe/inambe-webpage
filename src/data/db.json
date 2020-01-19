@@ -1,0 +1,19 @@
+{
+	"uses": [
+		{ "id": 1, "name": "PHP" },
+		{ "id": 2, "name": "JavaScript" },
+		{ "id": 3, "name": "React" },
+		{ "id": 4, "name": "Node.js" },
+		{ "id": 5, "name": "HTML/CSS" }
+	],
+	"projects": [
+		{
+			"id": 1,
+			"title": "Secure Password Generator",
+			"img": "password-generator.png",
+			"uses": [3, 5, 4],
+			"code_link": "https://github.com/Inambe/password-generator-app",
+			"live_link": "https://password-generator-ib.netlify.com"
+		}
+	]
+}

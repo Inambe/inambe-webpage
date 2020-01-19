@@ -29,6 +29,9 @@
 	--space-m: 2rem;
 	--space-l: 3rem;
 	--space-xl: 4rem;
+	/* border-radius */
+	--br-s: 0.2rem;
+	--br-m: 0.4rem;
 }
 
 *,
@@ -70,15 +73,18 @@ main p {
 	margin-bottom: 0.5rem;
 }
 main h1 {
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 	font-size: 2.5rem;
 	color: var(--clr-primary);
-	line-height: 1;
 }
 main h2 {
 	margin-bottom: var(--space-s);
 	font-size: 2rem;
 	color: var(--clr-primary);
+}
+main h3 {
+	margin-bottom: var(--space-s);
+	font-size: 1.5rem;
 }
 a {
 	text-decoration: none;

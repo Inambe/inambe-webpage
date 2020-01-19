@@ -1,0 +1,57 @@
+.pCard {
+	background: var(--clr-white);
+	color: var(--clr-black-light);
+	box-shadow: 0rem 0rem 3px 0px var(--clr-black-light);
+	border-radius: var(--br-s);
+}
+
+.pCard-thumbnail {
+	margin-bottom: 0.5rem;
+}
+.pCard-thumbnail > img {
+	border-top-left-radius: var(--br-s);
+	border-top-right-radius: var(--br-s);
+	margin: 0;
+}
+
+.pCard-details {
+	font-size: v(--fs-m);
+}
+
+.pCard-title {
+	text-align: center;
+	margin-bottom: 0.3rem;
+}
+
+.pCard-used {
+	text-align: center;
+	color: var(--clr-white);
+	font-size: 0.75rem;
+	margin-bottom: var(--space-s);
+}
+.pCard-used > span {
+	background: rgba(0, 0, 0, 0.45);
+	border-radius: var(--br-s);
+	margin: 0.2rem 0 0 0.2rem;
+	padding: 0.1rem 0.3rem;
+}
+
+.pCard-btnGroup {
+	margin-bottom: var(--space-s);
+	border-top: 1px solid var(--clr-black-light);
+	display: flex;
+}
+.pCard-btnGroup > a {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	padding: var(--space-s);
+	border-right: 1px solid var(--clr-black-light);
+	transition: color 0.1s ease-out;
+}
+.pCard-btnGroup > a:last-of-type {
+	border-right: none;
+}
+.pCard-btnGroup > a:hover {
+	color: var(--clr-primary);
+}

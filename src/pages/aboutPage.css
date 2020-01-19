@@ -5,8 +5,8 @@
 	margin-bottom: 0;
 }
 .aboutPage__sec img {
-	box-shadow: 0rem 0rem 2px 0px var(--clr-black);
-	border-radius: 0.2rem;
+	box-shadow: 0rem 0rem 3px 0px var(--clr-black-light);
+	border-radius: var(--br-s);
 }
 .aboutPage__sec p {
 	font-size: var(--fs-m);

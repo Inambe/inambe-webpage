@@ -8,6 +8,7 @@ import Container from "./components/container";
 import ContactPage from "./pages/contactPage";
 import AboutPage from "./pages/aboutPage";
 import Footer from "./components/footer";
+import ProjectsPage from "./pages/projectsPage";
 
 function App() {
 	return (
@@ -29,6 +30,9 @@ function App() {
 					<AboutPage />
 				</Container>
 				<Footer />
+			</Route>
+			<Route path="/projects" exact>
+				<ProjectsPage />
 			</Route>
 		</Router>
 	);
