@@ -1,6 +1,6 @@
-const { find } = require("lodash");
+import { find } from "lodash";
 
-const db = require("./db");
+import db from "./db";
 
 const uses = db.uses;
 
@@ -12,4 +12,4 @@ class Uses {
 		return find(uses, u => u.id == id);
 	}
 }
-module.exports = Uses;
+export default Uses;

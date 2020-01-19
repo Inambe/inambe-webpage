@@ -1,5 +1,5 @@
-const db = require("./db");
-const uses = require("./uses");
+import db from "./db";
+import uses from "./uses";
 
 const projects = db.projects;
 
@@ -11,4 +11,4 @@ class Projects {
 		});
 	}
 }
-module.exports = Projects;
+export default Projects;
