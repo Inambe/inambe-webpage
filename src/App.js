@@ -9,8 +9,10 @@ import ContactPage from "./pages/contactPage";
 import AboutPage from "./pages/aboutPage";
 import Footer from "./components/footer";
 import ProjectsPage from "./pages/projectsPage";
+import DisplayMode from "./api/displayMode";
 
 function App() {
+	DisplayMode.CleanMode();
 	return (
 		<Router>
 			<Header />

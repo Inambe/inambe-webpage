@@ -14,8 +14,8 @@ function ProjectsPage() {
 			<Container>
 				<Row>
 					{allProjects.length &&
-						allProjects.map(p => (
-							<Col md={6}>
+						allProjects.map((p, i) => (
+							<Col key={i} md={6}>
 								<ProjectCard project={p} />
 							</Col>
 						))}

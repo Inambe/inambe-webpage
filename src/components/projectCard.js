@@ -14,8 +14,8 @@ function ProjectCard({ project }) {
 			<div className="pCard-details">
 				<h3 className="pCard-title">{project.title}</h3>
 				<div className="pCard-used">
-					{project.uses.map(u => (
-						<span>{u.name}</span>
+					{project.uses.map((u, i) => (
+						<span key={i}>{u.name}</span>
 					))}
 				</div>
 				<div className="pCard-btnGroup">
