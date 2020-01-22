@@ -35,15 +35,15 @@ function ContactPage() {
 
 						<FormControl>
 							<Label>Your name</Label>
-							<Input name="name" />
+							<Input name="name" block />
 						</FormControl>
 						<FormControl>
 							<Label>Your email*</Label>
-							<Input name="email" type="email" required />
+							<Input name="email" type="email" required block />
 						</FormControl>
 						<FormControl>
 							<Label>Message*</Label>
-							<Input name="message" textarea required />
+							<Input name="message" textarea required block />
 						</FormControl>
 						<FormControl>
 							<Button type="primary" size="m">
