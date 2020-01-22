@@ -1,0 +1,16 @@
+.skillIcons {
+	display: flex;
+	flex-wrap: wrap;
+}
+.skillIcons > span {
+	flex: 1;
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.skillIcons > span > svg {
+	height: 100%;
+	max-width: 5rem;
+	min-width: 5rem;
+}
