@@ -7,7 +7,7 @@ function Footer() {
 	return (
 		<footer className="footer">
 			<p>
-				Website code available at{" "}
+				website code available at{" "}
 				<A href="https://github.com/Inambe/inambe-webpage" newTab>
 					Github
 				</A>
