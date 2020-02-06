@@ -58,6 +58,7 @@ body {
 	color: var(--fc-main);
 	background-repeat: no-repeat;
 	min-height: 100vh;
+	overflow-x: hidden;
 }
 
 h1,

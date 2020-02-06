@@ -1,0 +1,4 @@
+.accentOverlay > svg {
+	position: absolute;
+	z-index: -1;
+}

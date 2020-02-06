@@ -10,6 +10,7 @@ import AboutPage from "./pages/aboutPage";
 import Footer from "./components/footer";
 import ProjectsPage from "./pages/projectsPage";
 import DisplayMode from "./api/displayMode";
+import AccentOverlay from "./components/accentOverlay";
 
 function App() {
 	DisplayMode.CleanMode();
@@ -17,23 +18,27 @@ function App() {
 		<Router>
 			<Header />
 			<Route path="/" exact>
+				<AccentOverlay />
 				<Container>
 					<HomePage />
 				</Container>
 			</Route>
 			<Route path="/contact" exact>
+				<AccentOverlay />
 				<Container>
 					<ContactPage />
 				</Container>
 				<Footer />
 			</Route>
 			<Route path="/about" exact>
+				<AccentOverlay />
 				<Container>
 					<AboutPage />
 				</Container>
 				<Footer />
 			</Route>
 			<Route path="/projects" exact>
+				<AccentOverlay />
 				<ProjectsPage />
 			</Route>
 		</Router>
