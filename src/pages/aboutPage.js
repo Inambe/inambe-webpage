@@ -14,7 +14,7 @@ function AboutPage() {
 			<Row align="center" className="aboutPage-sec about-sec">
 				<Col>
 					<p>
-						Hi <span>👋</span>,<br /> I'm Inam Ul Haq, a full-stack
+						Hi <span>👋</span>,<br /> I'm Inam Ul Huq, a full-stack
 						web developer and tech enthusiast. I develop, maintain,
 						and fix web sites/applications.
 					</p>
@@ -31,7 +31,7 @@ function AboutPage() {
 					</p>
 				</Col>
 				<Col md={4}>
-					<Img src={Portrait} alt="Inam Ul Haq" />
+					<Img src={Portrait} alt="Inam Ul Huq" />
 				</Col>
 			</Row>
 			<Row align="center" className="aboutPage-sec">
