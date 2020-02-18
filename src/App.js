@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 
@@ -16,29 +16,26 @@ function App() {
 	DisplayMode.CleanMode();
 	return (
 		<Router>
+			<AccentOverlay />
 			<Header />
 			<Route path="/" exact>
-				<AccentOverlay />
 				<Container>
 					<HomePage />
 				</Container>
 			</Route>
 			<Route path="/contact" exact>
-				<AccentOverlay />
 				<Container>
 					<ContactPage />
 				</Container>
 				<Footer />
 			</Route>
 			<Route path="/about" exact>
-				<AccentOverlay />
 				<Container>
 					<AboutPage />
 				</Container>
 				<Footer />
 			</Route>
 			<Route path="/projects" exact>
-				<AccentOverlay />
 				<ProjectsPage />
 			</Route>
 		</Router>

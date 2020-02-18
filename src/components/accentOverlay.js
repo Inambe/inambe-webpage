@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { withRouter } from "react-router-dom";
 import "./accentOverlay.css";
 
 import useAccentOverlay from "../hooks/useAccentOverlay";
 
-function AccentOverlay() {
-	let BallIcons = useAccentOverlay();
-	return <div className="accentOverlay">{BallIcons}</div>;
+function AccentOverlay({ history }) {
+	const { ballIcons, setRefresh } = useAccentOverlay();
+	useEffect(() => {
+		history.listen(() => {
+			setRefresh(true);
+		});
+	}, []);
+
+	return <div className="accentOverlay">{ballIcons}</div>;
 }
 
-export default AccentOverlay;
+export default withRouter(AccentOverlay);
