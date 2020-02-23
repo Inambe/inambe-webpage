@@ -1,0 +1,9 @@
+.alertTemp {
+	padding: 1rem;
+	background: var(--clr-primary);
+	box-shadow: 0px 0px 20px -10px;
+}
+
+.alertTemp > span {
+	cursor: pointer;
+}

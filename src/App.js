@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { useAlert } from "react-alert";
 import "./App.css";
 
 import HomePage from "./pages/homePage";
@@ -13,7 +14,17 @@ import DisplayMode from "./api/displayMode";
 import AccentOverlay from "./components/accentOverlay";
 
 function App() {
+	const alert = useAlert();
+	setTimeout(() => {
+		alert.show(
+			<>
+				📢 Looking for a nice <i>full-time</i> Job
+			</>
+		);
+	}, 2000);
+
 	DisplayMode.CleanMode();
+
 	return (
 		<Router>
 			<AccentOverlay />
