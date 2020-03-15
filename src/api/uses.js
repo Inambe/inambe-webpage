@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import { find } from "lodash";
 
 import db from "./db";

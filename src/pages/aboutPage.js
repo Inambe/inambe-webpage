@@ -14,9 +14,13 @@ function AboutPage() {
 			<Row align="center" className="aboutPage-sec about-sec">
 				<Col>
 					<p>
-						Hi <span>👋</span>,<br /> I'm Inam Ul Huq, a full-stack
-						web developer and tech enthusiast. I develop, maintain,
-						and fix web sites/applications.
+						Hi{" "}
+						<span role="img" aria-label="Hi">
+							👋
+						</span>
+						,<br /> I'm Inam Ul Huq, a full-stack web developer and
+						tech enthusiast. I develop, maintain, and fix web
+						sites/applications.
 					</p>
 					<p>
 						I learned web and software development on my own from

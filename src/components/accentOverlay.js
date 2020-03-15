@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { withRouter } from "react-router-dom";
 import "./accentOverlay.css";
 
@@ -10,7 +10,7 @@ function AccentOverlay({ history }) {
 		history.listen(() => {
 			setRefresh(true);
 		});
-	}, []);
+	}, [history, setRefresh]);
 
 	return <div className="accentOverlay">{ballIcons}</div>;
 }

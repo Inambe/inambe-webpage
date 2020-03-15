@@ -1,12 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
-import {
-	transitions,
-	positions,
-	Provider as AlertProvider,
-	types
-} from "react-alert";
+import { transitions, positions, Provider as AlertProvider } from "react-alert";
 import "./index.css";
 
 import App from "./App";
