@@ -1,12 +1,13 @@
 .accentOverlay {
 	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	z-index: -1;
-}
-.accentOverlay__icons {
-	position: relative;
 	overflow: hidden;
 }
-.accentOverlay__icons > svg {
+.accentOverlay > svg {
 	position: absolute;
 	z-index: -1;
 }
