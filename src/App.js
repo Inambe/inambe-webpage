@@ -18,7 +18,7 @@ function App() {
 	setTimeout(() => {
 		alert.show(
 			<>
-				📢 Looking for a nice <i>full-time</i> Job
+				📢 Looking for a nice <i>full-time</i> job
 			</>
 		);
 	}, 2000);

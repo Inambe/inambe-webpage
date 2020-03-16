@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./projectCard.css";
 
 import Img from "./img";
+import A from './a';
 
 function ProjectCard({ project }) {
 	return (
@@ -13,6 +14,7 @@ function ProjectCard({ project }) {
 			</div>
 			<div className="pCard-details">
 				<h3 className="pCard-title">{project.title}</h3>
+				<p className="pCard-desc">{project.description}</p>
 				<div className="pCard-used">
 					{project.uses.map((u, i) => (
 						<span key={i}>{u.name}</span>
@@ -20,18 +22,19 @@ function ProjectCard({ project }) {
 				</div>
 				<div className="pCard-btnGroup">
 					{project.live_link && (
-						<a href={project.live_link} title="live">
+						<A noStyle newTab href={project.live_link} title="live">
 							<FaLink />
-						</a>
+						</A>
 					)}
 					{project.code_link && (
-						<a href={project.code_link} title="see the code">
+						<A noStyle newTab href={project.code_link} title="see the code">
+
 							<FaCode />
-						</a>
+						</A>
 					)}
-					<Link to={`/projects/${project.id}`} title="read more">
+					{/* <Link to={`/projects/${project.id}`} title="read more">
 						<FaArrowRight />
-					</Link>
+					</Link> */}
 				</div>
 			</div>
 		</div>

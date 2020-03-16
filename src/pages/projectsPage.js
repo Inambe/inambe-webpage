@@ -3,6 +3,7 @@ import { Row, Col } from "react-grid-system";
 
 import Container from "../components/container";
 import ProjectCard from "../components/projectCard";
+import Footer from './../components/footer';
 
 import projects from "./../api/projects";
 
@@ -21,6 +22,7 @@ function ProjectsPage() {
 						))}
 				</Row>
 			</Container>
+			<Footer />
 		</main>
 	);
 }

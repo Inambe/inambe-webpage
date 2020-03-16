@@ -1,8 +1,10 @@
 .pCard {
 	background: var(--clr-white);
 	color: var(--clr-black-light);
-	box-shadow: 0rem 0rem 3px 0px var(--clr-black-light);
+	box-shadow: 1rem 1rem 0px -0.5rem;
 	border-radius: var(--br-s);
+	margin-bottom: var(--space-s);
+	border: 1px solid;
 }
 
 .pCard-thumbnail {
@@ -20,7 +22,12 @@
 
 .pCard-title {
 	text-align: center;
-	margin-bottom: 0.3rem;
+	margin-bottom: 0.1rem;
+}
+
+.pCard-desc {
+	text-align: center;
+	margin-bottom: 1rem;
 }
 
 .pCard-used {
@@ -37,7 +44,6 @@
 }
 
 .pCard-btnGroup {
-	margin-bottom: var(--space-s);
 	border-top: 1px solid var(--clr-black-light);
 	display: flex;
 }
