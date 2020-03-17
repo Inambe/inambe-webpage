@@ -11,6 +11,7 @@
 	--clr-white: #fafafa;
 	--clr-gray: #c1c1c1;
 	--clr-gray-light: #e1e1e1;
+	--clr-gray-lightest: #f4f4f4;
 
 	/* font-size */
 	--fs-s: 1rem;
@@ -76,6 +77,9 @@ button,
 input,
 textarea {
 	font-family: inherit;
+}
+body main {
+	padding-top: var(--space-l);
 }
 main img,
 main p {

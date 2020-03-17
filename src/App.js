@@ -35,19 +35,16 @@ function App() {
 				</Container>
 			</Route>
 			<Route path="/contact" exact>
-				<Container>
-					<ContactPage />
-				</Container>
+				<ContactPage />
 				<Footer />
 			</Route>
 			<Route path="/about" exact>
-				<Container>
-					<AboutPage />
-				</Container>
+				<AboutPage />
 				<Footer />
 			</Route>
 			<Route path="/projects" exact>
 				<ProjectsPage />
+				<Footer />
 			</Route>
 		</Router>
 	);

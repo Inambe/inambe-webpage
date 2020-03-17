@@ -1,10 +1,9 @@
 import React from "react";
-import { FaCode, FaLink, FaArrowRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaCode, FaLink } from "react-icons/fa";
 import "./projectCard.css";
 
 import Img from "./img";
-import A from './a';
+import A from "./a";
 
 function ProjectCard({ project }) {
 	return (
@@ -27,8 +26,12 @@ function ProjectCard({ project }) {
 						</A>
 					)}
 					{project.code_link && (
-						<A noStyle newTab href={project.code_link} title="see the code">
-
+						<A
+							noStyle
+							newTab
+							href={project.code_link}
+							title="see the code"
+						>
 							<FaCode />
 						</A>
 					)}
