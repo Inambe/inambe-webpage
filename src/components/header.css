@@ -4,8 +4,23 @@
 	box-shadow: 0px 0px 2px 0px var(--clr-black-light);
 }
 
-.header-nav {
+.navigationBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	padding: var(--space-s) 0;
+}
+
+.mainLogo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.mainLogo > a > img {
+	max-height: 37px;
+}
+
+.header-nav {
 	display: flex;
 	justify-content: center;
 	overflow: auto;
@@ -63,20 +78,12 @@
 		transform: translateX(-100%);
 	}
 	.sideNavToggleBtn {
-		position: fixed;
-		z-index: 1;
-		left: 50%;
 		color: var(--clr-gray) !important;
 		border: 1px solid !important;
-		margin-left: var(--space-s);
-		margin-top: var(--space-s);
 		font-size: 2rem;
 		background: var(--bg-main);
 		display: flex;
 		align-items: center;
 		transition: left 0.3s ease-in;
-	}
-	.headerSideNav-close ~ .sideNavToggleBtn {
-		left: 0;
 	}
 }
