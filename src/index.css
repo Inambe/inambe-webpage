@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 :root {
 	/* colors */
-	--clr-primary: #ffc300;
-	--clr-primary-1: #ffce2c;
-	--clr-lightblue: rgb(34, 200, 255);
-	--clr-grad-1: rgb(2, 80, 197);
-	--clr-grad-2: rgb(212, 63, 141);
+	--clr-primary: #2872ff;
+	--clr-primary-1: #0159ff;
+
 	--clr-black: #2f2f2f;
 	--clr-black-light: #444444;
+
 	--clr-white: #fafafa;
+
 	--clr-gray: #c1c1c1;
 	--clr-gray-light: #e1e1e1;
 	--clr-gray-lightest: #f4f4f4;
 
 	/* font-size */
 	--fs-s: 1rem;
-	--fs-m: 1.25rem;
-	--fs-l: 1.5rem;
+	--fs-m: 1.1rem;
+	--fs-l: 1.25rem;
 	--fs-xl: 2rem;
 
 	/* margin-padding sizes */
@@ -29,22 +29,9 @@
 	--br-s: 0.2rem;
 	--br-m: 0.4rem;
 
-	/* standard */
-	--bg-main: linear-gradient(
-		to top,
-		var(--clr-grad-1) 0%,
-		var(--clr-grad-2) 100%
-	);
-	--ff-main: "Poppins", sans-serif;
-	/* 1rem = 16px */
-	--fs-main: calc(9.75px + 1vmin);
-	--fc-main: var(--clr-white);
-	--nav-bg: var(--clr-grad-2);
-	--nav-color: var(--clr-white);
-	--ftr-bg: var(--clr-black-light);
-
 	/* root styles */
-	font-size: var(--fs-main);
+	/* 1rem = 16px */
+	font-size: calc(9.75px + 1vmin);
 }
 
 *,
@@ -54,10 +41,15 @@
 }
 
 body {
+	--fc-main: var(--clr-black);
+	--ff-main: "Poppins", sans-serif;
+	--bg-main: var(--clr-white);
+}
+body {
 	margin: 0;
-	font-family: var(--ff-main);
-	background-image: var(--bg-main);
 	color: var(--fc-main);
+	font-family: var(--ff-main);
+	background: var(--bg-main);
 	background-repeat: no-repeat;
 	min-height: 100vh;
 	position: relative;

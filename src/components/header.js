@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, withRouter } from "react-router-dom";
 import classnames from "classnames";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaExternalLinkAlt } from "react-icons/fa";
 import "./header.css";
 
 import Container from "./container";
@@ -42,8 +42,9 @@ function Header({ history }) {
 					<nav className={navClassNames}>
 						<Link to="/projects">Projects</Link>
 						<Link to="/about">About</Link>
-						<A href={Resume} newTab noStyle className="fancy">
-							Resume
+						<A href={Resume} newTab noStyle>
+							Resume&nbsp;
+							<FaExternalLinkAlt />
 						</A>
 						<Link to="/contact">Contact</Link>
 					</nav>

@@ -1,6 +1,6 @@
 .btn {
 	border: none;
-	color: inherit;
+	color: var(--clr-white);
 	padding: 0.5rem 1rem;
 	border-radius: 0.4rem;
 	cursor: pointer;
@@ -23,8 +23,8 @@
 	font-size: var(--fs-m);
 }
 .btn--m {
-	padding: 0.4rem 1.5rem;
+	padding: 0.3rem 1rem;
 }
 .btn--mf {
-	padding: 0.6rem 1.5rem;
+	padding: 0.5rem 1rem;
 }
