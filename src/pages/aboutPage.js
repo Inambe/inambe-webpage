@@ -42,8 +42,8 @@ function AboutPage() {
 					</Col>
 				</Row>
 				<Row align="center" className="aboutPage-sec">
-					<Col>
-						<h2 className="aboutPage-title">Skill Set</h2>
+					<Col md={5}>
+						<h2 className="aboutPage-title">Skills</h2>
 						<p>
 							I had tried several different technologies/languages
 							including{" "}
@@ -68,8 +68,10 @@ function AboutPage() {
 								C
 							</A>{" "}
 							but I'm profound and professionally experienced in
-							the listed technologies.
+							the listed ones.
 						</p>
+					</Col>
+					<Col md={7}>
 						<SkillIcons />
 					</Col>
 				</Row>
