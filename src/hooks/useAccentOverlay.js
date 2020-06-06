@@ -6,11 +6,11 @@ function getRandomNum(min, max) {
 }
 
 function makeRandomIcons() {
-	const colors = ["orange", "green", "yellow", "purple"];
+	const colors = ["orange", "green", "red", "purple"];
 	let ballIconsTemp = [];
 
-	for (let i = 0; i < 15; i++) {
-		let height = getRandomNum(20, 100);
+	for (let i = 0; i < 10; i++) {
+		let height = getRandomNum(10, 50);
 		let color = colors[Math.floor(getRandomNum(0, colors.length))];
 		let top = Math.round(getRandomNum(0, 100));
 		let left = Math.round(getRandomNum(0, 100));
@@ -20,12 +20,12 @@ function makeRandomIcons() {
 			<BallIcon
 				key={i}
 				style={{
-					top: top+"%",
-					left: left+"%",
+					top: top + "%",
+					left: left + "%",
 					opacity,
 					height,
 					color,
-					transition: "all 4s"
+					transition: "all 8s",
 				}}
 			/>
 		);
@@ -38,23 +38,21 @@ function useAccentOverlay() {
 	let [ballIcons, setBallIcons] = useState([]);
 
 	const make = useCallback(() => {
-		setBallIcons(
-			makeRandomIcons()
-		);
+		setBallIcons(makeRandomIcons());
 	}, []);
 
 	useEffect(() => {
 		make();
 		let intervalId = setInterval(() => {
 			make();
-		}, 5000);
+		}, 10000);
 		return () => {
 			clearInterval(intervalId);
 		};
 	}, [make]);
 
 	return {
-		ballIcons
+		ballIcons,
 	};
 }
 
