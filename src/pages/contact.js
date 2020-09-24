@@ -31,14 +31,17 @@ function ContactPage() {
 									If you have any question for me or just
 									wanna say hello, use the form below.
 								</p>
-								<form method="post" name="contact-form">
+								<form
+									method="post"
+									name="contact-form"
+									data-netlify="true"
+								>
 									{/* for netlify */}
 									<input
 										type="hidden"
 										name="form-name"
 										value="contact-form"
 									/>
-
 									<FormControl>
 										<Label>Your name</Label>
 										<Input name="name" block />
