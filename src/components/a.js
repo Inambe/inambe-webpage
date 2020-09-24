@@ -1,20 +1,20 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./a.css";
+import React from "react"
+import { Link } from "gatsby"
+import "./a.css"
 
-function A({ newTab, children, rrLink, noStyle, ...props }) {
-	let customProps = {};
-	customProps.className = noStyle ? null : "a";
-	customProps.target = newTab ? "_blank" : undefined;
-	return rrLink ? (
-		<Link {...customProps} {...props}>
-			{children}
-		</Link>
-	) : (
+function A({ newTab, children, eLink, noStyle, ...props }) {
+	let customProps = {}
+	customProps.className = noStyle ? null : "a"
+	customProps.target = newTab ? "_blank" : undefined
+	return eLink ? (
 		<a {...customProps} {...props}>
 			{children}
 		</a>
-	);
+	) : (
+		<Link {...customProps} {...props}>
+			{children}
+		</Link>
+	)
 }
 
-export default A;
+export default A

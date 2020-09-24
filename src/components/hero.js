@@ -1,11 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./hero.css";
+import React from "react"
+import "./hero.css"
 
-import portrait from "./../static/media/imgs/inam-ul-huq.png";
-import Img from "./img";
-import Button from "./button";
-import A from "./a";
+import portrait from "./../static/media/imgs/inam-ul-huq.png"
+import Img from "./img"
+import Button from "./button"
+import A from "./a"
 
 function Hero() {
 	return (
@@ -36,17 +35,17 @@ function Hero() {
 					If you want a new web site/application or want to get your
 					existing one fixed, contact me to get a free quote.
 				</p>
-				<Link to="/contact">
+				<A noStyle to="/contact">
 					<Button type="primary" size="mf">
 						Contact Me
 					</Button>
-				</Link>
+				</A>
 			</div>
 			<div className="hero-portrait">
 				<Img src={portrait} alt="Inam Ul Huq" />
 			</div>
 		</div>
-	);
+	)
 }
 
-export default Hero;
+export default Hero
