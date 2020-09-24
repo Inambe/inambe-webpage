@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: inambe/inambe-webpage
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: static/assets
+public_folder: /assets
+collections:
+  - name: project
+    label: Project
+    folder: content/project
+    create: true
+    fields:
+      - { label: Title, name: title }
+      - { label: Description, name: description }
+      - { label: Thumbnail, name: thumbnail, widget: image }
+      - { label: Body, name: body, widget: markdown }
+      - label: Uses
+        name: uses
+        widget: select
+        multiple: true
+        min: 1
+        options: ["PHP", "JavaScript", "React", "Node.js", "HTML/CSS", "Express"]
+      - { label: Source Link, name: source_link }
+      - { label: Live Link, name: live_link }
