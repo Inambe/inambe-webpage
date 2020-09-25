@@ -11,10 +11,9 @@ module.exports = {
 		titleTemplate: "%s | Inam Ul Huq",
 		description:
 			"Inam Ul Huq is a software developer. He use JavaScript, PHP, Flutter and many other tools to develop, maintain, and fix software applications.",
-		url: "https://inambe.dev", // No trailing slash allowed!
+		siteUrl: "https://inambe.dev", // No trailing slash allowed!
 		image: "/images/inam-ul-huq.png", // Path to your image you placed in the 'static' folder
 		twitterUsername: "@MeInamUlHuq",
-		siteUrl: "https://inambe.dev",
 	},
 	plugins: [
 		"gatsby-plugin-netlify-cms",
@@ -35,5 +34,13 @@ module.exports = {
 			},
 		},
 		"gatsby-plugin-sitemap",
+		{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				trackingId: "UA-159434559-1",
+				head: true,
+				exclude: ["/admin"],
+			},
+		},
 	],
 }
