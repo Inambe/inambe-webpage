@@ -5,7 +5,6 @@ import "./aboutPage.css"
 import Portrait from "./../static/media/imgs/inam-ul-huq.png"
 
 import Img from "../components/img"
-import A from "../components/a"
 import SkillIcons from "../components/skillIcons"
 import MainLayout from "../layouts/main"
 import LayoutRoot from "../layouts/root"
