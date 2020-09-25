@@ -10,7 +10,9 @@ function Home() {
 		<LayoutRoot>
 			<SEO title="Home" />
 			<MainLayout>
-				<Hero />
+				<main>
+					<Hero />
+				</main>
 			</MainLayout>
 		</LayoutRoot>
 	)
