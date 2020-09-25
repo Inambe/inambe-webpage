@@ -1,13 +1,14 @@
 backend:
   name: github
   repo: inambe/inambe-webpage
-  branch: master # Branch to update (optional; defaults to master)
+  branch: move-to-gatsby # Branch to update (optional; defaults to master)
 media_folder: static/assets
 public_folder: /assets
 collections:
-  - name: project
-    label: Project
-    folder: content/project
+  - name: projects
+    label: Projects
+    label_singular: Project
+    folder: content/projects
     create: true
     fields:
       - { label: Title, name: title }
