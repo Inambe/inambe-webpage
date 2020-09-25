@@ -1,28 +1,49 @@
-import React from "react";
-import { Row, Col } from "react-grid-system";
+import { graphql } from "gatsby"
+import React from "react"
+import { Row, Col } from "react-grid-system"
 
-import Container from "../components/container";
-import ProjectCard from "../components/projectCard";
+import ProjectCard from "../components/projectCard"
+import MainLayout from "../layouts/main"
+import LayoutRoot from "../layouts/root"
 
-import projects from "./../api/projects";
+function ProjectsPage({ data }) {
+	const projects = data.allMarkdownRemark.edges
 
-const allProjects = projects.all();
-
-function ProjectsPage() {
 	return (
-		<main>
-			<Container>
-				<Row>
-					{allProjects.length &&
-						allProjects.map((p, i) => (
-							<Col key={i} md={6}>
-								<ProjectCard project={p} />
-							</Col>
-						))}
-				</Row>
-			</Container>
-		</main>
-	);
+		<LayoutRoot>
+			<MainLayout>
+				<main>
+					<Row>
+						{projects.length &&
+							projects.map((project, i) => (
+								<Col key={i} md={6}>
+									<ProjectCard project={project.node} />
+								</Col>
+							))}
+					</Row>
+				</main>
+			</MainLayout>
+		</LayoutRoot>
+	)
 }
-
-export default ProjectsPage;
+export const query = graphql`
+	{
+		allMarkdownRemark(
+			filter: { fileAbsolutePath: { regex: "/projects/" } }
+		) {
+			edges {
+				node {
+					frontmatter {
+						title
+						description
+						uses
+						source_link
+						live_link
+						thumbnail
+					}
+				}
+			}
+		}
+	}
+`
+export default ProjectsPage

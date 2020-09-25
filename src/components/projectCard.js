@@ -1,36 +1,45 @@
-import React from "react";
-import { FaCode, FaLink } from "react-icons/fa";
-import "./projectCard.css";
+import React from "react"
+import { FaCode, FaLink } from "react-icons/fa"
+import "./projectCard.css"
 
-import Img from "./img";
-import A from "./a";
+import Img from "./img"
+import A from "./a"
 
 function ProjectCard({ project }) {
+	const { frontmatter } = project
+
 	return (
 		<div className="pCard">
 			<div className="pCard-thumbnail">
-				<Img src={require("./../static/media/imgs/" + project.img)} />
+				<Img src={frontmatter.thumbnail} />
 			</div>
 			<div className="pCard-details">
-				<h3 className="pCard-title">{project.title}</h3>
-				<p className="pCard-desc">{project.description}</p>
+				<h3 className="pCard-title">{frontmatter.title}</h3>
+				<p className="pCard-desc">{frontmatter.description}</p>
 				<div className="pCard-used">
-					{project.uses.map((u, i) => (
-						<span key={i}>{u.name}</span>
+					{frontmatter.uses.map((u, i) => (
+						<span key={i}>{u}</span>
 					))}
 				</div>
 				<div className="pCard-btnGroup">
-					{project.live_link && (
-						<A noStyle newTab href={project.live_link} title="live">
+					{frontmatter.live_link && (
+						<A
+							eLink
+							noStyle
+							newTab
+							href={frontmatter.live_link}
+							title="see it live"
+						>
 							<FaLink />
 						</A>
 					)}
-					{project.code_link && (
+					{frontmatter.source_link && (
 						<A
+							eLink
 							noStyle
 							newTab
-							href={project.code_link}
-							title="see the code"
+							href={frontmatter.source_link}
+							title="see the source"
 						>
 							<FaCode />
 						</A>
@@ -41,7 +50,7 @@ function ProjectCard({ project }) {
 				</div>
 			</div>
 		</div>
-	);
+	)
 }
 
-export default ProjectCard;
+export default ProjectCard
