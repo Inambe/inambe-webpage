@@ -14,6 +14,7 @@ module.exports = {
 		url: "https://inambe.dev", // No trailing slash allowed!
 		image: "/images/inam-ul-huq.png", // Path to your image you placed in the 'static' folder
 		twitterUsername: "@MeInamUlHuq",
+		siteUrl: "https://inambe.dev",
 	},
 	plugins: [
 		"gatsby-plugin-netlify-cms",
@@ -26,5 +27,12 @@ module.exports = {
 		},
 		"gatsby-transformer-remark",
 		"gatsby-plugin-react-helmet",
+		{
+			resolve: "gatsby-plugin-robots-txt",
+			options: {
+				sitemap: null,
+				policy: [{ userAgent: "*", allow: "/", disallow: "/admin" }],
+			},
+		},
 	],
 }
