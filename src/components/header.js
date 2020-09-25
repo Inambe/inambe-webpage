@@ -33,7 +33,7 @@ function Header({ history }) {
 						<FaBars />
 					</Button>
 					<nav className={navClassNames}>
-						<A noStyle to="/project">
+						<A noStyle to="/projects">
 							Projects
 						</A>
 						<A noStyle to="/about">
