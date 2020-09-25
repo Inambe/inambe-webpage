@@ -1,11 +1,5 @@
 import React from "react"
-import {
-	FaGithub,
-	FaEnvelope,
-	FaPhone,
-	FaTwitter,
-	FaLinkedin,
-} from "react-icons/fa"
+import { FaGithub, FaEnvelope, FaPhone, FaTwitter } from "react-icons/fa"
 import { Row, Col } from "react-grid-system"
 import "./contactPage.css"
 
@@ -14,9 +8,9 @@ import FormControl from "../components/form/formControl"
 import Label from "../components/form/label"
 import Button from "../components/button"
 import A from "../components/a"
-import Container from "../components/container"
 import LayoutRoot from "../layouts/root"
 import MainLayout from "../layouts/main"
+import constants from "../constants"
 
 function ContactPage() {
 	return (
@@ -78,31 +72,19 @@ function ContactPage() {
 							<p>Some other ways you can contact me.</p>
 							<p className="contactInfo__item">
 								<FaEnvelope />{" "}
-								<A href="mailto:inambe.dev@gmail.com">
-									inambe.dev@gmail.com
+								<A eLink href={`mailto:${constants.EMAIL}`}>
+									{constants.EMAIL}
 								</A>
 							</p>
 							<p className="contactInfo__item">
-								<FaPhone /> +92 340 4678646
+								<FaPhone /> {constants.PHONE}
 							</p>
 							<p className="socialIcons">
-								<A
-									href="https://github.com/inambe"
-									target="_blank"
-								>
+								<A eLink newTab href={constants.URL.GITHUB}>
 									<FaGithub />
 								</A>
-								<A
-									href="https://twitter.com/MeInamUlHuq"
-									target="_blank"
-								>
+								<A eLink newTab href={constants.URL.TWITTER}>
 									<FaTwitter />
-								</A>
-								<A
-									href="https://www.linkedin.com/in/inambe"
-									target="_blank"
-								>
-									<FaLinkedin />
 								</A>
 							</p>
 						</Col>

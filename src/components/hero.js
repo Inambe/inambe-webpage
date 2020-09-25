@@ -11,29 +11,20 @@ function Hero() {
 		<div className="hero">
 			<div className="hero-intro">
 				<h1>Inam Ul Huq</h1>
-				<h3>Full-stack web developer</h3>
+				<h3>Software Developer</h3>
 				<p>
 					Hi{" "}
 					<span role="img" aria-label="Hi">
 						👋
 					</span>
-					, I'm Inam Ul Huq. I'm a full-stack web developer. I
-					develop, maintain, and fix web sites/applications. I use{" "}
-					<A
-						href="https://en.wikipedia.org/wiki/JavaScript"
-						target="_blank"
-					>
-						JavaScript
-					</A>
-					,{" "}
-					<A href="https://en.wikipedia.org/wiki/PHP" target="_blank">
-						PHP
-					</A>
-					, and their frameworks.
+					, I'm Inam, a human.
+					<br />I use <u>JavaScript</u>, <u>PHP</u>, <u>Flutter</u>{" "}
+					and many other tools and libraries to develop, maintain, and
+					fix different software applications.
 				</p>
 				<p>
-					If you want a new web site/application or want to get your
-					existing one fixed, contact me to get a free quote.
+					If you want a new website, mobile or web application, or
+					want to get your existing one(s) fixed, contact me.
 				</p>
 				<A noStyle to="/contact">
 					<Button type="primary" size="mf">

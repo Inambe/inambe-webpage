@@ -5,7 +5,7 @@ import "./header.css"
 
 import Container from "./container"
 import A from "./a"
-import Resume from "./../static/Inam-Ul-Huq-Resume.pdf"
+import constants from "./../constants"
 import TextLogo from "./../static/media/imgs/text-logo.png"
 import Button from "../button"
 import Img from "./img"
@@ -39,7 +39,7 @@ function Header({ history }) {
 						<A noStyle to="/about">
 							About
 						</A>
-						<A noStyle newTab eLink href={Resume}>
+						<A noStyle newTab eLink href={constants.URL.RESUME}>
 							Resume&nbsp;
 							<FaExternalLinkAlt />
 						</A>
