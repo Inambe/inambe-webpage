@@ -6,7 +6,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: var(--space-s) 0;
 }
 
 .mainLogo {
@@ -15,7 +14,11 @@
 	justify-content: center;
 }
 .mainLogo > a > img {
-	max-height: 37px;
+	max-height: 70px;
+	transition: all 0.1s ease-out;
+}
+.mainLogo > a > img:hover {
+	background: var(--clr-primary);
 }
 
 .header-nav {

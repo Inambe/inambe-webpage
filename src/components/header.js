@@ -6,11 +6,11 @@ import "./header.css"
 import Container from "./container"
 import A from "./a"
 import constants from "./../constants"
-import TextLogo from "./../static/media/imgs/text-logo.png"
+import Logo from "./../static/media/imgs/logo.png"
 import Button from "../button"
 import Img from "./img"
 
-function Header({ history }) {
+function Header() {
 	const [sideNaveOpen, setSideNaveOpen] = useState(false)
 	const navClassNames = classnames(
 		"header-nav",
@@ -23,7 +23,7 @@ function Header({ history }) {
 				<div className="navigationBar">
 					<div className="mainLogo">
 						<A noStyle to="/">
-							<Img src={TextLogo} />
+							<Img src={Logo} alt="Inam Ul Huq logo" />
 						</A>
 					</div>
 					<Button

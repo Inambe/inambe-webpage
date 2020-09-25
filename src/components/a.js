@@ -7,7 +7,7 @@ function A({ newTab, children, eLink, noStyle, ...props }) {
 	customProps.className = noStyle ? null : "a"
 	customProps.target = newTab ? "_blank" : undefined
 	return eLink ? (
-		<a {...customProps} {...props}>
+		<a rel="noopener noreferrer" {...customProps} {...props}>
 			{children}
 		</a>
 	) : (
