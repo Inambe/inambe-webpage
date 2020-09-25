@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
 	DiReact,
 	DiJavascript1,
@@ -9,80 +9,55 @@ import {
 	DiHtml5,
 	DiCss3,
 	DiLinux,
-	DiJqueryLogo
-} from "react-icons/di";
-import "./skillIcons.css";
-
-import A from "./a";
+	DiJqueryLogo,
+} from "react-icons/di"
+import "./skillIcons.css"
 
 function SkillIcons() {
 	return (
 		<div className="skillIcons">
 			<span>
 				<DiJavascript1 />
-				<A href="https://en.wikipedia.org/wiki/JavaScript" newTab>
-					JavaScript
-				</A>
+				<span>JavaScript</span>
 			</span>
 			<span>
 				<DiNodejs />
-				<A href="https://en.wikipedia.org/wiki/Node.js" newTab>
-					Node.js
-				</A>
+				<span>Node.js</span>
 			</span>
 			<span>
 				<DiReact />
-				<A
-					href="https://en.wikipedia.org/wiki/React_(web_framework)"
-					newTab
-				>
-					React
-				</A>
+				<span>React</span>
 			</span>
 			<span>
 				<DiPhp />
-				<A href="https://en.wikipedia.org/wiki/PHP" newTab>
-					PHP
-				</A>
+				<span>PHP</span>
 			</span>
 			<span>
 				<DiWordpress />
-				<A href="https://en.wikipedia.org/wiki/WordPress" newTab>
-					WordPress
-				</A>
+				<span>WordPress</span>
 			</span>
 			<span>
 				<DiHtml5 />
-				<A href="https://en.wikipedia.org/wiki/HTML" newTab>
-					HTML(5)
-				</A>
+				<span>HTML(5)</span>
 			</span>
 			<span>
 				<DiCss3 />
-				<A href="https://en.wikipedia.org/wiki/CSS" newTab>
-					CSS(3)
-				</A>
+				<span>CSS(3)</span>
 			</span>
 			<span>
 				<DiJqueryLogo />
-				<A href="https://en.wikipedia.org/wiki/JQuery" newTab>
-					jQuery
-				</A>
+				<span>jQuery</span>
 			</span>
 			<span>
 				<DiGit />
-				<A href="https://en.wikipedia.org/wiki/Git" newTab>
-					Git
-				</A>
+				<span>Git</span>
 			</span>
 			<span>
 				<DiLinux />
-				<A href="https://en.wikipedia.org/wiki/Linux" newTab>
-					Linux
-				</A>
+				<span>Linux</span>
 			</span>
 		</div>
-	);
+	)
 }
 
-export default SkillIcons;
+export default SkillIcons
