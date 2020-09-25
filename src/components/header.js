@@ -1,13 +1,12 @@
 import React, { useState } from "react"
 import classnames from "classnames"
-import { FaBars, FaExternalLinkAlt } from "react-icons/fa"
+import { FaBars, FaExternalLinkAlt, FaTimes } from "react-icons/fa"
 import "./header.css"
 
 import Container from "./container"
 import A from "./a"
 import constants from "./../constants"
 import Logo from "./../static/media/imgs/logo.png"
-import Button from "../button"
 import Img from "./img"
 
 function Header() {
@@ -26,12 +25,12 @@ function Header() {
 							<Img src={Logo} alt="Inam Ul Huq logo" />
 						</A>
 					</div>
-					<Button
+					<button
 						className="sideNavToggleBtn"
 						onClick={() => setSideNaveOpen(!sideNaveOpen)}
 					>
-						<FaBars />
-					</Button>
+						{sideNaveOpen ? <FaTimes /> : <FaBars />}
+					</button>
 					<nav className={navClassNames}>
 						<A noStyle to="/projects">
 							Projects
