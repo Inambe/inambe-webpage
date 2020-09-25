@@ -8,10 +8,12 @@ import Img from "../components/img"
 import SkillIcons from "../components/skillIcons"
 import MainLayout from "../layouts/main"
 import LayoutRoot from "../layouts/root"
+import SEO from "../components/seo"
 
 function AboutPage() {
 	return (
 		<LayoutRoot>
+			<SEO title="About" description="Read more about me." />
 			<MainLayout>
 				<main className="aboutPage">
 					<Row align="center" className="aboutPage-sec about-sec">

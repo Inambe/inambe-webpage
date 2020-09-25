@@ -6,6 +6,15 @@
 
 module.exports = {
 	/* Your site config here */
+	siteMetadata: {
+		title: "Inam Ul Huq",
+		titleTemplate: "%s | Inam Ul Huq",
+		description:
+			"Inam Ul Huq is a software developer. He use JavaScript, PHP, Flutter and many other tools to develop, maintain, and fix software applications.",
+		url: "https://inambe.dev", // No trailing slash allowed!
+		image: "/images/inam-ul-huq.png", // Path to your image you placed in the 'static' folder
+		twitterUsername: "@MeInamUlHuq",
+	},
 	plugins: [
 		"gatsby-plugin-netlify-cms",
 		{
@@ -16,5 +25,6 @@ module.exports = {
 			},
 		},
 		"gatsby-transformer-remark",
+		"gatsby-plugin-react-helmet",
 	],
 }

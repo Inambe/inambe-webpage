@@ -11,10 +11,12 @@ import A from "../components/a"
 import LayoutRoot from "../layouts/root"
 import MainLayout from "../layouts/main"
 import constants from "../constants"
+import SEO from "../components/seo"
 
 function ContactPage() {
 	return (
 		<LayoutRoot>
+			<SEO title="Contact" description="Some ways to contact me." />
 			<MainLayout>
 				<main className="contactPage">
 					<h1>Contact</h1>
