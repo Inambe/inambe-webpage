@@ -34,5 +34,6 @@ module.exports = {
 				policy: [{ userAgent: "*", allow: "/", disallow: "/admin" }],
 			},
 		},
+		"gatsby-plugin-sitemap",
 	],
 }
