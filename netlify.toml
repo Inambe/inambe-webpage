@@ -1,4 +1,4 @@
 [[redirects]]
-    from = "/*"
-    to = "/index.html"
-    status = 200
+    from = "/blog/*"
+    to = "https://inambe-blog.netlify.app/blog/:splat"
+	status = 200
