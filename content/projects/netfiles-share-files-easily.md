@@ -5,5 +5,6 @@ thumbnail: /assets/banner.png
 uses:
   - Flutter
   - Dart
+  - Mobile
 live_link: https://play.google.com/store/apps/details?id=dev.inambe.netfiles
 ---
