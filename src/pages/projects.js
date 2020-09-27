@@ -35,6 +35,7 @@ export const query = graphql`
 	{
 		allMarkdownRemark(
 			filter: { fileAbsolutePath: { regex: "/projects/" } }
+			sort: { order: ASC, fields: id }
 		) {
 			edges {
 				node {
