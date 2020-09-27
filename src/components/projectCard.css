@@ -1,7 +1,7 @@
 .pCard {
 	background: var(--clr-white);
 	color: var(--clr-black);
-	box-shadow: 1rem 1rem 0px -0.5rem var(--clr-gray);
+	/* box-shadow: 1rem 1rem 0px -0.5rem var(--clr-gray); */
 	border-radius: var(--br-s);
 	margin-bottom: var(--space-s);
 	border: 1px solid var(--clr-gray);
@@ -17,17 +17,17 @@
 }
 
 .pCard-details {
-	font-size: v(--fs-m);
+	text-align: center;
+	font-size: 0.8rem;
 }
 
 .pCard-title {
-	text-align: center;
-	margin-bottom: 0.1rem;
+	margin-bottom: 0;
 }
 
 .pCard-desc {
-	text-align: center;
-	margin-bottom: 1rem;
+	margin-bottom: 0.8rem;
+	color: var(--clr-black-light);
 }
 
 .pCard-used {
