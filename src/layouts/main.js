@@ -7,14 +7,15 @@ import AccentOverlay from "../components/accentOverlay"
 
 function MainLayout({ children }) {
 	const alert = useAlert()
-
-	setTimeout(() => {
-		alert.show(
-			<>
-				📢 Looking for a nice <i>full-time</i> job
-			</>
-		)
-	}, 2000)
+	if (!localStorage.getItem("show-alert")) {
+		setTimeout(() => {
+			alert.show(
+				<>
+					📢 Looking for a nice <i>full-time</i> job
+				</>
+			)
+		}, 2000)
+	}
 
 	return (
 		<>
