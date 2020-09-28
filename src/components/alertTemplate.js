@@ -1,9 +1,13 @@
 import React from "react"
+
+import { isBrowser } from "../api/runtime"
 import "./alertTemplate.css"
 
 function AlertTemplate({ style, options, message, close }) {
 	const onClose = () => {
-		localStorage.setItem("show-alert", 0)
+		if (isBrowser()) {
+			localStorage.setItem("show-alert", 0)
+		}
 		close()
 	}
 	return (

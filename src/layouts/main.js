@@ -4,10 +4,11 @@ import { useAlert } from "react-alert"
 import Header from "../components/header"
 import Container from "../components/container"
 import AccentOverlay from "../components/accentOverlay"
+import { isBrowser } from "../api/runtime"
 
 function MainLayout({ children }) {
 	const alert = useAlert()
-	if (!localStorage.getItem("show-alert")) {
+	if (isBrowser() && !localStorage.getItem("show-alert")) {
 		setTimeout(() => {
 			alert.show(
 				<>
