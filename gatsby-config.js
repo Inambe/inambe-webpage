@@ -10,7 +10,7 @@ module.exports = {
 		title: "Inam Ul Huq",
 		titleTemplate: "%s | Inam Ul Huq",
 		description:
-			"Inam Ul Huq is a software developer. He use JavaScript, PHP, Flutter and many other tools to develop, maintain, and fix software applications.",
+			"Inam Ul Huq is a software developer from Sialkot, Pakistan. He build Web, Desktop, and Mobile applications.",
 		siteUrl: "https://inambe.dev", // No trailing slash allowed!
 		image: "/images/inam-ul-huq.png", // Path to your image you placed in the 'static' folder
 		twitterUsername: "@MeInamUlHuq",
