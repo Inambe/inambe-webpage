@@ -23,22 +23,20 @@ function AboutPage() {
 								<span role="img" aria-label="Hi">
 									👋
 								</span>
-								,<br /> I'm Inam Ul Huq, a full-stack web
-								developer and tech enthusiast. I develop,
-								maintain, and fix web sites/applications.
+								,<br /> I'm Inam Ul Huq, a Software Developer. I
+								build Web, Desktop, and Mobile applications.
 							</p>
 							<p>
-								I learned web and software development on my own
-								from online courses, YouTube, and documents
-								including books, blogs, and software
-								documentations.
+								I learned software development on my own from
+								online courses, YouTube, and documents including
+								books, blogs, and software documentations.
 							</p>
 							<p>
-								I'd done the Diploma of Associate Engineering
-								(DAE) in Electronics from GCT Sialkot, Pakistan.
-								While I was in college, I learned about
-								programming Microcontrollers which led me to the
-								field of computer software.
+								I'd done Diploma of Associate Engineering (DAE)
+								in Electronics from GCT Sialkot, Pakistan. While
+								I was in college, I learned about programming
+								Microcontrollers which led me to the field of
+								computer software.
 							</p>
 						</Col>
 						<Col md={4}>

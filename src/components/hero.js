@@ -18,12 +18,12 @@ function Hero() {
 						👋
 					</span>
 					, I'm Inam, a human.
-					<br />I use <u>JavaScript</u>, <u>PHP</u>, <u>Flutter</u>{" "}
-					and many other tools and libraries to develop, maintain, and
-					fix different software applications.
+					<br />I use <u>JavaScript</u>, <u>PHP</u>, <u>Flutter</u>,{" "}
+					and many other tools and libraries to build, maintain, and
+					fix different kinds of software applications.
 				</p>
 				<p>
-					If you want a new website, mobile or web application, or
+					If you want a new Web, Desktop, or Mobile application, or
 					want to get your existing one(s) fixed, contact me.
 				</p>
 				<A noStyle to="/contact">
