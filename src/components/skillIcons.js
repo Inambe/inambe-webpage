@@ -10,6 +10,7 @@ import {
 	DiCss3,
 	DiLinux,
 	DiJqueryLogo,
+	DiDart,
 } from "react-icons/di"
 import "./skillIcons.css"
 
@@ -47,6 +48,10 @@ function SkillIcons() {
 			<span>
 				<DiJqueryLogo />
 				<span>jQuery</span>
+			</span>
+			<span>
+				<DiDart />
+				<span>Flutter</span>
 			</span>
 			<span>
 				<DiGit />
