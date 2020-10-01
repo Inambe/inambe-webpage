@@ -24,6 +24,13 @@ module.exports = {
 				path: `${__dirname}/content/projects`,
 			},
 		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `media`,
+				path: `${__dirname}/content/media`,
+			},
+		},
 		"gatsby-transformer-remark",
 		"gatsby-plugin-react-helmet",
 		{
@@ -42,5 +49,7 @@ module.exports = {
 				exclude: ["/admin"],
 			},
 		},
+		"gatsby-transformer-sharp",
+		"gatsby-plugin-sharp",
 	],
 }

@@ -1,12 +1,25 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import Image from "gatsby-image"
 import "./hero.css"
 
-import portrait from "./../static/media/imgs/inam-ul-huq.png"
-import Img from "./img"
 import Button from "./button"
 import A from "./a"
 
 function Hero() {
+	const data = useStaticQuery(graphql`
+		{
+			file(relativePath: { eq: "inam-ul-huq.png" }) {
+				childImageSharp {
+					fluid(maxWidth: 500) {
+						...GatsbyImageSharpFluid
+					}
+				}
+			}
+		}
+	`)
+	const portrait = data.file.childImageSharp.fluid
+
 	return (
 		<div className="hero">
 			<div className="hero-intro">
@@ -33,7 +46,7 @@ function Hero() {
 				</A>
 			</div>
 			<div className="hero-portrait">
-				<Img src={portrait} alt="Inam Ul Huq" />
+				<Image fluid={portrait} alt="Inam Ul Huq" />
 			</div>
 		</div>
 	)

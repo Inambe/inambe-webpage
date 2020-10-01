@@ -32,7 +32,7 @@
 	margin-bottom: var(--space-l);
 }
 
-.hero-portrait > img {
+.hero-portrait img {
 	border: 0.6rem solid var(--clr-primary);
 	border-radius: 50%;
 }
@@ -47,8 +47,7 @@
 		margin-bottom: 0;
 		text-align: center;
 	}
-	.hero-portrait > img {
-		max-width: 65%;
-		margin: auto;
+	.hero-portrait {
+		width: 65%;
 	}
 }
