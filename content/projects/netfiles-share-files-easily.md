@@ -1,11 +1,11 @@
 ---
 title: NetFiles - Share Files Easily
 description: NetFiles makes it easy to share files across the network
-thumbnail: /assets/banner.png
+thumbnail: /assets/site-banner.png
 uses:
-    - Mobile
-    - Flutter
-    - Dart
+  - Mobile
+  - Flutter
+  - Dart
 live_link: https://play.google.com/store/apps/details?id=dev.inambe.netfiles
 date: 2020-09-27T23:08:40.239Z
 ---
