@@ -3,7 +3,6 @@ import { useAlert } from "react-alert"
 
 import Header from "../components/header"
 import Container from "../components/container"
-import AccentOverlay from "../components/accentOverlay"
 import { isBrowser } from "../api/runtime"
 
 function MainLayout({ children }) {
@@ -20,7 +19,6 @@ function MainLayout({ children }) {
 
 	return (
 		<>
-			<AccentOverlay />
 			<Header />
 			<Container>{children}</Container>
 		</>

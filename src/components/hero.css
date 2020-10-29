@@ -33,7 +33,7 @@
 }
 
 .hero-portrait img {
-	border: 0.6rem solid var(--clr-primary);
+	border: 0.5rem solid var(--clr-primary);
 	border-radius: 50%;
 }
 

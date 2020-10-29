@@ -51,7 +51,8 @@ body {
 	font-family: var(--ff-main);
 	background: var(--bg-main);
 	background-image: url(./static/circuit-board.svg);
-	border: 0.5rem solid var(--clr-primary);
+	border-top: 0.5rem solid var(--clr-primary);
+	border-bottom: 0.5rem solid var(--clr-primary);
 	min-height: 100vh;
 	position: relative;
 }
