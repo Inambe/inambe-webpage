@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1280"
+   height="720"
+   viewBox="0 0 338.66668 190.5"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="logo-banner.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   inkscape:export-filename="/home/inam/Documents/make-resume/logo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="676.16813"
+     inkscape:cy="644.68653"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g7918"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1608"
+     inkscape:window-height="986"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-106.50001)">
+    <g
+       id="g3945"
+       transform="matrix(0.26458333,0,0,0.26458333,35.308873,194.15871)">
+      <g
+         id="g3884">
+        <g
+           id="g7918"
+           transform="translate(7.2857129)">
+          <g
+             style="opacity:0.95999995;fill:none;stroke:#8d30ff;stroke-opacity:1"
+             id="g3833"
+             transform="matrix(8.7896743,8.7896743,-8.7896743,8.7896743,90.52539,-445.95088)">
+            <circle
+               id="circle3810"
+               stroke-miterlimit="10"
+               r="5.5"
+               cy="24"
+               cx="12"
+               style="fill:none;stroke:#8d30ff;stroke-width:3;stroke-miterlimit:10;stroke-opacity:1" />
+            <circle
+               id="circle3812"
+               stroke-miterlimit="10"
+               r="5.5"
+               cy="12"
+               cx="36"
+               style="fill:none;stroke:#8d30ff;stroke-width:3;stroke-miterlimit:10;stroke-opacity:1" />
+            <circle
+               id="circle3814"
+               stroke-miterlimit="10"
+               r="5.5"
+               cy="36"
+               cx="36"
+               style="fill:none;stroke:#8d30ff;stroke-width:3;stroke-miterlimit:10;stroke-opacity:1" />
+            <polyline
+               id="polyline3816"
+               points="17.5,24 26.5,24 32.586,16.312"
+               stroke-miterlimit="10"
+               style="fill:none;stroke:#8d30ff;stroke-width:3;stroke-miterlimit:10;stroke-opacity:1" />
+            <line
+               id="line3818"
+               stroke-miterlimit="10"
+               y2="31.688"
+               y1="24"
+               x2="32.585999"
+               x1="26.5"
+               style="fill:none;stroke:#8d30ff;stroke-width:3;stroke-miterlimit:10;stroke-opacity:1" />
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#8d30ff;fill-opacity:0.96078431;stroke:none"
+             x="446.97772"
+             y="63.089256"
+             id="text857"><tspan
+               sodipodi:role="line"
+               id="tspan855"
+               x="446.97772"
+               y="63.089256"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;font-family:Inter;-inkscape-font-specification:'Inter Bold';fill:#8d30ff;fill-opacity:0.96078431">Make Resume</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g3886" />
+      <g
+         id="g3888" />
+      <g
+         id="g3890" />
+      <g
+         id="g3892" />
+      <g
+         id="g3894" />
+      <g
+         id="g3896" />
+      <g
+         id="g3898" />
+      <g
+         id="g3900" />
+      <g
+         id="g3902" />
+      <g
+         id="g3904" />
+      <g
+         id="g3906" />
+      <g
+         id="g3908" />
+      <g
+         id="g3910" />
+      <g
+         id="g3912" />
+      <g
+         id="g3914" />
+    </g>
+  </g>
+</svg>
