@@ -37,83 +37,76 @@ function ContactPage() {
 		<LayoutRoot>
 			<SEO title="Contact" description="Contact Inam Ul Huq" />
 			<MainLayout>
-				<main>
-					<Heading>Contact</Heading>
-					<div className="flex flex-col -mx-5 md:flex-row">
-						<div className="w-full mx-5 md:w-2/5">
-							<p className="mb-2">
-								If you have any question for me or just wanna
-								say hello, use the form below.
-							</p>
-							<form
-								method="post"
-								name="contact-form"
-								data-netlify="true"
-							>
-								{/* for netlify */}
-								<input
-									type="hidden"
-									name="form-name"
-									value="contact-form"
+				<Heading>Contact</Heading>
+				<div className="flex flex-col -mx-5 md:flex-row">
+					<div className="w-full mx-5 md:w-2/5">
+						<p className="mb-2">
+							If you have any question for me or just wanna say
+							hello, use the form below.
+						</p>
+						<form
+							method="post"
+							name="contact-form"
+							data-netlify="true"
+						>
+							{/* for netlify */}
+							<input
+								type="hidden"
+								name="form-name"
+								value="contact-form"
+							/>
+							<FormControl>
+								<Label>Your name</Label>
+								<Input name="name" block />
+							</FormControl>
+							<FormControl>
+								<Label>Your email*</Label>
+								<Input
+									name="email"
+									type="email"
+									required
+									block
 								/>
-								<FormControl>
-									<Label>Your name</Label>
-									<Input name="name" block />
-								</FormControl>
-								<FormControl>
-									<Label>Your email*</Label>
-									<Input
-										name="email"
-										type="email"
-										required
-										block
-									/>
-								</FormControl>
-								<FormControl>
-									<Label>Message*</Label>
-									<Input
-										name="message"
-										textarea
-										required
-										block
-									/>
-								</FormControl>
-								<FormControl>
-									<Button type="primary" size="m">
-										Send
-									</Button>
-								</FormControl>
-							</form>
-						</div>
-						<div className="w-full mx-5 md:w-3/5">
-							<p className="mb-2">
-								Some other ways you can contact me.
-							</p>
-							<div className="mb-3">
-								<ContactItem
-									Icon={FaEnvelope}
-									href={`mailto:${constants.EMAIL}`}
-								>
-									{constants.EMAIL}
-								</ContactItem>
-								<ContactItem
-									Icon={FaPhone}
-									href={`tel:${constants.PHONE}`}
-								>
-									{constants.PHONE}
-								</ContactItem>
-							</div>
-							<p className="mb-3">
-								<SocialItem href={constants.URL.GITHUB}>
-									<FaGithub />
-								</SocialItem>
-								<SocialItem href={constants.URL.TWITTER}>
-									<FaTwitter />
-								</SocialItem>
-							</p>
-						</div>
+							</FormControl>
+							<FormControl>
+								<Label>Message*</Label>
+								<Input name="message" textarea required block />
+							</FormControl>
+							<FormControl>
+								<Button type="primary" size="m">
+									Send
+								</Button>
+							</FormControl>
+						</form>
 					</div>
-				</main>
+					<div className="w-full mx-5 md:w-3/5">
+						<p className="mb-2">
+							Some other ways you can contact me.
+						</p>
+						<div className="mb-3">
+							<ContactItem
+								Icon={FaEnvelope}
+								href={`mailto:${constants.EMAIL}`}
+							>
+								{constants.EMAIL}
+							</ContactItem>
+							<ContactItem
+								Icon={FaPhone}
+								href={`tel:${constants.PHONE}`}
+							>
+								{constants.PHONE}
+							</ContactItem>
+						</div>
+						<p className="mb-3">
+							<SocialItem href={constants.URL.GITHUB}>
+								<FaGithub />
+							</SocialItem>
+							<SocialItem href={constants.URL.TWITTER}>
+								<FaTwitter />
+							</SocialItem>
+						</p>
+					</div>
+				</div>
 			</MainLayout>
 		</LayoutRoot>
 	)

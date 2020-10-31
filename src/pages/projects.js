@@ -16,19 +16,17 @@ function ProjectsPage({ data }) {
 				description="List of projects I've developed or currently working on."
 			/>
 			<MainLayout>
-				<main>
-					<div className="flex flex-col md:flex-row md:flex-wrap md:-mx-2">
-						{projects.length &&
-							projects.map((project, i) => (
-								<article
-									className="w-full mb-2 md:w-1/2 md:px-2 lg:w-1/3"
-									key={i}
-								>
-									<ProjectCard project={project.node} />
-								</article>
-							))}
-					</div>
-				</main>
+				<div className="flex flex-col md:flex-row md:flex-wrap md:-mx-2">
+					{projects.length &&
+						projects.map((project, i) => (
+							<article
+								className="w-full mb-2 md:w-1/2 md:px-2 lg:w-1/3"
+								key={i}
+							>
+								<ProjectCard project={project.node} />
+							</article>
+						))}
+				</div>
 			</MainLayout>
 		</LayoutRoot>
 	)
