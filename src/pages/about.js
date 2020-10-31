@@ -35,7 +35,7 @@ function AboutPage() {
 	const portrait = data.file.childImageSharp.fluid
 	return (
 		<LayoutRoot>
-			<SEO title="About" description="Read more about Inam Ul Huq." />
+			<SEO title="About" description="Read more about Inam Ul Huq" />
 			<MainLayout>
 				<main>
 					<Section>

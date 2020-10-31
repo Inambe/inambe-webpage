@@ -1,7 +1,5 @@
 import React from "react"
 import { FaGithub, FaEnvelope, FaPhone, FaTwitter } from "react-icons/fa"
-import { Row, Col } from "react-grid-system"
-import "./contactPage.css"
 
 import Input from "../components/form/input"
 import FormControl from "../components/form/formControl"
@@ -12,17 +10,38 @@ import LayoutRoot from "../layouts/root"
 import MainLayout from "../layouts/main"
 import constants from "../constants"
 import SEO from "../components/seo"
+import Heading from "../components/heading"
+
+const ContactItem = ({ Icon, ...props }) => {
+	return (
+		<p className="flex items-center mb-1">
+			<Icon />
+			&nbsp;
+			<A eLink {...props}></A>
+		</p>
+	)
+}
+const SocialItem = props => {
+	return (
+		<A
+			eLink
+			newTab
+			className="inline-block mr-2 text-2xl hover:text-primary"
+			{...props}
+		/>
+	)
+}
 
 function ContactPage() {
 	return (
 		<LayoutRoot>
-			<SEO title="Contact" description="Some ways to contact me." />
+			<SEO title="Contact" description="Contact Inam Ul Huq" />
 			<MainLayout>
-				<main className="contactPage">
-					<h1>Contact</h1>
-					<Row>
-						<Col md={5} className="contactPage__section">
-							<p>
+				<main>
+					<Heading>Contact</Heading>
+					<div className="flex flex-col -mx-5 md:flex-row">
+						<div className="w-full mx-5 md:w-2/5">
+							<p className="mb-2">
 								If you have any question for me or just wanna
 								say hello, use the form below.
 							</p>
@@ -65,32 +84,35 @@ function ContactPage() {
 									</Button>
 								</FormControl>
 							</form>
-						</Col>
-						<Col
-							md={5}
-							offset={{ md: 2 }}
-							className="contactPage__section contactInfo"
-						>
-							<p>Some other ways you can contact me.</p>
-							<p className="contactInfo__item">
-								<FaEnvelope />{" "}
-								<A eLink href={`mailto:${constants.EMAIL}`}>
+						</div>
+						<div className="w-full mx-5 md:w-3/5">
+							<p className="mb-2">
+								Some other ways you can contact me.
+							</p>
+							<div className="mb-3">
+								<ContactItem
+									Icon={FaEnvelope}
+									href={`mailto:${constants.EMAIL}`}
+								>
 									{constants.EMAIL}
-								</A>
-							</p>
-							<p className="contactInfo__item">
-								<FaPhone /> {constants.PHONE}
-							</p>
-							<p className="socialIcons">
-								<A eLink newTab href={constants.URL.GITHUB}>
+								</ContactItem>
+								<ContactItem
+									Icon={FaPhone}
+									href={`tel:${constants.EMAIL}`}
+								>
+									{constants.PHONE}
+								</ContactItem>
+							</div>
+							<p className="mb-3">
+								<SocialItem href={constants.URL.GITHUB}>
 									<FaGithub />
-								</A>
-								<A eLink newTab href={constants.URL.TWITTER}>
+								</SocialItem>
+								<SocialItem href={constants.URL.TWITTER}>
 									<FaTwitter />
-								</A>
+								</SocialItem>
 							</p>
-						</Col>
-					</Row>
+						</div>
+					</div>
 				</main>
 			</MainLayout>
 		</LayoutRoot>
