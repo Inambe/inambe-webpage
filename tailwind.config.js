@@ -1,3 +1,5 @@
+const theme = require("tailwindcss/defaultTheme")
+
 module.exports = {
 	future: {
 		// removeDeprecatedGapUtilities: true,
@@ -16,6 +18,9 @@ module.exports = {
 			},
 			borderWidth: {
 				"half-rem": "0.5rem",
+			},
+			fontFamily: {
+				sans: ["Poppins", ...theme.fontFamily.sans],
 			},
 		},
 	},

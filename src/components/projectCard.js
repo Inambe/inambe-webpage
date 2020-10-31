@@ -27,9 +27,7 @@ function ProjectCard({ project }) {
 				<h3 className="text-xl font-semibold leading-none my-2">
 					{frontmatter.title}
 				</h3>
-				<p className="text-gray-800 leading-none mb-2">
-					{frontmatter.description}
-				</p>
+				<p className="leading-none mb-2">{frontmatter.description}</p>
 				<div className="text-xs mb-2">
 					{frontmatter.uses.map((u, i) => (
 						<span

@@ -34,53 +34,13 @@
 	/* font-size: calc(9.75px + 1vmin); */
 }
 
-*,
-*::after,
-*::before {
-	box-sizing: border-box;
-}
-
 body {
-	--fc-main: var(--clr-black);
-	--ff-main: "Poppins", sans-serif;
-	--bg-main: var(--clr-white);
-}
-body {
-	margin: 0;
-	color: var(--fc-main);
-	font-family: var(--ff-main);
-	background: var(--bg-main);
 	background-image: url(./static/circuit-board.svg);
-	border-top: 0.5rem solid var(--clr-primary);
-	border-bottom: 0.5rem solid var(--clr-primary);
-	min-height: 100vh;
-	position: relative;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-	margin: 0;
-}
-
-button,
-input,
-textarea {
-	font-family: inherit;
-}
-button {
-	border: 0;
-	padding: 0.3rem 0.5rem;
-	color: inherit;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
+	@apply m-0;
+	@apply bg-white text-gray-800 font-sans;
+	@apply border-t-half-rem border-b-half-rem border-primary;
+	@apply min-h-screen;
+	@apply relative;
 }
 
 @tailwind base;
