@@ -12,12 +12,7 @@ import Img from "./img"
 import { tailwindScreen } from "../api/runtime"
 
 const NavLink = props => {
-	return (
-		<A
-			className="p-3 no-underline flex items-center md:p-0 md:pl-6"
-			{...props}
-		/>
-	)
+	return <A className="p-3 no-underline md:p-0 md:pl-6" {...props} />
 }
 
 function Header() {

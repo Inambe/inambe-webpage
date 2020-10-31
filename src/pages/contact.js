@@ -23,12 +23,9 @@ const ContactItem = ({ Icon, ...props }) => {
 }
 const SocialItem = props => {
 	return (
-		<A
-			eLink
-			newTab
-			className="inline-block mr-2 text-2xl hover:text-primary"
-			{...props}
-		/>
+		<span className="inline-block mr-2">
+			<A eLink newTab className="text-2xl" {...props} />
+		</span>
 	)
 }
 

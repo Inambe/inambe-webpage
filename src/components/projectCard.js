@@ -5,14 +5,7 @@ import Img from "./img"
 import A from "./a"
 
 const CardLink = props => {
-	return (
-		<A
-			eLink
-			newTab
-			className="flex items-center p-3 hover:text-primary"
-			{...props}
-		/>
-	)
+	return <A eLink newTab className="p-3 no-underline" {...props} />
 }
 
 function ProjectCard({ project }) {

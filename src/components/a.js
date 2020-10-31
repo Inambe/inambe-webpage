@@ -7,7 +7,7 @@ function A({ newTab, children, eLink, noStyle, ...props }) {
 	customProps.className = noStyle
 		? null
 		: classNames(
-				"transition duration-200 hover:text-primary underline",
+				"transition duration-200 hover:text-primary underline flex items-center",
 				props.className
 		  )
 
