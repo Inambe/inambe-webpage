@@ -27,7 +27,7 @@ function Hero() {
 					<h1 className="text-primary font-bold text-6xl leading-none">
 						Inam Ul Huq
 					</h1>
-					<h3 className="text-1xl font-italic">Software Developer</h3>
+					<h3 className="text-1xl italic">Software Developer</h3>
 				</div>
 				<div className="mb-8">
 					<p className="mb-4 text-lg">
