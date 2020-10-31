@@ -98,7 +98,7 @@ function ContactPage() {
 								</ContactItem>
 								<ContactItem
 									Icon={FaPhone}
-									href={`tel:${constants.EMAIL}`}
+									href={`tel:${constants.PHONE}`}
 								>
 									{constants.PHONE}
 								</ContactItem>
