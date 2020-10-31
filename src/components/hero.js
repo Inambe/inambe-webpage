@@ -24,7 +24,7 @@ function Hero() {
 		<div className="flex items-center flex-col-reverse md:flex-row md:-mx-2">
 			<div className="w-full mb-6 text-center md:text-left md:mx-2 md:w-8/12 lg:w-6/12">
 				<div className="mb-8">
-					<h1 className="text-primary font-bold text-6xl leading-none">
+					<h1 className="text-primary text-4xl font-bold md:text-6xl leading-none">
 						Inam Ul Huq
 					</h1>
 					<h3 className="text-xl italic">Software Developer</h3>
