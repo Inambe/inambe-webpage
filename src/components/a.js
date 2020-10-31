@@ -1,18 +1,23 @@
 import React from "react"
 import { Link } from "gatsby"
+import classNames from "classnames"
 
 function A({ newTab, children, eLink, noStyle, ...props }) {
 	let customProps = {}
 	customProps.className = noStyle
 		? null
-		: "transition duration-200 hover:text-primary underline"
+		: classNames(
+				"transition duration-200 hover:text-primary underline",
+				props.className
+		  )
+
 	customProps.target = newTab ? "_blank" : undefined
 	return eLink ? (
-		<a rel="noopener noreferrer" {...customProps} {...props}>
+		<a rel="noopener noreferrer" {...props} {...customProps}>
 			{children}
 		</a>
 	) : (
-		<Link {...customProps} {...props}>
+		<Link {...props} {...customProps}>
 			{children}
 		</Link>
 	)
