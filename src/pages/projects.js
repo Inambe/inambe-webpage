@@ -1,6 +1,5 @@
-import { graphql } from "gatsby"
 import React from "react"
-import { Row, Col } from "react-grid-system"
+import { graphql } from "gatsby"
 
 import ProjectCard from "../components/projectCard"
 import SEO from "../components/seo"
@@ -17,16 +16,17 @@ function ProjectsPage({ data }) {
 				description="List of projects I've developed or currently working on."
 			/>
 			<MainLayout>
-				<main>
-					<Row>
-						{projects.length &&
-							projects.map((project, i) => (
-								<Col key={i} md={6}>
-									<ProjectCard project={project.node} />
-								</Col>
-							))}
-					</Row>
-				</main>
+				<div className="flex flex-col md:flex-row md:flex-wrap md:-mx-2">
+					{projects.length &&
+						projects.map((project, i) => (
+							<article
+								className="w-full mb-2 md:w-1/2 md:px-2 lg:w-1/3"
+								key={i}
+							>
+								<ProjectCard project={project.node} />
+							</article>
+						))}
+				</div>
 			</MainLayout>
 		</LayoutRoot>
 	)

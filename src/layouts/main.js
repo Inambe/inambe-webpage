@@ -20,7 +20,7 @@ function MainLayout({ children }) {
 	return (
 		<>
 			<Header />
-			<Container>{children}</Container>
+			<Container main>{children}</Container>
 		</>
 	)
 }

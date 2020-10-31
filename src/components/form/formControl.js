@@ -1,8 +1,7 @@
-import React from "react";
-import "./formControl.css";
+import React from "react"
 
 function FormControl(props) {
-	return <div className="formControl" {...props} />;
+	return <div className="mb-3" {...props} />
 }
 
-export default FormControl;
+export default FormControl
