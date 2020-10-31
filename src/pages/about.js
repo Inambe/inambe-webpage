@@ -10,7 +10,7 @@ import SEO from "../components/seo"
 const Section = props => {
 	return (
 		<div
-			className="flex items-center flex-col -mx-2 mb-8 md:flex-row md:mb-16"
+			className="flex items-center flex-col mb-8 md:flex-row md:mb-16 md:-mx-2"
 			{...props}
 		/>
 	)
@@ -38,7 +38,7 @@ function AboutPage() {
 			<SEO title="About" description="Read more about Inam Ul Huq" />
 			<MainLayout>
 				<Section>
-					<div className="w-full mx-2 md:w-9/12">
+					<div className="w-full md:mx-2 md:w-9/12">
 						<SectionHeading>About</SectionHeading>
 						<p className="mb-2">
 							Hi{" "}
@@ -61,12 +61,12 @@ function AboutPage() {
 							computer software.
 						</p>
 					</div>
-					<div className="w-full mx-2 md:w-3/12">
+					<div className="w-full md:mx-2 md:w-3/12">
 						<Image fluid={portrait} alt="Inam Ul Huq" />
 					</div>
 				</Section>
 				<Section>
-					<div className="w-full mx-2 md:w-1/3">
+					<div className="w-full md:mx-2 md:w-1/3">
 						<SectionHeading>Skills</SectionHeading>
 						<p className="mb-2">
 							I had tried several different technologies/languages
@@ -75,7 +75,7 @@ function AboutPage() {
 							listed ones.
 						</p>
 					</div>
-					<div className="w-full mx-2 md:w-2/3">
+					<div className="w-full md:mx-2 md:w-2/3">
 						<SkillIcons />
 					</div>
 				</Section>
