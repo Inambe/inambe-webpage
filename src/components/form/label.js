@@ -1,8 +1,7 @@
-import React from "react";
-import "./label.css";
+import React from "react"
 
 function Label(props) {
-	return <label className="label" {...props} />;
+	return <label className="block mb-1" {...props} />
 }
 
-export default Label;
+export default Label

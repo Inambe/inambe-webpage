@@ -38,8 +38,8 @@ function ContactPage() {
 			<SEO title="Contact" description="Contact Inam Ul Huq" />
 			<MainLayout>
 				<Heading>Contact</Heading>
-				<div className="flex flex-col -mx-5 md:flex-row">
-					<div className="w-full mx-5 md:w-2/5">
+				<div className="flex flex-col  md:flex-row md:-mx-5">
+					<div className="w-full mb-5 md:w-2/5 md:mx-5">
 						<p className="mb-2">
 							If you have any question for me or just wanna say
 							hello, use the form below.
@@ -79,7 +79,7 @@ function ContactPage() {
 							</FormControl>
 						</form>
 					</div>
-					<div className="w-full mx-5 md:w-3/5">
+					<div className="w-full mb-5 md:w-3/5 md:mx-5">
 						<p className="mb-2">
 							Some other ways you can contact me.
 						</p>
