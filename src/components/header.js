@@ -32,7 +32,7 @@ function Header() {
 	)
 
 	return (
-		<header className="bg-white border-b">
+		<header className="max-h-main-nav-header bg-white border-b">
 			<Container>
 				<div className="flex justify-between items-center">
 					<A to="/" className="hover:bg-primary">

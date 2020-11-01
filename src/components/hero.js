@@ -21,7 +21,7 @@ function Hero() {
 	const portrait = data.file.childImageSharp.fluid
 
 	return (
-		<div className="flex items-center flex-col-reverse md:flex-row md:-mx-2">
+		<div className="min-h-full-in-container flex items-center flex-col-reverse md:flex-row md:-mx-2">
 			<div className="w-full mb-6 text-center md:text-left md:mx-2 md:w-8/12 lg:w-6/12">
 				<div className="mb-8">
 					<h1 className="text-primary text-4xl font-bold md:text-6xl leading-none">
