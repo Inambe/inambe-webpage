@@ -4,34 +4,13 @@
 	--clr-primary: #2872ff;
 	--clr-primary-1: #0159ff;
 
-	--clr-black: #2f2f2f;
-	--clr-black-light: #444444;
-
 	--clr-white: #fafafa;
-
-	--clr-gray: #c1c1c1;
-	--clr-gray-light: #e1e1e1;
-	--clr-gray-lightest: #efefef;
 
 	/* font-size */
 	--fs-s: 1rem;
 	--fs-m: 1.1rem;
 	--fs-l: 1.25rem;
 	--fs-xl: 2rem;
-
-	/* margin-padding sizes */
-	--space-s: 1rem;
-	--space-m: 2rem;
-	--space-l: 3rem;
-	--space-xl: 4rem;
-
-	/* border-radius */
-	--br-s: 0.2rem;
-	--br-m: 0.4rem;
-
-	/* root styles */
-	/* 1rem = 16px */
-	/* font-size: calc(9.75px + 1vmin); */
 }
 
 body {
