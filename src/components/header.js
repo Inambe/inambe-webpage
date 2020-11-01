@@ -20,8 +20,8 @@ function Header() {
 			<Container>
 				<div className="flex justify-between items-center">
 					<A to="/" className="hover:bg-primary">
-						<Img
-							className="w-16"
+						<img
+							className="max-h-main-nav-header"
 							src={Logo}
 							alt="Inam Ul Huq logo"
 						/>
