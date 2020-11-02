@@ -52,5 +52,14 @@ module.exports = {
 		"gatsby-transformer-sharp",
 		"gatsby-plugin-sharp",
 		"gatsby-plugin-postcss",
+		{
+			resolve: `gatsby-plugin-favicon`,
+			options: {
+				logo: "./src/static/media/imgs/inam-bnw-cropped-1x1.png",
+				appName: "Inam Ul Huq", // Inferred with your package.json
+				developerName: "Inam Ul Huq",
+				developerURL: "https://inambe.dev",
+			},
+		},
 	],
 }
