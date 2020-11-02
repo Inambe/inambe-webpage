@@ -14,11 +14,11 @@ import Heading from "../components/heading"
 
 const ContactItem = ({ Icon, ...props }) => {
 	return (
-		<p className="flex items-center mb-1">
+		<div className="flex items-center">
 			<Icon />
 			&nbsp;
 			<A eLink {...props}></A>
-		</p>
+		</div>
 	)
 }
 const SocialItem = props => {
@@ -35,9 +35,9 @@ function ContactPage() {
 			<SEO title="Contact" description="Contact Inam Ul Huq" />
 			<MainLayout>
 				<Heading>Contact</Heading>
-				<div className="flex flex-col md:flex-row">
-					<div className="w-full mb-5 md:w-6/12">
-						<p className="mb-2">
+				<div className="flex flex-col space-y-8 md:flex-row md:space-y-0">
+					<div className="w-full space-y-3 md:w-6/12">
+						<p>
 							If you have any question for me or just wanna say
 							hello, use the form below.
 						</p>
@@ -54,20 +54,15 @@ function ContactPage() {
 							/>
 							<FormControl>
 								<Label>Your name</Label>
-								<Input name="name" block />
+								<Input name="name" />
 							</FormControl>
 							<FormControl>
 								<Label>Your email*</Label>
-								<Input
-									name="email"
-									type="email"
-									required
-									block
-								/>
+								<Input name="email" type="email" required />
 							</FormControl>
 							<FormControl>
 								<Label>Message*</Label>
-								<Input name="message" textarea required block />
+								<Input name="message" textarea required />
 							</FormControl>
 							<FormControl>
 								<Button type="primary" size="m">
@@ -76,11 +71,9 @@ function ContactPage() {
 							</FormControl>
 						</form>
 					</div>
-					<div className="w-full mb-5 md:w-4/12 md:ml-auto">
-						<p className="mb-2">
-							Some other ways you can contact me.
-						</p>
-						<div className="mb-3">
+					<div className="w-full space-y-3 md:w-4/12 md:ml-auto">
+						<p>Some other ways you can contact me.</p>
+						<div className="space-y-1">
 							<ContactItem
 								Icon={FaEnvelope}
 								href={`mailto:${constants.EMAIL}`}
@@ -94,14 +87,14 @@ function ContactPage() {
 								{constants.PHONE}
 							</ContactItem>
 						</div>
-						<p className="mb-3">
+						<div>
 							<SocialItem href={constants.URL.GITHUB}>
 								<FaGithub />
 							</SocialItem>
 							<SocialItem href={constants.URL.TWITTER}>
 								<FaTwitter />
 							</SocialItem>
-						</p>
+						</div>
 					</div>
 				</div>
 			</MainLayout>
