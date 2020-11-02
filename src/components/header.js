@@ -20,7 +20,7 @@ function Header() {
 				<div className="flex justify-between items-center">
 					<A to="/" className="hover:bg-primary">
 						<img
-							className="px-2 py-1"
+							className="max-h-60px px-2 py-1 box-content"
 							src={Logo}
 							alt="Inam Ul Huq logo"
 						/>

@@ -59,6 +59,7 @@ module.exports = {
 				appName: "Inam Ul Huq", // Inferred with your package.json
 				developerName: "Inam Ul Huq",
 				developerURL: "https://inambe.dev",
+				theme_color: "#2872ff",
 			},
 		},
 	],
