@@ -24,7 +24,6 @@ module.exports = {
 			},
 			maxHeight: {
 				"main-nav-header": "4rem",
-				"60px": "60px",
 			},
 			minHeight: {
 				// 1rem of borders + 4rem of header + 6rem of container padding - 100vh
