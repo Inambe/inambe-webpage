@@ -5,8 +5,7 @@ import { FaBars, FaExternalLinkAlt, FaTimes } from "react-icons/fa"
 import Container from "./container"
 import A from "./a"
 import constants from "./../constants"
-import Logo from "./../static/media/imgs/logo.png"
-import Img from "./img"
+import Logo from "./../static/media/imgs/inam-bnw-cropped-h-60.png"
 
 const NavLink = props => {
 	return <A className="p-3 no-underline md:p-0 md:pl-6" {...props} />
@@ -21,7 +20,7 @@ function Header() {
 				<div className="flex justify-between items-center">
 					<A to="/" className="hover:bg-primary">
 						<img
-							className="max-h-main-nav-header"
+							className="px-2 py-1"
 							src={Logo}
 							alt="Inam Ul Huq logo"
 						/>
