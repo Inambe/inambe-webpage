@@ -21,7 +21,6 @@ const skills = [
 	{ name: "WordPress", icon: DiWordpress },
 	{ name: "HTML(5)", icon: DiHtml5 },
 	{ name: "CSS(3)", icon: DiCss3 },
-	{ name: "jQuery", icon: DiJqueryLogo },
 	{ name: "Flutter", icon: DiDart },
 	{ name: "Git", icon: DiGit },
 	{ name: "Linux", icon: DiLinux },
@@ -29,7 +28,7 @@ const skills = [
 
 function SkillIcons() {
 	return (
-		<div className="grid grid-cols-5 gap-2 text-center text-xs lg:grid-cols-6">
+		<div className="grid grid-cols-5 gap-2 text-center text-xs">
 			{skills.map(skill => (
 				<span>
 					<skill.icon className="w-full h-auto" />

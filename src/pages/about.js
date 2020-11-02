@@ -11,7 +11,7 @@ import Heading from "../components/heading"
 const Section = props => {
 	return (
 		<div
-			className="min-h-full-in-container flex items-center justify-center flex-col space-y-2 md:flex-row md:-mx-2 md:space-y-0"
+			className="min-h-full-in-container flex items-center justify-center flex-col space-y-2 md:flex-row md:-mx-3 md:space-y-0"
 			{...props}
 		/>
 	)
@@ -39,7 +39,7 @@ function AboutPage() {
 			<MainLayout>
 				<div className="space-y-8">
 					<Section>
-						<div className="w-full md:mx-2 md:w-8/12 lg:w-1/2">
+						<div className="w-full md:mx-3 md:w-1/2">
 							<Heading>About</Heading>
 							<div className="space-y-2 text-justify">
 								<p>
@@ -66,12 +66,16 @@ function AboutPage() {
 								</p>
 							</div>
 						</div>
-						<div className="w-full md:mx-2 md:w-3/12 md:ml-auto">
-							<Image fluid={portrait} alt="Inam Ul Huq" />
+						<div className="w-full md:mx-3 md:w-1/2">
+							<Image
+								fluid={portrait}
+								alt="Inam Ul Huq"
+								className="w-full m-auto border-2 md:w-2/3"
+							/>
 						</div>
 					</Section>
 					<Section>
-						<div className="w-full md:mx-2 md:w-1/2">
+						<div className="w-full md:mx-3 md:w-1/2">
 							<Heading>Skills</Heading>
 							<p className="text-justify">
 								I had tried several different
@@ -80,7 +84,7 @@ function AboutPage() {
 								professionally experienced in the listed ones.
 							</p>
 						</div>
-						<div className="w-full md:mx-2 md:w-1/2">
+						<div className="w-full md:mx-3 md:w-1/2">
 							<SkillIcons />
 						</div>
 					</Section>
