@@ -12,7 +12,6 @@ module.exports = {
 		description:
 			"Inam Ul Huq is a software developer from Sialkot, Pakistan. He build Web, Desktop, and Mobile applications.",
 		siteUrl: "https://inambe.dev", // No trailing slash allowed!
-		image: "/images/inam-ul-huq.png", // Path to your image you placed in the 'static' folder
 		twitterUsername: "@MeInamUlHuq",
 	},
 	plugins: [

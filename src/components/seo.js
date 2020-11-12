@@ -3,17 +3,18 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
+
 const SEO = ({ title, description, image, article }) => {
 	const { pathname } = useLocation()
-	const { site } = useStaticQuery(query)
+	const { site, file } = useStaticQuery(query)
 	const {
 		defaultTitle,
 		titleTemplate,
 		defaultDescription,
 		siteUrl,
-		defaultImage,
 		twitterUsername,
 	} = site.siteMetadata
+	const { defaultImage } = file.childImageSharp.original
 	const seo = {
 		title: title || defaultTitle,
 		description: description || defaultDescription,
@@ -66,8 +67,14 @@ const query = graphql`
 				titleTemplate
 				defaultDescription: description
 				siteUrl: siteUrl
-				defaultImage: image
 				twitterUsername
+			}
+		}
+		file(relativePath: { eq: "inam-ul-huq.png" }) {
+			childImageSharp {
+				original {
+					defaultImage: src
+				}
 			}
 		}
 	}
