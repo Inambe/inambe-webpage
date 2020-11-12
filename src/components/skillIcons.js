@@ -29,8 +29,8 @@ const skills = [
 function SkillIcons() {
 	return (
 		<div className="grid grid-cols-5 gap-2 text-center text-xs">
-			{skills.map(skill => (
-				<span>
+			{skills.map((skill, i) => (
+				<span key={i}>
 					<skill.icon className="w-full h-auto" />
 					<span>{skill.name}</span>
 				</span>
