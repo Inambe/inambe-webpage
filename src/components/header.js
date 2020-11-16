@@ -1,11 +1,11 @@
 import React, { useState } from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import classnames from "classnames"
 import { FaBars, FaExternalLinkAlt, FaTimes } from "react-icons/fa"
 
 import Container from "./container"
 import A from "./a"
 import constants from "./../constants"
-import Logo from "./../static/media/imgs/inam-bnw-cropped-h-60.png"
 
 const NavLink = props => {
 	return <A className="p-3 no-underline md:p-0 md:pl-6" {...props} />
@@ -14,16 +14,25 @@ const NavLink = props => {
 function Header() {
 	const [sideNaveOpen, setSideNaveOpen] = useState(false)
 
+	const logoQ = useStaticQuery(graphql`
+		{
+			file(relativePath: { eq: "inam-bnw-cropped-h-64-p-8.png" }) {
+				childImageSharp {
+					original {
+						src
+					}
+				}
+			}
+		}
+	`)
+	const logo = logoQ.file.childImageSharp.original.src
+
 	return (
 		<header className="max-h-main-nav-header bg-white border-b">
 			<Container>
 				<div className="flex justify-between items-center">
 					<A to="/" className="hover:bg-primary">
-						<img
-							className="max-h-main-nav-header px-2 py-1"
-							src={Logo}
-							alt="Inam Ul Huq logo"
-						/>
+						<img src={logo} alt="Inam Ul Huq logo" />
 					</A>
 					<button
 						className="max-md:block p-2 border z-20 hidden"

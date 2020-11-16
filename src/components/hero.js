@@ -7,7 +7,7 @@ import Button from "./button"
 import A from "./a"
 
 function Hero() {
-	const data = useStaticQuery(graphql`
+	const portraitQ = useStaticQuery(graphql`
 		{
 			file(relativePath: { eq: "inam-ul-huq.png" }) {
 				childImageSharp {
@@ -18,7 +18,7 @@ function Hero() {
 			}
 		}
 	`)
-	const portrait = data.file.childImageSharp.fluid
+	const portrait = portraitQ.file.childImageSharp.fluid
 
 	return (
 		<div className="min-h-full-in-container flex items-center flex-col-reverse md:flex-row md:-mx-2 md:justify-between">
