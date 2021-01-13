@@ -24,24 +24,23 @@ function Hero() {
 		<div className="min-h-full-in-container flex items-center flex-col-reverse md:flex-row md:-mx-2 md:justify-between">
 			<div className="w-full mb-6 text-center md:text-left md:mx-2 md:w-8/12 lg:w-6/12">
 				<div className="mb-8">
-					<h1 className="text-primary text-4xl font-bold md:text-6xl leading-none">
+					<h1 className="text-primary text-4xl font-bold md:text-5xl leading-none">
 						Inam Ul Huq
 					</h1>
-					<h3 className="text-xl italic">Software Developer</h3>
+					<h3 className="italic">Software Developer</h3>
 				</div>
 				<div className="mb-8">
-					<p className="mb-4 text-lg">
+					<p className="mb-4">
 						Hi{" "}
 						<span role="img" aria-label="Hi">
 							👋
 						</span>
 						, I'm Inam, a human.
-						<br />I use <u>JavaScript</u>, <u>PHP</u>,{" "}
-						<u>Flutter</u>, and many other tools and libraries to
-						build, maintain, and fix different kinds of software
-						applications.
+						<br />I use <u>JavaScript</u>, <u>PHP</u>, <u>Java</u>,
+						and many other tools and libraries to build, maintain,
+						and fix different kinds of software applications.
 					</p>
-					<p className="mb-4 text-lg">
+					<p className="mb-4">
 						If you want a new Web, Desktop, or Mobile application,
 						or want to get your existing one(s) fixed, contact me.
 					</p>

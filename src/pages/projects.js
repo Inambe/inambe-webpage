@@ -16,7 +16,7 @@ function ProjectsPage({ data }) {
 				description="List of projects I've developed or currently working on."
 			/>
 			<MainLayout>
-				<div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+				<div className="grid gap-3 grid-cols-1 md:grid-cols-2">
 					{projects.length &&
 						projects.map((project, i) => (
 							<article key={i}>

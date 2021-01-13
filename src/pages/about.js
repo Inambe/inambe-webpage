@@ -11,7 +11,7 @@ import Heading from "../components/heading"
 const Section = props => {
 	return (
 		<div
-			className="min-h-full-in-container flex items-center justify-center flex-col space-y-2 md:flex-row md:-mx-3 md:space-y-0"
+			className="flex items-center justify-center flex-col space-y-2 md:flex-row md:-mx-3 md:space-y-0"
 			{...props}
 		/>
 	)
@@ -37,11 +37,11 @@ function AboutPage() {
 				description="Inam Ul Huq is a Software Developer from Sialkot, Pakistan."
 			/>
 			<MainLayout>
-				<div className="space-y-8">
+				<div className="space-y-24">
 					<Section>
-						<div className="w-full md:mx-3 md:w-1/2">
+						<div className="w-full mb-5 md:mx-3 md:w-7/12 md:mb-0">
 							<Heading>About</Heading>
-							<div className="space-y-2 text-justify">
+							<div className="space-y-2">
 								<p>
 									Hi{" "}
 									<span role="img" aria-label="Hi">
@@ -66,22 +66,22 @@ function AboutPage() {
 								</p>
 							</div>
 						</div>
-						<div className="w-full md:mx-3 md:w-1/2">
+						<div className="w-full md:mx-3 md:w-5/12">
 							<Image
 								fluid={portrait}
 								alt="Inam Ul Huq"
-								className="w-full m-auto border-2 md:w-2/3"
+								className="w-full ml-auto border-2 md:w-2/3 rounded-full"
 							/>
 						</div>
 					</Section>
 					<Section>
 						<div className="w-full md:mx-3 md:w-1/2">
 							<Heading>Skills</Heading>
-							<p className="text-justify">
+							<p>
 								I had tried several different
-								technologies/languages including Java, C#,
-								Python, and C/C++ but I'm profound and
-								professionally experienced in the listed ones.
+								technologies/languages including C#, Python, and
+								C/C++ but I'm profound and professionally
+								experienced in the listed ones.
 							</p>
 						</div>
 						<div className="w-full md:mx-3 md:w-1/2">

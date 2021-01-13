@@ -9,8 +9,7 @@ import {
 	DiHtml5,
 	DiCss3,
 	DiLinux,
-	DiJqueryLogo,
-	DiDart,
+	DiAndroid,
 } from "react-icons/di"
 
 const skills = [
@@ -21,7 +20,7 @@ const skills = [
 	{ name: "WordPress", icon: DiWordpress },
 	{ name: "HTML(5)", icon: DiHtml5 },
 	{ name: "CSS(3)", icon: DiCss3 },
-	{ name: "Flutter", icon: DiDart },
+	{ name: "Android", icon: DiAndroid },
 	{ name: "Git", icon: DiGit },
 	{ name: "Linux", icon: DiLinux },
 ]
@@ -31,7 +30,7 @@ function SkillIcons() {
 		<div className="grid grid-cols-5 gap-2 text-center text-xs">
 			{skills.map((skill, i) => (
 				<span key={i}>
-					<skill.icon className="w-full h-auto" />
+					<skill.icon className="w-full h-auto mb-1" />
 					<span>{skill.name}</span>
 				</span>
 			))}

@@ -5,7 +5,7 @@ import Img from "./img"
 import A from "./a"
 
 const CardLink = props => {
-	return <A eLink newTab className="p-2 no-underline" {...props} />
+	return <A eLink newTab className="p-2 text-base no-underline" {...props} />
 }
 
 function ProjectCard({ project }) {
@@ -17,8 +17,8 @@ function ProjectCard({ project }) {
 				<Img src={frontmatter.thumbnail} />
 			</div>
 			<div className="text-center border-b p-2 space-y-2">
-				<h3 className="text-xl font-semibold">{frontmatter.title}</h3>
-				<p className="text-sm">{frontmatter.description}</p>
+				<h3 className="font-semibold">{frontmatter.title}</h3>
+				<p className="text-base">{frontmatter.description}</p>
 				<div className="text-xs">
 					{frontmatter.uses.map((u, i) => (
 						<span

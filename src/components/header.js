@@ -8,7 +8,7 @@ import A from "./a"
 import constants from "./../constants"
 
 const NavLink = props => {
-	return <A className="p-3 no-underline md:p-0 md:pl-6" {...props} />
+	return <A className="p-3 no-underline md:p-0 md:pl-8" {...props} />
 }
 
 function Header() {
@@ -28,7 +28,7 @@ function Header() {
 	const logo = logoQ.file.childImageSharp.original.src
 
 	return (
-		<header className="max-h-main-nav-header bg-white border-b">
+		<header className="max-h-main-nav-header">
 			<Container>
 				<div className="flex justify-between items-center">
 					<A to="/" className="hover:bg-primary">
