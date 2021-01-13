@@ -32,7 +32,7 @@ function Header() {
 			<Container>
 				<div className="flex justify-between items-center">
 					<A to="/" className="hover:bg-primary">
-						<img src={logo} alt="Inam Ul Huq logo" />
+						<img src={logo} alt="Inam Ul Haq logo" />
 					</A>
 					<button
 						className="max-md:block p-2 border z-20 hidden"

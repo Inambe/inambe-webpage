@@ -25,7 +25,7 @@ function Hero() {
 			<div className="w-full mb-6 text-center md:text-left md:mx-2 md:w-8/12 lg:w-6/12">
 				<div className="mb-8">
 					<h1 className="text-primary text-4xl font-bold md:text-5xl leading-none">
-						Inam Ul Huq
+						Inam Ul Haq
 					</h1>
 					<h3 className="italic">Software Developer</h3>
 				</div>
@@ -54,7 +54,7 @@ function Hero() {
 			<div className="w-2/3 mb-6 md:mx-2 md:w-4/12">
 				<Image
 					fluid={portrait}
-					alt="Inam Ul Huq"
+					alt="Inam Ul Haq"
 					className={styles.heroPortrait}
 				/>
 			</div>

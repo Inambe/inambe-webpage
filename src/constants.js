@@ -1,7 +1,7 @@
 const constants = {
 	URL: {
 		GITHUB: "https://github.com/inambe",
-		TWITTER: "https://twitter.com/MeInamUlHuq",
+		TWITTER: "https://twitter.com/MeInamUlHaq",
 		RESUME: "https://cv.inambe.dev",
 	},
 	EMAIL: "inambe.dev@gmail.com",

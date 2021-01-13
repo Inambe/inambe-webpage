@@ -34,7 +34,7 @@ function AboutPage() {
 		<LayoutRoot>
 			<SEO
 				title="About"
-				description="Inam Ul Huq is a Software Developer from Sialkot, Pakistan."
+				description="Inam Ul Haq is a Software Developer from Sialkot, Pakistan."
 			/>
 			<MainLayout>
 				<div className="space-y-24">
@@ -47,7 +47,7 @@ function AboutPage() {
 									<span role="img" aria-label="Hi">
 										👋
 									</span>
-									,<br /> I'm Inam Ul Huq, a Software
+									,<br /> I'm Inam Ul Haq, a Software
 									Developer. I build Web, Desktop, and Mobile
 									applications.
 								</p>
@@ -69,7 +69,7 @@ function AboutPage() {
 						<div className="w-full md:mx-3 md:w-5/12">
 							<Image
 								fluid={portrait}
-								alt="Inam Ul Huq"
+								alt="Inam Ul Haq"
 								className="w-full ml-auto border-2 md:w-2/3 rounded-full"
 							/>
 						</div>
