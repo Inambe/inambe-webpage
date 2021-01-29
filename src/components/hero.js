@@ -47,10 +47,8 @@ function Hero() {
 					</p>
 				</div>
 				<div>
-					<A noStyle to="/contact">
-						<Button type="primary" size="mf">
-							Let's talk!
-						</Button>
+					<A to="/contact">
+						<Button>Let's talk!</Button>
 					</A>
 				</div>
 			</div>

@@ -58,7 +58,7 @@ body {
 		scroll-behavior: smooth;
 	}
 	a {
-		@apply hover:text-primary;
+		@apply underline font-medium hover:text-primary;
 	}
 	svg {
 		display: inline-block;

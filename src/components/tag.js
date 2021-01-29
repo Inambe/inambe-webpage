@@ -3,7 +3,7 @@ import React from "react"
 function Tag(props) {
 	return (
 		<span
-			className="py-1 px-3 text-sm rounded font-semibold shadow bg-white"
+			className="py-1 px-3 rounded font-medium mr-1 border"
 			{...props}
 		/>
 	)

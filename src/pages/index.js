@@ -21,14 +21,14 @@ function Home({ data }) {
 					<Hero />
 					<section className="space-y-6">
 						<Heading bare>Blog</Heading>
-						<div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+						<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
 							{blogPosts.map(({ node }, i) => (
 								<BlogPostCard key={i} node={node} />
 							))}
 						</div>
 						<div className="text-center">
 							<Link to="/blog">
-								<Button type="primary" size="mf">
+								<Button>
 									More <FaArrowRight />
 								</Button>
 							</Link>
@@ -50,7 +50,9 @@ export const query = graphql`
 				node {
 					title
 					description {
-						description
+						childMarkdownRemark {
+							html
+						}
 					}
 					publishDateText: publishDate(
 						formatString: "DD MMMM, YYYY"
@@ -59,11 +61,6 @@ export const query = graphql`
 					publishDate: publishDate(formatString: "YYYY-MM-DD")
 					slug
 					tags
-					heroImage {
-						fluid(maxWidth: 800, maxHeight: 600) {
-							...GatsbyContentfulFluid
-						}
-					}
 				}
 			}
 		}

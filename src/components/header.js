@@ -7,7 +7,7 @@ import A from "./a"
 import constants from "./../constants"
 
 const NavLink = props => {
-	return <A className="p-3 text-xl no-underline md:p-0 md:pl-8" {...props} />
+	return <A className="p-3 text-xl font-normal md:p-0 md:pl-8" {...props} />
 }
 
 function Header() {

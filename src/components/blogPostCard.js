@@ -1,5 +1,4 @@
 import React from "react"
-import Image from "gatsby-image"
 import { Link } from "gatsby"
 import Tag from "./tag"
 
@@ -13,33 +12,25 @@ const PostLink = ({ children, slug }) => {
 
 function BlogPostCard({ node }) {
 	return (
-		<article
-			data-sal="fade"
-			data-sal-duration="500"
-			data-sal-delay="150"
-			className="shadow rounded bg-white"
-		>
-			<div className="relative rounded rounded-b-none overflow-hidden">
-				<div className="absolute top-2 left-2 z-10 space-x-2">
-					{node.tags.map((t, i) => (
-						<Tag key={i}>{t}</Tag>
-					))}
-				</div>
-				<PostLink slug={node.slug}>
-					<Image
-						fluid={node.heroImage.fluid}
-						className="transition-transform transform hover:scale-110"
-					/>
-				</PostLink>
-			</div>
+		<article className="shadow border rounded bg-white hover:shadow-md">
 			<div className="p-4 space-y-4">
 				<PostLink slug={node.slug}>
 					<h2 className="leading-snug text-xl font-bold">
 						{node.title}
 					</h2>
 				</PostLink>
-				<p>{node.description.description}</p>
-				<div className="text-xs font-bold">
+				<div
+					className="content"
+					dangerouslySetInnerHTML={{
+						__html: node.description.childMarkdownRemark.html,
+					}}
+				></div>
+				<div className="flex justify-between text-xs font-bold">
+					<div>
+						{node.tags.map((t, i) => (
+							<Tag key={i}>{t}</Tag>
+						))}
+					</div>
 					<time dateTime={node.publishDate}>
 						{node.publishDateText}
 					</time>

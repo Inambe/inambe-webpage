@@ -12,11 +12,15 @@ function BlogPost({ data }) {
 	return (
 		<LayoutRoot>
 			<MainLayout>
-				<SEO title={blogPost.title} />
+				<SEO
+					title={blogPost.title}
+					description={blogPost.metaDescription?.metaDescription}
+				/>
 				{blogPost.heroImage && (
 					<Img
 						fluid={blogPost.heroImage.fluid}
-						style={{ height: 300 }}
+						style={{ height: 400 }}
+						alt={blogPost.title}
 					/>
 				)}
 				<Heading page>{blogPost.title}</Heading>
@@ -37,13 +41,16 @@ export const query = graphql`
 			edges {
 				node {
 					title
+					metaDescription {
+						metaDescription
+					}
 					body {
 						childMarkdownRemark {
 							html
 						}
 					}
 					heroImage {
-						fluid {
+						fluid(maxHeight: 400, cropFocus: CENTER) {
 							...GatsbyContentfulFluid
 						}
 					}
