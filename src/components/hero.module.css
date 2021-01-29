@@ -1,5 +1,0 @@
-.heroPortrait img {
-	@apply rounded-full;
-	@apply border-primary;
-	@apply border-half-rem;
-}

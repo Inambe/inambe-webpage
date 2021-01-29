@@ -1,64 +1,60 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
-import styles from "./hero.module.css"
 
 import Button from "./button"
 import A from "./a"
+import Heading from "./heading"
 
 function Hero() {
 	const portraitQ = useStaticQuery(graphql`
 		{
-			file(relativePath: { eq: "inam-ul-huq.png" }) {
-				childImageSharp {
-					fluid(maxWidth: 500) {
-						...GatsbyImageSharpFluid
+			contentfulSettings {
+				portrait {
+					fluid {
+						...GatsbyContentfulFluid
 					}
+					title
 				}
 			}
 		}
 	`)
-	const portrait = portraitQ.file.childImageSharp.fluid
+	const portrait = portraitQ.contentfulSettings.portrait
 
 	return (
-		<div className="min-h-full-in-container flex items-center flex-col-reverse md:flex-row md:-mx-2 md:justify-between">
-			<div className="w-full mb-6 text-center md:text-left md:mx-2 md:w-8/12 lg:w-6/12">
-				<div className="mb-8">
-					<h1 className="text-primary text-4xl font-bold md:text-5xl leading-none">
-						Inam Ul Haq
-					</h1>
-					<h3 className="italic">Software Developer</h3>
+		<section className="flex flex-col items-center space-y-6">
+			<div className="w-2/3 md:w-4/12">
+				<Image
+					fluid={portrait.fluid}
+					alt={portrait.title}
+					className="rounded-full border-primary border-half-rem"
+				/>
+			</div>
+			<div className="text-center space-y-4">
+				<div>
+					<Heading bare>Inam Ul Haq</Heading>
+					<h3 className="italic text-xl">Software Developer</h3>
 				</div>
-				<div className="mb-8">
-					<p className="mb-4">
+				<div className="text-xl">
+					<p>
 						Hi{" "}
 						<span role="img" aria-label="Hi">
 							👋
 						</span>
 						, I'm Inam, a human.
-						<br />I use <u>JavaScript</u>, <u>PHP</u>, <u>Java</u>,
-						and many other tools and libraries to build, maintain,
-						and fix different kinds of software applications.
-					</p>
-					<p className="mb-4">
-						If you want a new Web, Desktop, or Mobile application,
-						or want to get your existing one(s) fixed, contact me.
+						<br />I build, fix, and maintain different kinds of
+						software applications.
 					</p>
 				</div>
-				<A noStyle to="/contact">
-					<Button type="primary" size="mf">
-						Contact Me
-					</Button>
-				</A>
+				<div>
+					<A noStyle to="/contact">
+						<Button type="primary" size="mf">
+							Let's talk!
+						</Button>
+					</A>
+				</div>
 			</div>
-			<div className="w-2/3 mb-6 md:mx-2 md:w-4/12">
-				<Image
-					fluid={portrait}
-					alt="Inam Ul Haq"
-					className={styles.heroPortrait}
-				/>
-			</div>
-		</div>
+		</section>
 	)
 }
 

@@ -1,7 +1,4 @@
-import React, { useEffect } from "react"
-import naruto from "animexyz"
-import "./../index.css"
-
+import React from "react"
 import { transitions, positions, Provider as AlertProvider } from "react-alert"
 
 import AlertTemplate from "./../components/alertTemplate"
@@ -14,10 +11,6 @@ const options = {
 }
 
 function LayoutRoot({ children }) {
-	useEffect(() => {
-		naruto()
-	}, [])
-
 	return (
 		<AlertProvider template={AlertTemplate} {...options}>
 			{children}

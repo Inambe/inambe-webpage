@@ -61,5 +61,12 @@ module.exports = {
 				theme_color: "#2872ff",
 			},
 		},
+		{
+			resolve: "gatsby-source-contentful",
+			options: {
+				spaceId: "16ws5xghsvsm",
+				accessToken: "sVG5e9WFlIO52PsiBD2eI6G98uEq5XRjdcdYdNxP-tk",
+			},
+		},
 	],
 }

@@ -1,14 +1,13 @@
-import React from "react";
-import classnames from "classnames";
-import "./button.css";
+import React from "react"
+import clsx from "clsx"
 
 function Button({ type, size, ...props }) {
-	let className = classnames(
-		"btn",
-		type ? "btn--" + type : null,
-		size ? "btn--" + size : null
-	);
-	return <button className={className} {...props} />;
+	return (
+		<button
+			className={clsx("py-2 px-4 rounded bg-primary text-white")}
+			{...props}
+		/>
+	)
 }
 
-export default Button;
+export default Button
