@@ -15,7 +15,6 @@ module.exports = {
 		twitterUsername: "@MeInamUlHaq",
 	},
 	plugins: [
-		"gatsby-plugin-netlify-cms",
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
