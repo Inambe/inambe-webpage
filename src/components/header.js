@@ -21,7 +21,7 @@ function Header() {
 						Inam.
 					</A>
 					<button
-						className="max-md:block p-2 border z-30 hidden"
+						className="max-md:block py-1 px-2 border z-30 hidden"
 						onClick={() => setSideNaveOpen(!sideNaveOpen)}
 					>
 						{sideNaveOpen ? <FaTimes /> : <FaBars />}

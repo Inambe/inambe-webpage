@@ -13,9 +13,9 @@ const PostLink = ({ children, slug }) => {
 function BlogPostCard({ node }) {
 	return (
 		<article className="shadow border rounded bg-white hover:shadow-md">
-			<div className="p-4 space-y-4">
+			<div className="p-4 space-y-2">
 				<PostLink slug={node.slug}>
-					<h2 className="leading-snug text-xl font-bold">
+					<h2 className="leading-snug text-3xl font-extrabold">
 						{node.title}
 					</h2>
 				</PostLink>
@@ -25,7 +25,7 @@ function BlogPostCard({ node }) {
 						__html: node.description.childMarkdownRemark.html,
 					}}
 				></div>
-				<div className="flex justify-between text-xs font-bold">
+				<div className="flex justify-between items-center text-xs font-bold">
 					<div>
 						{node.tags.map((t, i) => (
 							<Tag key={i}>{t}</Tag>

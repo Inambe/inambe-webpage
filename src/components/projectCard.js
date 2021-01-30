@@ -1,46 +1,49 @@
 import React from "react"
 import { FaCode, FaLink } from "react-icons/fa"
+import Image from "gatsby-image"
 
-import Img from "./img"
 import A from "./a"
+import Tag from "./tag"
 
 const CardLink = props => {
-	return <A eLink newTab className="p-2 text-base no-underline" {...props} />
+	return <A eLink newTab className="p-4" {...props} />
 }
 
 function ProjectCard({ project }) {
-	const { frontmatter } = project
-
 	return (
-		<div className="border bg-white">
+		<div className="border shadow rounded bg-white">
 			<div>
-				<Img src={frontmatter.thumbnail} />
+				<Image
+					className="rounded-t"
+					fluid={project.heroImage.fluid}
+					alt={project.heroImage.title}
+				/>
 			</div>
-			<div className="text-center border-b p-2 space-y-2">
-				<h3 className="font-semibold">{frontmatter.title}</h3>
-				<p className="text-base">{frontmatter.description}</p>
+			<div className="text-center p-4 border-b space-y-2">
+				<h3 className="text-2xl font-extrabold">{project.title}</h3>
+				<div
+					className="content"
+					dangerouslySetInnerHTML={{
+						__html: project.description.childMarkdownRemark.html,
+					}}
+				/>
 				<div className="text-xs">
-					{frontmatter.uses.map((u, i) => (
-						<span
-							className="inline-block bg-gray-300 mr-1 py-1 px-2 rounded"
-							key={i}
-						>
-							{u}
-						</span>
+					{project.tags.map((u, i) => (
+						<Tag key={i}>{u}</Tag>
 					))}
 				</div>
 			</div>
 			<div className="flex items-center justify-around">
-				{frontmatter.live_link && (
-					<CardLink href={frontmatter.live_link}>
+				{project.liveLink && (
+					<CardLink href={project.liveLink}>
+						Live&nbsp;
 						<FaLink />
-						&nbsp;Live
 					</CardLink>
 				)}
-				{frontmatter.source_link && (
-					<CardLink href={frontmatter.source_link}>
+				{project.sourceLink && (
+					<CardLink href={project.sourceLink}>
+						Source&nbsp;
 						<FaCode />
-						&nbsp;Source
 					</CardLink>
 				)}
 			</div>

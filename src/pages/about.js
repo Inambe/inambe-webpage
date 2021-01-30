@@ -1,7 +1,4 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Image from "gatsby-image"
-
 import SkillIcons from "../components/skillIcons"
 import MainLayout from "../layouts/main"
 import LayoutRoot from "../layouts/root"
@@ -11,25 +8,13 @@ import Heading from "../components/heading"
 const Section = props => {
 	return (
 		<div
-			className="flex items-center justify-center flex-col space-y-2 md:flex-row md:-mx-3 md:space-y-0"
+			className="flex items-center justify-center flex-col space-y-4"
 			{...props}
 		/>
 	)
 }
 
 function AboutPage() {
-	const data = useStaticQuery(graphql`
-		{
-			file(relativePath: { eq: "inam-ul-huq.png" }) {
-				childImageSharp {
-					fluid(maxWidth: 500) {
-						...GatsbyImageSharpFluid
-					}
-				}
-			}
-		}
-	`)
-	const portrait = data.file.childImageSharp.fluid
 	return (
 		<LayoutRoot>
 			<SEO
@@ -37,9 +22,9 @@ function AboutPage() {
 				description="Inam Ul Haq is a Software Developer from Sialkot, Pakistan."
 			/>
 			<MainLayout>
-				<div className="space-y-24">
+				<div className="space-y-8">
 					<Section>
-						<div className="w-full mb-5 md:mx-3 md:w-7/12 md:mb-0">
+						<div className="w-full">
 							<Heading>About</Heading>
 							<div className="space-y-2">
 								<p>
@@ -66,16 +51,9 @@ function AboutPage() {
 								</p>
 							</div>
 						</div>
-						<div className="w-full md:mx-3 md:w-5/12">
-							<Image
-								fluid={portrait}
-								alt="Inam Ul Haq"
-								className="w-full ml-auto border-2 md:w-2/3 rounded-full"
-							/>
-						</div>
 					</Section>
 					<Section>
-						<div className="w-full md:mx-3 md:w-1/2">
+						<div className="w-full">
 							<Heading>Skills</Heading>
 							<p>
 								I had tried several different
@@ -84,7 +62,7 @@ function AboutPage() {
 								experienced in the listed ones.
 							</p>
 						</div>
-						<div className="w-full md:mx-3 md:w-1/2">
+						<div className="w-full">
 							<SkillIcons />
 						</div>
 					</Section>

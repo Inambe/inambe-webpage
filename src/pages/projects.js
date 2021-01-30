@@ -7,20 +7,20 @@ import MainLayout from "../layouts/main"
 import LayoutRoot from "../layouts/root"
 
 function ProjectsPage({ data }) {
-	const projects = data.allMarkdownRemark.edges
+	const projects = data.allContentfulWorkPost.edges
 
 	return (
 		<LayoutRoot>
 			<SEO
 				title="Projects"
-				description="List of projects I've developed or currently working on."
+				description="List of projects Inam has developed or currently working on."
 			/>
 			<MainLayout>
 				<div className="grid gap-3 grid-cols-1 md:grid-cols-2">
 					{projects.length &&
-						projects.map((project, i) => (
+						projects.map(({ node }, i) => (
 							<article key={i}>
-								<ProjectCard project={project.node} />
+								<ProjectCard project={node} />
 							</article>
 						))}
 				</div>
@@ -30,19 +30,24 @@ function ProjectsPage({ data }) {
 }
 export const query = graphql`
 	{
-		allMarkdownRemark(
-			filter: { fileAbsolutePath: { regex: "/projects/" } }
-			sort: { fields: frontmatter___date, order: DESC }
+		allContentfulWorkPost(
+			sort: { fields: heroImage___createdAt, order: DESC }
 		) {
 			edges {
 				node {
-					frontmatter {
-						title
-						description
-						uses
-						source_link
-						live_link
-						thumbnail
+					title
+					tags
+					heroImage {
+						fluid {
+							...GatsbyContentfulFluid
+						}
+					}
+					liveLink
+					sourceLink
+					description {
+						childMarkdownRemark {
+							html
+						}
 					}
 				}
 			}
