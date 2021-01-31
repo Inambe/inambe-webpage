@@ -1,26 +1,26 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import ProjectCard from "../components/projectCard"
+import WorkPostCard from "../components/workPostCard"
 import SEO from "../components/seo"
 import MainLayout from "../layouts/main"
 import LayoutRoot from "../layouts/root"
 
-function ProjectsPage({ data }) {
-	const projects = data.allContentfulWorkPost.edges
+function WorkPage({ data }) {
+	const workPosts = data.allContentfulWorkPost.edges
 
 	return (
 		<LayoutRoot>
 			<SEO
-				title="Projects"
-				description="List of projects Inam has developed or currently working on."
+				title="Work"
+				description="List of work Inam has done or currently doing."
 			/>
 			<MainLayout>
 				<div className="grid gap-3 grid-cols-1 md:grid-cols-2">
-					{projects.length &&
-						projects.map(({ node }, i) => (
+					{workPosts.length &&
+						workPosts.map(({ node }, i) => (
 							<article key={i}>
-								<ProjectCard project={node} />
+								<WorkPostCard workPost={node} />
 							</article>
 						))}
 				</div>
@@ -54,4 +54,4 @@ export const query = graphql`
 		}
 	}
 `
-export default ProjectsPage
+export default WorkPage

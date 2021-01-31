@@ -9,39 +9,39 @@ const CardLink = props => {
 	return <A eLink newTab className="p-4" {...props} />
 }
 
-function ProjectCard({ project }) {
+function WorkPostCard({ workPost }) {
 	return (
 		<div className="shadow rounded bg-white">
 			<div>
 				<Image
 					className="rounded-t"
-					fluid={project.heroImage.fluid}
-					alt={project.heroImage.title}
+					fluid={workPost.heroImage.fluid}
+					alt={workPost.heroImage.title}
 				/>
 			</div>
 			<div className="text-center p-4 border-b space-y-2">
-				<h3 className="text-2xl font-extrabold">{project.title}</h3>
+				<h3 className="text-2xl font-extrabold">{workPost.title}</h3>
 				<div
 					className="content"
 					dangerouslySetInnerHTML={{
-						__html: project.description.childMarkdownRemark.html,
+						__html: workPost.description.childMarkdownRemark.html,
 					}}
 				/>
 				<div className="text-xs">
-					{project.tags.map((u, i) => (
+					{workPost.tags.map((u, i) => (
 						<Tag key={i}>{u}</Tag>
 					))}
 				</div>
 			</div>
 			<div className="flex items-center justify-around">
-				{project.liveLink && (
-					<CardLink href={project.liveLink}>
+				{workPost.liveLink && (
+					<CardLink href={workPost.liveLink}>
 						Live&nbsp;
 						<FaLink />
 					</CardLink>
 				)}
-				{project.sourceLink && (
-					<CardLink href={project.sourceLink}>
+				{workPost.sourceLink && (
+					<CardLink href={workPost.sourceLink}>
 						Source&nbsp;
 						<FaCode />
 					</CardLink>
@@ -51,4 +51,4 @@ function ProjectCard({ project }) {
 	)
 }
 
-export default ProjectCard
+export default WorkPostCard

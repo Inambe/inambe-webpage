@@ -34,7 +34,7 @@ function Header() {
 							}
 						)}
 					>
-						<NavLink to="/projects">Projects</NavLink>
+						<NavLink to="/work">Work</NavLink>
 						<NavLink to="/about">About</NavLink>
 						<NavLink newTab eLink href={constants.URL.RESUME}>
 							Resume&nbsp;
