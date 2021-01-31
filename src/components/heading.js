@@ -7,7 +7,7 @@ function Heading({ className, bare, ...props }) {
 		<h1
 			className={clsx(
 				"text-4xl md:text-5xl text-primary font-extrabold leading-none",
-				!bare && "my-6",
+				!bare && "mb-6",
 				className
 			)}
 			{...props}

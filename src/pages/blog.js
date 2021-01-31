@@ -1,14 +1,11 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
-import Hero from "../components/hero"
 import SEO from "../components/seo"
 import MainLayout from "../layouts/main"
 import LayoutRoot from "../layouts/root"
 import Heading from "../components/heading"
 import BlogPostCard from "../components/blogPostCard"
-import Button from "../components/button"
-import { FaArrowRight } from "react-icons/fa"
 
 function Home({ data }) {
 	const blogPosts = data.allContentfulBlogPost.edges
@@ -17,23 +14,11 @@ function Home({ data }) {
 		<LayoutRoot>
 			<SEO title="Home" />
 			<MainLayout>
-				<div className="space-y-12">
-					<Hero />
-					<section className="space-y-6">
-						<Heading bare>Blog</Heading>
-						<div className="grid grid-cols-1 gap-4">
-							{blogPosts.map(({ node }, i) => (
-								<BlogPostCard key={i} node={node} />
-							))}
-						</div>
-						<div className="text-center">
-							<Link to="/blog">
-								<Button>
-									More <FaArrowRight />
-								</Button>
-							</Link>
-						</div>
-					</section>
+				<Heading>Blog</Heading>
+				<div className="grid grid-cols-1 gap-4">
+					{blogPosts.map(({ node }, i) => (
+						<BlogPostCard key={i} node={node} />
+					))}
 				</div>
 			</MainLayout>
 		</LayoutRoot>
