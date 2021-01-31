@@ -22,7 +22,7 @@ function AboutPage() {
 				description="Inam Ul Haq is a Software Developer from Sialkot, Pakistan."
 			/>
 			<MainLayout>
-				<div className="space-y-8">
+				<div className="space-y-12">
 					<Section>
 						<div className="w-full">
 							<Heading>About</Heading>
