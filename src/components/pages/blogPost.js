@@ -21,9 +21,10 @@ function BlogPost({ data }) {
 						fluid={blogPost.heroImage.fluid}
 						style={{ height: 400 }}
 						alt={blogPost.title}
+						className="mb-6"
 					/>
 				)}
-				<Heading page>{blogPost.title}</Heading>
+				<Heading>{blogPost.title}</Heading>
 				<div
 					className="content"
 					dangerouslySetInnerHTML={{

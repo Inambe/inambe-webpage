@@ -12,7 +12,7 @@ const PostLink = ({ children, slug }) => {
 
 function BlogPostCard({ node }) {
 	return (
-		<article className="shadow rounded bg-white hover:shadow-md">
+		<article className="shadow rounded bg-white">
 			<div className="p-4 space-y-2">
 				<PostLink slug={node.slug}>
 					<h2 className="leading-snug text-3xl font-extrabold">
