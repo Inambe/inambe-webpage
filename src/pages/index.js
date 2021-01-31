@@ -21,7 +21,7 @@ function Home({ data }) {
 					<Hero />
 					<section className="space-y-6">
 						<Heading bare>Blog</Heading>
-						<div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+						<div className="grid grid-cols-1 gap-4">
 							{blogPosts.map(({ node }, i) => (
 								<BlogPostCard key={i} node={node} />
 							))}

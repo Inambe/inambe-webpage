@@ -11,7 +11,7 @@ const CardLink = props => {
 
 function ProjectCard({ project }) {
 	return (
-		<div className="border shadow rounded bg-white">
+		<div className="shadow rounded bg-white">
 			<div>
 				<Image
 					className="rounded-t"
