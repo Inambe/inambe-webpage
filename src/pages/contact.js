@@ -71,7 +71,7 @@ function ContactPage() {
 							</FormControl>
 						</form>
 					</div>
-					<div className="w-full space-y-3 md:w-4/12 md:ml-auto">
+					<div className="w-full space-y-3 md:w-5/12 md:ml-auto">
 						<p>Some other ways you can contact me.</p>
 						<div className="space-y-1">
 							<ContactItem

@@ -4,7 +4,7 @@ import clsx from "clsx"
 
 function A({ newTab, children, eLink, className, ...props }) {
 	let customProps = {}
-	customProps.className = clsx("no-underline", className)
+	customProps.className = clsx(className)
 	customProps.target = newTab ? "_blank" : undefined
 
 	return eLink ? (

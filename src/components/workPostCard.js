@@ -7,7 +7,7 @@ import Tag from "./tag"
 import Card from "./card"
 
 const CardLink = props => {
-	return <A eLink newTab className="p-4" {...props} />
+	return <A eLink newTab className="p-4 no-underline" {...props} />
 }
 
 function WorkPostCard({ workPost }) {
