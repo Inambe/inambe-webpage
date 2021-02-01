@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+
 import Heading from "../heading"
 import SEO from "../seo"
 import LayoutRoot from "../../layouts/root"

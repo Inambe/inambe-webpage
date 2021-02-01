@@ -17,7 +17,7 @@ body {
 	border-bottom-width: 8px;
 	border-top-width: 8px;
 	@apply m-0;
-	@apply bg-white text-gray-800 font-sans;
+	@apply bg-gray-100 text-gray-800 font-sans;
 	@apply border-primary;
 	@apply min-h-screen;
 	@apply relative;

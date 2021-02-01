@@ -4,6 +4,7 @@ import Image from "gatsby-image"
 
 import A from "./a"
 import Tag from "./tag"
+import Card from "./card"
 
 const CardLink = props => {
 	return <A eLink newTab className="p-4" {...props} />
@@ -11,7 +12,7 @@ const CardLink = props => {
 
 function WorkPostCard({ workPost }) {
 	return (
-		<div className="shadow rounded bg-white">
+		<Card Component="article" noShadow noPadding border>
 			<div>
 				<Image
 					className="rounded-t"
@@ -47,7 +48,7 @@ function WorkPostCard({ workPost }) {
 					</CardLink>
 				)}
 			</div>
-		</div>
+		</Card>
 	)
 }
 

@@ -7,14 +7,14 @@ import A from "./a"
 import constants from "./../constants"
 
 const NavLink = props => {
-	return <A className="p-3 text-xl font-normal md:p-0 md:pl-8" {...props} />
+	return <A className="p-3 font-normal md:p-0 md:pl-8" {...props} />
 }
 
 function Header() {
 	const [sideNaveOpen, setSideNaveOpen] = useState(false)
 
 	return (
-		<header className="py-2">
+		<header className="py-4 bg-white shadow">
 			<Container>
 				<div className="flex justify-between items-center">
 					<A to="/" className="no-underline text-4xl font-black">
@@ -34,6 +34,7 @@ function Header() {
 							}
 						)}
 					>
+						<NavLink to="/blog">Blog</NavLink>
 						<NavLink to="/work">Work</NavLink>
 						<NavLink to="/about">About</NavLink>
 						<NavLink newTab eLink href={constants.URL.RESUME}>
