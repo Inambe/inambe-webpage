@@ -19,9 +19,7 @@ function WorkPage({ data }) {
 				<div className="grid gap-3 grid-cols-1 md:grid-cols-2">
 					{workPosts.length &&
 						workPosts.map(({ node }, i) => (
-							<article key={i}>
-								<WorkPostCard workPost={node} />
-							</article>
+							<WorkPostCard key={i} workPost={node} />
 						))}
 				</div>
 			</MainLayout>

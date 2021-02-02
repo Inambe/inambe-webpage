@@ -1,21 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-import clsx from "clsx"
 
-function A({ newTab, children, eLink, className, ...props }) {
+function A({ newTab, eLink, ...props }) {
+	const Component = eLink ? "a" : Link
 	let customProps = {}
-	customProps.className = clsx(className)
 	customProps.target = newTab ? "_blank" : undefined
+	customProps.rel = eLink ? "noopener noreferrer" : undefined
 
-	return eLink ? (
-		<a rel="noopener noreferrer" {...props} {...customProps}>
-			{children}
-		</a>
-	) : (
-		<Link {...props} {...customProps}>
-			{children}
-		</Link>
-	)
+	return <Component {...customProps} {...props} />
 }
 
 export default A
