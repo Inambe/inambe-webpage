@@ -10,7 +10,7 @@ module.exports = {
 		title: "Inam Ul Haq",
 		titleTemplate: "%s | Inam Ul Haq",
 		description:
-			"Inam Ul Haq is a software developer from Sialkot, Pakistan. He build Web, Desktop, and Mobile applications.",
+			"Inam Ul Haq is a Software Developer from Sialkot, Pakistan. He build Web, Desktop, and Mobile software applications.",
 		siteUrl: "https://inambe.dev", // No trailing slash allowed!
 		twitterUsername: "@MeInamUlHaq",
 	},
