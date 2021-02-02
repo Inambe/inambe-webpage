@@ -9,7 +9,7 @@ import constants from "./../constants"
 const NavLink = props => {
 	return (
 		<A
-			className="p-3 no-underline font-normal md:p-0 md:pl-8"
+			className="p-3 no-underline font-normal md:p-0 md:ml-8"
 			partiallyActive={true}
 			activeClassName="text-primary"
 			{...props}
