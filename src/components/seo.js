@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const SEO = ({ title, description, image, article }) => {
 	const { pathname } = useLocation()
-	const { site, file } = useStaticQuery(query)
+	const { site, contentfulSettings } = useStaticQuery(query)
 	const {
 		defaultTitle,
 		titleTemplate,
@@ -14,11 +14,11 @@ const SEO = ({ title, description, image, article }) => {
 		siteUrl,
 		twitterUsername,
 	} = site.siteMetadata
-	const { defaultImage } = file.childImageSharp.original
+	const defaultImage = contentfulSettings.portrait.file.url
 	const seo = {
 		title: title || defaultTitle,
 		description: description || defaultDescription,
-		image: `${siteUrl}${image || defaultImage}`,
+		image: `${image || defaultImage}`,
 		url: `${siteUrl}${pathname}`,
 	}
 	return (
@@ -70,10 +70,10 @@ const query = graphql`
 				twitterUsername
 			}
 		}
-		file(relativePath: { eq: "inam-ul-huq.png" }) {
-			childImageSharp {
-				original {
-					defaultImage: src
+		contentfulSettings {
+			portrait {
+				file {
+					url
 				}
 			}
 		}
