@@ -36,9 +36,10 @@ export const query = graphql`
 			edges {
 				node {
 					title
+					slug
 					tags
 					heroImage {
-						fluid {
+						fluid(maxWidth: 800, cropFocus: CENTER) {
 							...GatsbyContentfulFluid
 						}
 					}

@@ -34,7 +34,7 @@ function BlogPostCard({ node }) {
 				className={clsx("w-full p-4 space-y-2", withHero && "md:w-3/4")}
 			>
 				<PostLink slug={node.slug}>
-					<h2 className="leading-snug text-3xl font-extrabold">
+					<h2 className="leading-none text-3xl font-extrabold">
 						{node.title}
 					</h2>
 				</PostLink>
