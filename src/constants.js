@@ -6,5 +6,6 @@ const constants = {
 	},
 	EMAIL: "inambe.dev@gmail.com",
 	PHONE: "+92 340 4678646",
+	HTTP_SCHEME: "https:",
 }
 export default constants

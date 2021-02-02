@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
+import constants from "./../constants"
 
 const SEO = ({ title, description, image, article }) => {
 	const { pathname } = useLocation()
@@ -18,7 +19,7 @@ const SEO = ({ title, description, image, article }) => {
 	const seo = {
 		title: title || defaultTitle,
 		description: description || defaultDescription,
-		image: `${image || defaultImage}`,
+		image: `${constants.HTTP_SCHEME}${image || defaultImage}`,
 		url: `${siteUrl}${pathname}`,
 	}
 	return (
