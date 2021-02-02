@@ -34,6 +34,11 @@ export const query = graphql`
 			edges {
 				node {
 					title
+					heroImage {
+						fluid(maxWidth: 800, cropFocus: CENTER) {
+							...GatsbyContentfulFluid
+						}
+					}
 					description {
 						childMarkdownRemark {
 							html

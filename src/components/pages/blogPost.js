@@ -52,7 +52,7 @@ export const query = graphql`
 						}
 					}
 					heroImage {
-						fluid(maxHeight: 400, cropFocus: CENTER) {
+						fluid(maxWidth: 800, cropFocus: CENTER) {
 							...GatsbyContentfulFluid
 						}
 					}

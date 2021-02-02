@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import { FaArrowRight } from "react-icons/fa"
 
 import Hero from "../components/hero"
 import SEO from "../components/seo"
@@ -8,7 +9,6 @@ import LayoutRoot from "../layouts/root"
 import Heading from "../components/heading"
 import BlogPostCard from "../components/blogPostCard"
 import Button from "../components/button"
-import { FaArrowRight } from "react-icons/fa"
 
 function Home({ data }) {
 	const blogPosts = data.allContentfulBlogPost.edges
@@ -49,6 +49,11 @@ export const query = graphql`
 			edges {
 				node {
 					title
+					heroImage {
+						fluid(maxWidth: 800, cropFocus: CENTER) {
+							...GatsbyContentfulFluid
+						}
+					}
 					description {
 						childMarkdownRemark {
 							html
