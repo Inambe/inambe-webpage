@@ -44,7 +44,7 @@ function BlogPostCard({ node }) {
 						__html: node.description.childMarkdownRemark.html,
 					}}
 				></div>
-				<div className="flex justify-between items-center text-xs font-bold">
+				<div className="flex justify-between items-center text-xs">
 					<div>
 						{node.tags.map((t, i) => (
 							<Tag key={i}>{t}</Tag>

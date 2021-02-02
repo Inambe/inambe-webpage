@@ -59,10 +59,7 @@ export const query = graphql`
 							html
 						}
 					}
-					publishDateText: publishDate(
-						formatString: "DD MMMM, YYYY"
-						locale: ""
-					)
+					publishDateText: publishDate(formatString: "DD MMMM, YYYY")
 					publishDate: publishDate(formatString: "YYYY-MM-DD")
 					slug
 					tags

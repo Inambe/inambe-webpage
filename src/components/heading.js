@@ -6,7 +6,7 @@ function Heading({ className, bare, ...props }) {
 		// eslint-disable-next-line jsx-a11y/heading-has-content
 		<h1
 			className={clsx(
-				"text-4xl md:text-5xl text-primary font-extrabold leading-none",
+				"text-3xl md:text-4xl text-primary font-extrabold leading-none",
 				!bare && "mb-6",
 				className
 			)}

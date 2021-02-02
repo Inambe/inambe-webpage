@@ -25,6 +25,10 @@ body {
 	@apply leading-normal;
 }
 
+time {
+	@apply font-medium;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

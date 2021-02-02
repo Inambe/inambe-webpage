@@ -6,30 +6,40 @@ import Heading from "../heading"
 import SEO from "../seo"
 import LayoutRoot from "../../layouts/root"
 import MainLayout from "../../layouts/main"
+import Tag from "../tag"
 
 function WorkPost({ data }) {
-	const blogPost = data.allContentfulWorkPost.edges[0].node
+	const workPost = data.allContentfulWorkPost.edges[0].node
 
 	return (
 		<LayoutRoot>
 			<MainLayout>
 				<SEO
-					title={blogPost.title}
-					description={blogPost.metaDescription?.metaDescription}
+					title={workPost.title}
+					description={workPost.metaDescription?.metaDescription}
 				/>
-				{blogPost.heroImage && (
-					<Img
-						fluid={blogPost.heroImage.fluid}
-						style={{ height: 400 }}
-						alt={blogPost.title}
-						className="mb-6"
-					/>
-				)}
-				<Heading>{blogPost.title}</Heading>
+				<div className="mb-6 space-y-2">
+					{workPost.heroImage && (
+						<Img
+							fluid={workPost.heroImage.fluid}
+							style={{ height: 400 }}
+							alt={workPost.title}
+						/>
+					)}
+					<Heading bare>{workPost.title}</Heading>
+					<div className="flex items-center text-xs">
+						<span>
+							{workPost.tags &&
+								workPost.tags.map((t, i) => (
+									<Tag key={i}>{t}</Tag>
+								))}
+						</span>
+					</div>
+				</div>
 				<div
 					className="content"
 					dangerouslySetInnerHTML={{
-						__html: blogPost.body.childMarkdownRemark.html,
+						__html: workPost.body.childMarkdownRemark.html,
 					}}
 				></div>
 			</MainLayout>
@@ -43,6 +53,7 @@ export const query = graphql`
 			edges {
 				node {
 					title
+					tags
 					metaDescription {
 						metaDescription
 					}

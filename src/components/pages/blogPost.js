@@ -6,6 +6,7 @@ import Heading from "../heading"
 import SEO from "../seo"
 import LayoutRoot from "../../layouts/root"
 import MainLayout from "../../layouts/main"
+import Tag from "../tag"
 
 function BlogPost({ data }) {
 	const blogPost = data.allContentfulBlogPost.edges[0].node
@@ -17,15 +18,28 @@ function BlogPost({ data }) {
 					title={blogPost.title}
 					description={blogPost.metaDescription?.metaDescription}
 				/>
-				{blogPost.heroImage && (
-					<Img
-						fluid={blogPost.heroImage.fluid}
-						style={{ height: 400 }}
-						alt={blogPost.title}
-						className="mb-6"
-					/>
-				)}
-				<Heading>{blogPost.title}</Heading>
+				<div className="mb-6 space-y-2">
+					{blogPost.heroImage && (
+						<Img
+							fluid={blogPost.heroImage.fluid}
+							style={{ height: 400 }}
+							alt={blogPost.title}
+						/>
+					)}
+					<Heading bare>{blogPost.title}</Heading>
+					<div className="flex items-center text-xs">
+						<time dateTime={blogPost.publishDate}>
+							{blogPost.publishDateText}
+						</time>
+						<span className="mx-2">—</span>
+						<span>
+							{blogPost.tags &&
+								blogPost.tags.map((t, i) => (
+									<Tag key={i}>{t}</Tag>
+								))}
+						</span>
+					</div>
+				</div>
 				<div
 					className="content"
 					dangerouslySetInnerHTML={{
@@ -43,6 +57,7 @@ export const query = graphql`
 			edges {
 				node {
 					title
+					tags
 					metaDescription {
 						metaDescription
 					}
@@ -56,6 +71,8 @@ export const query = graphql`
 							...GatsbyContentfulFluid
 						}
 					}
+					publishDateText: publishDate(formatString: "DD MMMM, YYYY")
+					publishDate: publishDate(formatString: "YYYY-MM-DD")
 				}
 			}
 		}
