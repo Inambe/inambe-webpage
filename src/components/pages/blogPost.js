@@ -17,6 +17,7 @@ function BlogPost({ data }) {
 				<SEO
 					title={blogPost.title}
 					description={blogPost.metaDescription?.metaDescription}
+					image={blogPost.heroImage?.file.url}
 				/>
 				<div className="mb-6 space-y-2">
 					{blogPost.heroImage && (
@@ -67,6 +68,9 @@ export const query = graphql`
 						}
 					}
 					heroImage {
+						file {
+							url
+						}
 						fluid(maxWidth: 800, cropFocus: CENTER, quality: 100) {
 							...GatsbyContentfulFluid
 						}

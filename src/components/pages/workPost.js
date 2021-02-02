@@ -17,6 +17,7 @@ function WorkPost({ data }) {
 				<SEO
 					title={workPost.title}
 					description={workPost.metaDescription?.metaDescription}
+					image={workPost.heroImage?.file.url}
 				/>
 				<div className="mb-6 space-y-2">
 					{workPost.heroImage && (
@@ -63,6 +64,9 @@ export const query = graphql`
 						}
 					}
 					heroImage {
+						file {
+							url
+						}
 						fluid(maxWidth: 800, cropFocus: CENTER) {
 							...GatsbyContentfulFluid
 						}
