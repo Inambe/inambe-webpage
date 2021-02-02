@@ -29,6 +29,13 @@ time {
 	@apply font-medium;
 }
 
+code {
+	@apply bg-gray-100 border rounded px-1 break-words overflow-auto;
+}
+pre > code {
+	@apply p-2 block mb-4;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -67,13 +74,13 @@ time {
 		display: inline-block;
 	}
 	.content h1 {
-		@apply text-3xl font-bold mb-4;
+		@apply text-4xl font-bold mb-4;
 	}
 	.content h2 {
-		@apply text-2xl font-semibold mb-4;
+		@apply text-3xl font-bold mb-4;
 	}
 	.content h3 {
-		@apply text-2xl font-bold mb-4;
+		@apply text-2xl font-semibold mb-4;
 	}
 
 	.content hr {
@@ -102,7 +109,7 @@ time {
 	}
 	/* Blockquotes */
 	.content blockquote {
-		@apply p-2 mb-4 bg-gray-100 border-l-4 border-gray-400 italic;
+		@apply p-4 mb-4 bg-gray-100 border-l-4 border-gray-400 italic;
 	}
 	.content blockquote > p {
 		@apply mb-0;
