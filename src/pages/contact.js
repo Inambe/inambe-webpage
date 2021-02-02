@@ -32,7 +32,7 @@ const SocialItem = props => {
 function ContactPage() {
 	return (
 		<LayoutRoot>
-			<SEO title="Contact" description="Contact Inam Ul Haq" />
+			<SEO title="Contact" description="Contact Inam Ul Haq." />
 			<MainLayout>
 				<Heading>Contact</Heading>
 				<div className="flex flex-col space-y-8 md:flex-row md:space-y-0">

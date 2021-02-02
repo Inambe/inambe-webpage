@@ -13,7 +13,7 @@ function WorkPage({ data }) {
 		<LayoutRoot>
 			<SEO
 				title="Work"
-				description="List of work Inam has done or currently doing."
+				description="List of work Inam Ul Haq has done or currently doing."
 			/>
 			<MainLayout>
 				<div className="grid gap-3 grid-cols-1 md:grid-cols-2">

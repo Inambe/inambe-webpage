@@ -12,7 +12,10 @@ function Home({ data }) {
 
 	return (
 		<LayoutRoot>
-			<SEO title="Home" />
+			<SEO
+				title="Blog"
+				description="Tutorials, Guides, and Tips about software development in general and web development in particular."
+			/>
 			<MainLayout>
 				<Heading>Blog</Heading>
 				<div className="grid grid-cols-1 gap-4">
@@ -35,7 +38,7 @@ export const query = graphql`
 				node {
 					title
 					heroImage {
-						fluid(maxWidth: 800, cropFocus: CENTER) {
+						fluid(maxWidth: 800, cropFocus: CENTER, quality: 100) {
 							...GatsbyContentfulFluid
 						}
 					}

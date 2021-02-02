@@ -17,10 +17,7 @@ const Section = props => {
 function AboutPage() {
 	return (
 		<LayoutRoot>
-			<SEO
-				title="About"
-				description="Inam Ul Haq is a Software Developer from Sialkot, Pakistan."
-			/>
+			<SEO title="About" />
 			<MainLayout>
 				<div className="space-y-12">
 					<Section>
