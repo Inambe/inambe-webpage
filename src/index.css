@@ -73,6 +73,12 @@ pre > code {
 	svg {
 		display: inline-block;
 	}
+	.content {
+		@apply leading-7 tracking-wide;
+	}
+	.content.description {
+		@apply text-base;
+	}
 	.content h1 {
 		@apply text-4xl font-bold mb-4;
 	}

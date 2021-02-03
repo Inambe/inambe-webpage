@@ -25,21 +25,21 @@ function BlogPostCard({ node }) {
 		>
 			{withHero && (
 				<Image
-					className="rounded-t md:rounded-t-none md:rounded-l w-full md:w-1/4"
+					className="rounded-t md:rounded-t-none md:rounded-l w-full md:w-1/3"
 					fluid={node.heroImage.fluid}
 					alt={node.heroImage.title}
 				/>
 			)}
 			<div
-				className={clsx("w-full p-4 space-y-2", withHero && "md:w-3/4")}
+				className={clsx("w-full p-4 space-y-2", withHero && "md:w-2/3")}
 			>
 				<PostLink slug={node.slug}>
-					<h2 className="leading-none text-3xl font-extrabold">
+					<h2 className="leading-none text-2xl font-extrabold">
 						{node.title}
 					</h2>
 				</PostLink>
 				<div
-					className="content"
+					className="content description"
 					dangerouslySetInnerHTML={{
 						__html: node.description.childMarkdownRemark.html,
 					}}
