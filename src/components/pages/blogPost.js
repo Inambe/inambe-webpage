@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import { Disqus } from "gatsby-plugin-disqus"
 
 import Heading from "../heading"
 import SEO from "../seo"
@@ -8,8 +9,9 @@ import LayoutRoot from "../../layouts/root"
 import MainLayout from "../../layouts/main"
 import Tag from "../tag"
 
-function BlogPost({ data }) {
+function BlogPost({ location, data }) {
 	const blogPost = data.allContentfulBlogPost.edges[0].node
+	const postUrl = data.site.siteMetadata.siteUrl + location.pathname
 
 	return (
 		<LayoutRoot>
@@ -48,6 +50,16 @@ function BlogPost({ data }) {
 						__html: blogPost.body.childMarkdownRemark.html,
 					}}
 				></div>
+				<Disqus
+					config={{
+						/* Replace PAGE_URL with your post's canonical URL variable */
+						url: postUrl,
+						/* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+						identifier: blogPost.slug,
+						/* Replace PAGE_TITLE with the title of the page */
+						title: blogPost.title,
+					}}
+				/>
 			</MainLayout>
 		</LayoutRoot>
 	)
@@ -59,6 +71,7 @@ export const query = graphql`
 			edges {
 				node {
 					title
+					slug
 					tags
 					metaDescription {
 						metaDescription
@@ -79,6 +92,11 @@ export const query = graphql`
 					publishDateText: publishDate(formatString: "DD MMMM, YYYY")
 					publishDate: publishDate(formatString: "YYYY-MM-DD")
 				}
+			}
+		}
+		site {
+			siteMetadata {
+				siteUrl
 			}
 		}
 	}

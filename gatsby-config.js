@@ -60,5 +60,11 @@ module.exports = {
 				accessToken: "sVG5e9WFlIO52PsiBD2eI6G98uEq5XRjdcdYdNxP-tk",
 			},
 		},
+		{
+			resolve: `gatsby-plugin-disqus`,
+			options: {
+				shortname: `inambe-dev`,
+			},
+		},
 	],
 }
