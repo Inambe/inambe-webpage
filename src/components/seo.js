@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
-import constants from "./../constants"
+import { fixContentfulAssetURL } from "../api"
 
 const SEO = ({ title, description, image, article }) => {
 	const { pathname } = useLocation()
@@ -19,7 +19,7 @@ const SEO = ({ title, description, image, article }) => {
 	const seo = {
 		title: title || defaultTitle,
 		description: description || defaultDescription,
-		image: `${constants.HTTP_SCHEME}${image || defaultImage}`,
+		image: `${fixContentfulAssetURL(image || defaultImage)}`,
 		url: `${siteUrl}${pathname}`,
 	}
 	return (
@@ -38,6 +38,9 @@ const SEO = ({ title, description, image, article }) => {
 			<meta name="twitter:card" content="summary_large_image" />
 			{twitterUsername && (
 				<meta name="twitter:creator" content={twitterUsername} />
+			)}
+			{twitterUsername && (
+				<meta name="twitter:site" content={twitterUsername} />
 			)}
 			{seo.title && <meta name="twitter:title" content={seo.title} />}
 			{seo.description && (

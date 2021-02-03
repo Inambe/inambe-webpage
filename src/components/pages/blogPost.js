@@ -18,6 +18,7 @@ function BlogPost({ data }) {
 					title={blogPost.title}
 					description={blogPost.metaDescription?.metaDescription}
 					image={blogPost.heroImage?.file.url}
+					article
 				/>
 				<div className="mb-6 space-y-2">
 					{blogPost.heroImage && (
