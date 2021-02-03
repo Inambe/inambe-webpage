@@ -24,6 +24,9 @@ body {
 	@apply text-lg;
 	@apply leading-normal;
 }
+body.blog {
+	background: theme("colors.gray.50");
+}
 
 time {
 	@apply font-medium;

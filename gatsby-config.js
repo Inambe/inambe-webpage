@@ -6,14 +6,7 @@
 
 module.exports = {
 	/* Your site config here */
-	siteMetadata: {
-		title: "Inam Ul Haq",
-		titleTemplate: "%s | Inam Ul Haq",
-		description:
-			"Inam Ul Haq is a Software Developer from Sialkot, Pakistan. He build Web, Desktop, and Mobile software applications.",
-		siteUrl: "https://inambe.dev", // No trailing slash allowed!
-		twitterUsername: "@MeInamUlHaq",
-	},
+	siteMetadata: {},
 	plugins: [
 		{
 			resolve: `gatsby-source-filesystem`,
