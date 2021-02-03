@@ -12,6 +12,30 @@
 	--fs-xl: 2rem;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+@layer utilities {
+	@responsive {
+		.side-nave-close {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			transform: translateX(-100%);
+			@apply bg-white;
+			@apply transition duration-200;
+			@apply z-20;
+		}
+		.side-nave-open {
+			transform: translateX(0);
+		}
+	}
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -49,30 +73,6 @@ a {
 
 svg {
 	display: inline-block;
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@tailwind screens;
-
-@layer utilities {
-	@responsive {
-		.side-nave-close {
-			position: fixed;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			transform: translateX(-100%);
-			@apply bg-white;
-			@apply transition duration-200;
-			@apply z-20;
-		}
-		.side-nave-open {
-			transform: translateX(0);
-		}
-	}
 }
 
 .content {
