@@ -29,11 +29,11 @@ function BlogPost({ data }) {
 						/>
 					)}
 					<Heading bare>{blogPost.title}</Heading>
-					<div className="flex items-center text-xs">
+					<div className="flex md:items-center flex-col md:flex-row space-y-2 md:space-y-0 text-xs">
 						<time dateTime={blogPost.publishDate}>
 							{blogPost.publishDateText}
 						</time>
-						<span className="mx-2">—</span>
+						<span className="hidden md:block mx-2">—</span>
 						<span>
 							{blogPost.tags &&
 								blogPost.tags.map((t, i) => (
