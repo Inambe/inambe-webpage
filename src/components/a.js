@@ -7,6 +7,13 @@ function A({ newTab, eLink, ...props }) {
 	customProps.target = newTab ? "_blank" : undefined
 	customProps.rel = eLink ? "noopener noreferrer" : undefined
 
+	if (eLink) {
+		delete props.activeClassName
+		delete props.partiallyActive
+	}
+
+	console.log(props)
+
 	return <Component {...customProps} {...props} />
 }
 
