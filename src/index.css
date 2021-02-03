@@ -12,6 +12,10 @@
 	--fs-xl: 2rem;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-image: url(./static/circuit-board.svg);
 	border-bottom-width: 8px;
@@ -39,6 +43,14 @@ pre > code {
 	@apply p-2 block mb-4;
 }
 
+a {
+	@apply underline font-medium hover:text-primary;
+}
+
+svg {
+	display: inline-block;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -61,77 +73,69 @@ pre > code {
 			transform: translateX(0);
 		}
 	}
-	.container {
-		max-width: 800px;
-	}
 }
 
-@layer base {
-	html {
-		scroll-behavior: smooth;
-	}
-	a {
-		@apply underline font-medium hover:text-primary;
-	}
-	svg {
-		display: inline-block;
-	}
-	.content {
-		@apply leading-7 tracking-wide;
-	}
-	.content.description {
-		@apply text-base;
-	}
-	.content h1 {
-		@apply text-4xl font-bold mb-4;
-	}
-	.content h2 {
-		@apply text-3xl font-bold mb-4;
-	}
-	.content h3 {
-		@apply text-2xl font-semibold mb-4;
-	}
+.content {
+	@apply leading-7 tracking-wide;
+}
+.content.description {
+	@apply text-base;
+}
 
-	.content hr {
-		@apply my-8;
-	}
+.content h1 {
+	@apply text-4xl font-bold mb-4;
+}
 
-	/* Paragraph */
-	.content p {
-		@apply mb-4;
-	}
-	/* Lists */
-	.content ul,
-	.content ol {
-		@apply mb-4 ml-8;
-	}
-	.content li > p,
-	.content li > ul,
-	.content li > ol {
-		@apply mb-0;
-	}
-	.content ol {
-		@apply list-decimal;
-	}
-	.content ul {
-		@apply list-disc;
-	}
-	/* Blockquotes */
-	.content blockquote {
-		@apply p-4 mb-4 bg-gray-100 border-l-4 border-gray-400 italic;
-	}
-	.content blockquote > p {
-		@apply mb-0;
-	}
-	/* Tables */
-	.content td,
-	.content th {
-		@apply px-2 py-1 border border-gray-300;
-	}
-	.content tr:nth-child(even) {
-		@apply bg-gray-100;
-	}
-	.content table {
-		@apply mb-6;
-	}
+.content h2 {
+	@apply text-3xl font-bold mb-4;
+}
+
+.content h3 {
+	@apply text-2xl font-semibold mb-4;
+}
+
+.content hr {
+	@apply my-8;
+}
+
+.content p {
+	@apply mb-4;
+}
+
+.content ul,
+.content ol {
+	@apply mb-4 ml-8;
+}
+.content li > p,
+.content li > ul,
+.content li > ol {
+	@apply mb-0;
+}
+.content ol {
+	@apply list-decimal;
+}
+.content ul {
+	@apply list-disc;
+}
+
+.content blockquote {
+	@apply p-4 mb-4 bg-gray-100 border-l-4 border-gray-400 italic;
+}
+.content blockquote > p {
+	@apply mb-0;
+}
+
+.content table {
+	@apply mb-6;
+}
+.content td,
+.content th {
+	@apply px-2 py-1 border border-gray-300;
+}
+.content tr:nth-child(even) {
+	@apply bg-gray-100;
+}
+
+.container {
+	max-width: 800px;
 }
