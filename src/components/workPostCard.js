@@ -6,6 +6,7 @@ import Image from "gatsby-image"
 import A from "./a"
 import Tag from "./tag"
 import Card from "./card"
+import PostHeading from "./postHeading"
 
 const PostLink = ({ children, slug }) => {
 	return (
@@ -29,9 +30,7 @@ function WorkPostCard({ workPost }) {
 			/>
 			<div className="text-center p-4 space-y-4">
 				<PostLink slug={workPost.slug}>
-					<h3 className="leading-none text-2xl font-extrabold">
-						{workPost.title}
-					</h3>
+					<PostHeading>{workPost.title}</PostHeading>
 				</PostLink>
 				<div className="text-xs">
 					{workPost.tags.map((u, i) => (

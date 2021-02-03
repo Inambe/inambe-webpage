@@ -4,6 +4,7 @@ import Image from "gatsby-image"
 import clsx from "clsx"
 import Tag from "./tag"
 import Card from "./card"
+import PostHeading from "./postHeading"
 
 const PostLink = ({ children, slug }) => {
 	return (
@@ -34,9 +35,7 @@ function BlogPostCard({ node }) {
 				className={clsx("w-full p-4 space-y-2", withHero && "md:w-2/3")}
 			>
 				<PostLink slug={node.slug}>
-					<h2 className="leading-none text-2xl font-extrabold">
-						{node.title}
-					</h2>
+					<PostHeading>{node.title}</PostHeading>
 				</PostLink>
 				<div
 					className="content description"

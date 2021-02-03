@@ -12,8 +12,6 @@ function A({ newTab, eLink, ...props }) {
 		delete props.partiallyActive
 	}
 
-	console.log(props)
-
 	return <Component {...customProps} {...props} />
 }
 
