@@ -6,7 +6,9 @@
 
 module.exports = {
 	/* Your site config here */
-	siteMetadata: {},
+	siteMetadata: {
+		siteUrl: "https://inambe.dev",
+	},
 	plugins: [
 		{
 			resolve: `gatsby-source-filesystem`,
