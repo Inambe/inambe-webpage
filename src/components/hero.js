@@ -47,7 +47,7 @@ function Hero() {
 					</p>
 				</div>
 				<div>
-					<A to="/contact">
+					<A to="/contact/">
 						<Button>Let's talk!</Button>
 					</A>
 				</div>

@@ -23,7 +23,7 @@ function BlogHeader() {
 		<header className="py-4">
 			<Container>
 				<div className="flex justify-between items-center">
-					<A to="/blog" className="no-underline text-3xl font-black">
+					<A to="/blog/" className="no-underline text-3xl font-black">
 						{title}
 					</A>
 					<nav>

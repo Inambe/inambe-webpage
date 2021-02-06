@@ -27,7 +27,7 @@ function Home({ data }) {
 							))}
 						</div>
 						<div className="text-center">
-							<Link to="/blog">
+							<Link to="/blog/">
 								<Button>
 									More <FaArrowRight />
 								</Button>
