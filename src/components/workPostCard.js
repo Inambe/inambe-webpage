@@ -7,10 +7,11 @@ import A from "./a"
 import Tag from "./tag"
 import Card from "./card"
 import PostHeading from "./postHeading"
+import { getWorkURL } from "../api"
 
 const PostLink = ({ children, slug }) => {
 	return (
-		<Link to={`/work/${slug}`} className="no-underline">
+		<Link to={getWorkURL(slug)} className="no-underline">
 			{children}
 		</Link>
 	)

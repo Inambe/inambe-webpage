@@ -1,4 +1,5 @@
 const path = require("path")
+const { getWorkURL, getBlogURL } = require("./src/api")
 
 exports.createPages = async ({ graphql, actions }) => {
 	const { createPage } = actions
@@ -28,7 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
 	`)
 	data.allContentfulBlogPost.edges.forEach(edge => {
 		createPage({
-			path: "/blog/" + edge.node.slug,
+			path: getBlogURL(edge.node.slug),
 			component: blogPost,
 			context: {
 				slug: edge.node.slug,
@@ -37,7 +38,7 @@ exports.createPages = async ({ graphql, actions }) => {
 	})
 	data.allContentfulWorkPost.edges.forEach(edge => {
 		createPage({
-			path: "/work/" + edge.node.slug,
+			path: getWorkURL(edge.node.slug),
 			component: workPost,
 			context: {
 				slug: edge.node.slug,

@@ -5,10 +5,11 @@ import clsx from "clsx"
 import Tag from "./tag"
 import Card from "./card"
 import PostHeading from "./postHeading"
+import { getBlogURL } from "../api"
 
 const PostLink = ({ children, slug }) => {
 	return (
-		<Link to={`/blog/${slug}`} className="no-underline">
+		<Link to={getBlogURL(slug)} className="no-underline">
 			{children}
 		</Link>
 	)
