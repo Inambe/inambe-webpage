@@ -17,7 +17,12 @@ module.exports = {
 				path: `${__dirname}/content/media`,
 			},
 		},
-		"gatsby-transformer-remark",
+		{
+			resolve: "gatsby-transformer-remark",
+			options: {
+				plugins: [{ resolve: `gatsby-remark-prismjs`, options: {} }],
+			},
+		},
 		"gatsby-plugin-react-helmet",
 		{
 			resolve: "gatsby-plugin-robots-txt",

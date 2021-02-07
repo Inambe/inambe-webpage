@@ -47,6 +47,7 @@ function BlogPost({ location, data }) {
 				}}
 			></div>
 			<Disqus
+				className="mt-12"
 				config={{
 					/* Replace PAGE_URL with your post's canonical URL variable */
 					url: postUrl,
