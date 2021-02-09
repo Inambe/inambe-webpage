@@ -3,10 +3,11 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Disqus } from "gatsby-plugin-disqus"
 
-import Heading from "../heading"
 import SEO from "../seo"
 import Tag from "../tag"
 import BlogLayout from "../blog/layout"
+import PostHeading from "../blog/postHeading"
+import { FaCalendarAlt } from "react-icons/fa"
 
 function BlogPost({ location, data }) {
 	const blogPost = data.allContentfulBlogPost.edges[0].node
@@ -28,16 +29,18 @@ function BlogPost({ location, data }) {
 						alt={blogPost.title}
 					/>
 				)}
-				<Heading bare>{blogPost.title}</Heading>
-				<div className="flex md:items-center flex-col md:flex-row space-y-2 md:space-y-0 text-xs">
-					<time dateTime={blogPost.publishDate}>
-						{blogPost.publishDateText}
-					</time>
-					<span className="hidden md:block mx-2">—</span>
-					<span>
+				<PostHeading bare>{blogPost.title}</PostHeading>
+				<div className="space-y-2 text-sm">
+					<div>
 						{blogPost.tags &&
 							blogPost.tags.map((t, i) => <Tag key={i}>{t}</Tag>)}
-					</span>
+					</div>
+					<div className="flex items-center">
+						<FaCalendarAlt className="mr-1" />
+						<time dateTime={blogPost.publishDate}>
+							{blogPost.publishDateText}
+						</time>
+					</div>
 				</div>
 			</div>
 			<div
