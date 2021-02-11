@@ -21,7 +21,7 @@ function Header() {
 	const [sideNaveOpen, setSideNaveOpen] = useState(false)
 
 	return (
-		<header className="py-4 bg-white shadow">
+		<header className="py-4 bg-white shadow-sm">
 			<Container>
 				<div className="flex justify-between items-center">
 					<A to="/" className="no-underline text-4xl font-black">

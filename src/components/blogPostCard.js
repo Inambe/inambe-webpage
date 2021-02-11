@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Image from "gatsby-image"
+import { FaCalendarAlt } from "react-icons/fa"
 import clsx from "clsx"
 import Tag from "./tag"
 import Card from "./card"
@@ -50,9 +51,12 @@ function BlogPostCard({ node }) {
 							<Tag key={i}>{t}</Tag>
 						))}
 					</div>
-					<time dateTime={node.publishDate}>
-						{node.publishDateText}
-					</time>
+					<div className="flex items-center">
+						<FaCalendarAlt className="mr-1" />
+						<time dateTime={node.publishDate}>
+							{node.publishDateText}
+						</time>
+					</div>
 				</div>
 			</div>
 		</Card>

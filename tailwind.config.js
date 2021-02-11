@@ -22,13 +22,6 @@ module.exports = {
 			fontFamily: {
 				sans: ["Poppins", ...defaultTheme.fontFamily.sans],
 			},
-			maxHeight: {
-				"main-nav-header": "4rem",
-			},
-			minHeight: {
-				// 1rem of borders + 4rem of header + 6rem of container padding - 100vh
-				"full-in-container": "calc(100vh - (1rem + 4rem + 6rem))",
-			},
 			screens: {
 				"max-md": { max: defaultTheme.screens.md },
 			},
