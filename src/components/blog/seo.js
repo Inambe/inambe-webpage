@@ -20,6 +20,7 @@ const SEO = ({ title, description, image, article }) => {
 		defaultTitle,
 		twitter,
 		article,
+		twitterCard: "summary",
 	}
 
 	return useSEO(seo)

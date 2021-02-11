@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import SEO from "../components/blog/seo"
 import BlogPostCard from "../components/blogPostCard"
 import BlogLayout from "../components/blog/layout"
+import PostHeading from "../components/blog/postHeading"
 
 function Home({ data }) {
 	const blogPosts = data.allContentfulBlogPost.edges
@@ -12,10 +13,11 @@ function Home({ data }) {
 	return (
 		<BlogLayout>
 			<SEO title="Home" />
-			<div className="mb-6">
-				<p>{description}</p>
+			<div className="pb-8 border-b">
+				<PostHeading>Latest</PostHeading>
+				<p className="text-base text-gray-500">{description}</p>
 			</div>
-			<div className="grid grid-cols-1 gap-4">
+			<div className="grid grid-cols-1">
 				{blogPosts.map(({ node }, i) => (
 					<BlogPostCard key={i} node={node} />
 				))}

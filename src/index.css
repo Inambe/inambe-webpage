@@ -94,6 +94,9 @@ svg {
 .content p {
 	@apply mb-4;
 }
+.content.description p {
+	@apply m-0;
+}
 
 .content ul,
 .content ol {

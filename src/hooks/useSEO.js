@@ -14,7 +14,10 @@ const useSEO = seo => {
 			<meta property="og:description" content={seo.description} />
 			<meta property="og:image" content={seo.image} />
 
-			<meta name="twitter:card" content="summary_large_image" />
+			<meta
+				name="twitter:card"
+				content={seo.twitterCard || "summary_large_image"}
+			/>
 			<meta name="twitter:creator" content={seo.twitter} />
 			<meta name="twitter:site" content={seo.twitter} />
 			<meta name="twitter:title" content={seo.title} />
