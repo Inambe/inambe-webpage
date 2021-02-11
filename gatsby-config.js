@@ -10,6 +10,8 @@ module.exports = {
 		siteUrl: "https://inambe.dev",
 	},
 	plugins: [
+		"gatsby-plugin-sharp",
+		"gatsby-transformer-sharp",
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -20,7 +22,15 @@ module.exports = {
 		{
 			resolve: "gatsby-transformer-remark",
 			options: {
-				plugins: [{ resolve: `gatsby-remark-prismjs`, options: {} }],
+				plugins: [
+					{
+						resolve: "gatsby-remark-images-contentful",
+						options: {
+							maxWidth: 800,
+						},
+					},
+					{ resolve: `gatsby-remark-prismjs`, options: {} },
+				],
 			},
 		},
 		"gatsby-plugin-react-helmet",
@@ -28,7 +38,7 @@ module.exports = {
 			resolve: "gatsby-plugin-robots-txt",
 			options: {
 				sitemap: null,
-				policy: [{ userAgent: "*", allow: "/", disallow: "/admin" }],
+				policy: [{ userAgent: "*", allow: "/" }],
 			},
 		},
 		"gatsby-plugin-sitemap",
@@ -37,20 +47,19 @@ module.exports = {
 			options: {
 				trackingId: "UA-159434559-1",
 				head: true,
-				exclude: ["/admin"],
 			},
 		},
-		"gatsby-transformer-sharp",
-		"gatsby-plugin-sharp",
 		"gatsby-plugin-postcss",
 		{
-			resolve: `gatsby-plugin-favicon`,
+			resolve: `gatsby-plugin-manifest`,
 			options: {
-				logo: "./src/static/media/imgs/inam-bnw-cropped-1x1.png",
-				appName: "Inam Ul Haq", // Inferred with your package.json
-				developerName: "Inam Ul Haq",
-				developerURL: "https://inambe.dev",
-				theme_color: "#2872ff",
+				icon: "./src/static/media/imgs/inam-bnw-cropped-1x1.png",
+				name: `Inam Ul Haq`,
+				short_name: `Inambe`,
+				start_url: `/`,
+				background_color: `#ffffff`,
+				theme_color: `#2872ff`,
+				display: `standalone`,
 			},
 		},
 		{
