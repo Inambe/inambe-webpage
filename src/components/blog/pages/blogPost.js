@@ -2,12 +2,12 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Disqus } from "gatsby-plugin-disqus"
+import { FaCalendarAlt } from "react-icons/fa"
 
 import SEO from "../seo"
-import Tag from "../tag"
-import BlogLayout from "../blog/layout"
-import PostHeading from "../blog/postHeading"
-import { FaCalendarAlt } from "react-icons/fa"
+import Tag from "../../tag"
+import BlogLayout from "../layout"
+import PostHeading from "../postHeading"
 
 function BlogPost({ location, data }) {
 	const blogPost = data.allContentfulBlogPost.edges[0].node
@@ -29,7 +29,7 @@ function BlogPost({ location, data }) {
 						alt={blogPost.title}
 					/>
 				)}
-				<PostHeading bare>{blogPost.title}</PostHeading>
+				<PostHeading>{blogPost.title}</PostHeading>
 				<div className="space-y-2 text-sm">
 					<div>
 						{blogPost.tags &&
