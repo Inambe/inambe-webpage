@@ -25,7 +25,7 @@ function Header() {
 			<Container>
 				<div className="flex justify-between items-center">
 					<A to="/" className="no-underline text-4xl font-black">
-						Inam.
+						Inambe
 					</A>
 					<button
 						className="max-md:block py-1 px-2 border z-30 hidden"
