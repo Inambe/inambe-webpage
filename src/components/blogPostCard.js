@@ -4,6 +4,7 @@ import { FaCalendarAlt } from "react-icons/fa"
 import Tag from "./tag"
 import CardHeading from "./blog/cardHeading"
 import { getBlogURL } from "../api"
+import Card from "./card"
 
 const PostLink = ({ children, slug }) => {
 	return (
@@ -15,7 +16,7 @@ const PostLink = ({ children, slug }) => {
 
 function BlogPostCard({ node }) {
 	return (
-		<div className="w-full space-y-4 border-b border-gray-200 py-8">
+		<Card Component="article" className="w-full space-y-4">
 			<PostLink slug={node.slug}>
 				<CardHeading>{node.title}</CardHeading>
 			</PostLink>
@@ -38,7 +39,7 @@ function BlogPostCard({ node }) {
 					</time>
 				</div>
 			</div>
-		</div>
+		</Card>
 	)
 }
 

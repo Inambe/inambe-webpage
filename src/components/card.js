@@ -12,9 +12,9 @@ function Card({
 	return (
 		<Component
 			className={clsx(
-				"rounded bg-white",
+				"bg-white",
 				!noPadding && "p-4",
-				!noShadow && "shadow",
+				!noShadow && "shadow-sm",
 				border && "border",
 				className
 			)}

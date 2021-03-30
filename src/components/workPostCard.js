@@ -23,9 +23,8 @@ const CardLink = props => {
 
 function WorkPostCard({ workPost }) {
 	return (
-		<Card Component="article" noShadow noPadding border>
+		<Card Component="article" noPadding>
 			<Image
-				className="rounded-t"
 				fluid={workPost.heroImage.fluid}
 				alt={workPost.heroImage.title}
 			/>

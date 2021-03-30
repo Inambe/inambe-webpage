@@ -13,14 +13,16 @@ function Home({ data }) {
 	return (
 		<BlogLayout>
 			<SEO title="Home" />
-			<div className="pb-8 border-b">
-				<PostHeading>Latest</PostHeading>
-				<p className="text-base text-gray-500">{description}</p>
-			</div>
-			<div className="grid grid-cols-1">
-				{blogPosts.map(({ node }, i) => (
-					<BlogPostCard key={i} node={node} />
-				))}
+			<div className="space-y-8">
+				<div>
+					<PostHeading>Latest</PostHeading>
+					<p className="text-base text-gray-500">{description}</p>
+				</div>
+				<div className="grid grid-cols-1 gap-4">
+					{blogPosts.map(({ node }, i) => (
+						<BlogPostCard key={i} node={node} />
+					))}
+				</div>
 			</div>
 		</BlogLayout>
 	)

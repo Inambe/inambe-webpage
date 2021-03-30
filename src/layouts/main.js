@@ -4,7 +4,6 @@ import { useAlert } from "react-alert"
 import Header from "../components/header"
 import Container from "../components/container"
 import { isBrowser } from "../api/runtime"
-import Card from "../components/card"
 
 function MainLayout({ children }) {
 	const alert = useAlert()
@@ -21,9 +20,7 @@ function MainLayout({ children }) {
 	return (
 		<>
 			<Header />
-			<Container main>
-				<Card>{children}</Card>
-			</Container>
+			<Container main>{children}</Container>
 		</>
 	)
 }

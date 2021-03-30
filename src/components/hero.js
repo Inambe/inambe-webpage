@@ -1,58 +1,40 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Image from "gatsby-image"
+import { FaGithub, FaTwitter } from "react-icons/fa"
 
-import Button from "./button"
 import A from "./a"
-import Heading from "./heading"
+import constants from "../constants"
+import Card from "./card"
 
 function Hero() {
 	const portraitQ = useStaticQuery(graphql`
 		{
 			contentfulSettings {
-				portrait {
-					fluid {
-						...GatsbyContentfulFluid
-					}
-					title
-				}
+				title
 			}
 		}
 	`)
-	const portrait = portraitQ.contentfulSettings.portrait
+	const { title } = portraitQ.contentfulSettings
 
 	return (
-		<section className="flex flex-col items-center space-y-6">
-			<div className="w-2/3 md:w-4/12">
-				<Image
-					fluid={portrait.fluid}
-					alt={portrait.title}
-					className="rounded-full border-primary border-half-rem"
-				/>
+		<Card Component="section" className="space-y-4 text-center py-12">
+			<div>
+				<h1 className="text-5xl font-bold">{title}</h1>
+				<h3 className="text-lg italic  text-gray-500">
+					Software Developer
+				</h3>
 			</div>
-			<div className="text-center space-y-4">
-				<div>
-					<Heading bare>Inam Ul Haq</Heading>
-					<h3 className="italic text-xl">Software Developer</h3>
-				</div>
-				<div className="text-xl">
-					<p>
-						Hi{" "}
-						<span role="img" aria-label="Hi">
-							👋
-						</span>
-						, I'm Inam, a human.
-						<br />I build, fix, and maintain different kinds of
-						software applications.
-					</p>
-				</div>
-				<div>
-					<A to="/contact/">
-						<Button>Let's talk!</Button>
-					</A>
-				</div>
+
+			<div className="flex justify-center space-x-3">
+				<A eLink newTab href={constants.URL.GITHUB}>
+					<FaGithub size={25} />
+				</A>
+
+				<A eLink newTab href={constants.URL.TWITTER}>
+					<FaTwitter size={25} />
+				</A>
 			</div>
-		</section>
+		</Card>
 	)
 }
 

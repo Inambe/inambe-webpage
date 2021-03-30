@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 
 const useSEO = seo => {
 	return (
-		<Helmet title={seo.title} titleTemplate={`%s — ${seo.defaultTitle}`}>
+		<Helmet title={seo.title} titleTemplate={`%s | ${seo.defaultTitle}`}>
 			<link rel="canonical" href={seo.url} />
 			<meta name="description" content={seo.description} />
 			<meta name="image" content={seo.image} />

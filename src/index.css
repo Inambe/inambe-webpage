@@ -41,11 +41,11 @@ html {
 }
 
 body {
-	background-image: url(./static/circuit-board.svg);
+	/* background-image: url(./static/circuit-board.svg); */
 	border-bottom-width: 8px;
 	border-top-width: 8px;
 	@apply m-0;
-	@apply bg-gray-50 text-gray-800 font-sans;
+	@apply bg-gray-100 text-gray-600 font-sans;
 	@apply border-primary;
 	@apply min-h-screen;
 	@apply relative;
