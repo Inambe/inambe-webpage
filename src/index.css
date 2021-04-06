@@ -45,7 +45,7 @@ body {
 	border-bottom-width: 8px;
 	border-top-width: 8px;
 	@apply m-0;
-	@apply bg-gray-100 text-gray-600 font-sans;
+	@apply bg-opacity-50 bg-gray-100 text-gray-600 font-sans;
 	@apply border-primary;
 	@apply min-h-screen;
 	@apply relative;
@@ -73,6 +73,10 @@ svg {
 }
 .content.description {
 	@apply text-base;
+}
+
+.content a {
+	@apply no-underline text-primary hover:underline;
 }
 
 .content h1 {
@@ -137,4 +141,8 @@ svg {
 
 .container {
 	max-width: 800px;
+}
+
+:not(pre) > code[class*="language-"] {
+	padding: 0.1em 0.4em !important;
 }
