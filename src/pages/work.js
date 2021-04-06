@@ -43,11 +43,6 @@ export const query = graphql`
 					}
 					liveLink
 					sourceLink
-					description {
-						childMarkdownRemark {
-							html
-						}
-					}
 				}
 			}
 		}
